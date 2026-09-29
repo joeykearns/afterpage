@@ -70,7 +70,41 @@ function validate(series, file) {
     need(e.start_volume == null || Number.isInteger(e.start_volume), `${at}: start_volume must be a whole number`);
     (e.sources || []).forEach((s) => need(/^https:\/\//.test(s.url || ''), `${at}: source "${s.name}" needs an https link`));
     need(/^\d{4}-\d{2}-\d{2}$/.test(asText(e.last_checked) || ''), `${at}: last_checked must be YYYY-MM-DD`);
+    if (e.episode_map != null) errors.push(...validateEpisodeMap(e, `${file}: ${at}: episode_map`));
   });
+  return errors;
+}
+
+function episodeCount(episodes) {
+  const m = String(episodes || '').match(/^(\d+)\s*[–-]\s*(\d+)$/);
+  return m ? { first: Number(m[1]), count: Number(m[2]) - Number(m[1]) + 1 } : null;
+}
+
+// Episode maps must follow the manga in order, or the "stopped at episode"
+// answers would send people to the wrong place.
+function validateEpisodeMap(e, at) {
+  const errors = [];
+  const map = e.episode_map;
+  const rows = map && map.rows;
+  if (!map || !map.source || !/^https:\/\//.test(map.source.url || '')) errors.push(`${at}: needs a source with an https link`);
+  if (map && map.overall_first != null && !(Number.isInteger(map.overall_first) && map.overall_first > 1)) errors.push(`${at}: overall_first must be a whole number above 1`);
+  if (!Array.isArray(rows) || !rows.length) return [...errors, `${at}: rows must be a list`];
+  rows.forEach((r, i) => {
+    const ok = Array.isArray(r) && r.length === 3 && r.every(Number.isInteger);
+    if (!ok) return errors.push(`${at}: row ${i + 1} must look like [episode, first chapter, last chapter]`);
+    const [ep, first, last] = r;
+    if (ep !== i + 1) errors.push(`${at}: row ${i + 1} should be episode ${i + 1} (numbering within the season)`);
+    if (first > last) errors.push(`${at}: episode ${ep} starts after it ends`);
+    if (i > 0) {
+      const [, pf, pl] = rows[i - 1];
+      if (first < pf || last < pl) errors.push(`${at}: episode ${ep} goes back to earlier chapters. Only add maps for seasons that follow the manga in order`);
+    }
+  });
+  const range = episodeCount(e.episodes);
+  if (range && range.count !== rows.length) errors.push(`${at}: has ${rows.length} rows but the season has ${range.count} episodes`);
+  const end = rows.at(-1)?.[2];
+  if (Number.isInteger(e.last_chapter) && Number.isInteger(end) && Math.abs(end - e.last_chapter) > 2)
+    errors.push(`${at}: the last episode ends at Ch. ${end}, far from last_chapter ${e.last_chapter}. Check both`);
   return errors;
 }
 
@@ -99,6 +133,14 @@ export function loadAllSeries() {
       skipped: e.skipped || [],
       sources: e.sources || [],
       airing: e.status === 'airing',
+      episode_map: e.episode_map
+        ? {
+            source: e.episode_map.source,
+            // overall_first: the series-wide number of this season's first episode, when `episodes` counts from 1.
+            first_episode: e.episode_map.overall_first ?? episodeCount(e.episodes)?.first ?? 1,
+            rows: e.episode_map.rows.map(([ep, first, last]) => ({ ep, first, last })),
+          }
+        : null,
     })),
   }));
   cache.sort((a, b) => a.title.localeCompare(b.title));
