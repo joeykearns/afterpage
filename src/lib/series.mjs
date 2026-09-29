@@ -56,12 +56,18 @@ function validate(series, file) {
     need(e.label, `${at}: label is required`);
     need(KINDS.includes(e.kind), `${at}: kind must be one of ${KINDS.join(', ')}`);
     need(e.aired === 'ongoing' || /^\d{4}-(winter|spring|summer|fall)$/.test(String(e.aired)), `${at}: aired must look like 2026-spring or "ongoing"`);
-    need(Number.isInteger(e.start_chapter), `${at}: start_chapter must be a whole number`);
+    need(e.status == null || ['airing', 'finished'].includes(e.status), `${at}: status must be "airing" or left out`);
+    const airing = e.status === 'airing';
+    if (airing) {
+      need(e.start_chapter == null, `${at}: an airing entry can't have start_chapter yet. Remove "status: airing" once the finale has aired`);
+    } else {
+      need(Number.isInteger(e.start_chapter), `${at}: start_chapter must be a whole number`);
+      need(CONFIDENCE.includes(e.confidence), `${at}: confidence must be one of ${CONFIDENCE.join(', ')}`);
+      need(Array.isArray(e.sources) && e.sources.length, `${at}: at least one source link is required`);
+      need(e.confidence !== 'agree' || (e.sources || []).length >= 2, `${at}: "agree" needs two or more sources`);
+    }
     need(e.last_chapter == null || Number.isInteger(e.last_chapter), `${at}: last_chapter must be a whole number`);
     need(e.start_volume == null || Number.isInteger(e.start_volume), `${at}: start_volume must be a whole number`);
-    need(CONFIDENCE.includes(e.confidence), `${at}: confidence must be one of ${CONFIDENCE.join(', ')}`);
-    need(Array.isArray(e.sources) && e.sources.length, `${at}: at least one source link is required`);
-    need(e.confidence !== 'agree' || (e.sources || []).length >= 2, `${at}: "agree" needs two or more sources`);
     (e.sources || []).forEach((s) => need(/^https:\/\//.test(s.url || ''), `${at}: source "${s.name}" needs an https link`));
     need(/^\d{4}-\d{2}-\d{2}$/.test(asText(e.last_checked) || ''), `${at}: last_checked must be YYYY-MM-DD`);
   });
@@ -91,10 +97,17 @@ export function loadAllSeries() {
       id: entryId(e),
       last_checked: asText(e.last_checked),
       skipped: e.skipped || [],
+      sources: e.sources || [],
+      airing: e.status === 'airing',
     })),
   }));
   cache.sort((a, b) => a.title.localeCompare(b.title));
   return cache;
+}
+
+// Newest finished entry of a series (the one with an answer), or undefined.
+export function latestAnswer(series) {
+  return [...series.entries].filter((e) => !e.airing).sort((a, b) => airedKey(b.aired) - airedKey(a.aired))[0];
 }
 
 // Every entry flattened with its series, newest first.
