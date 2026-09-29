@@ -6,6 +6,7 @@ export function getStaticPaths() {
   return seasonHubs().map((hub) => ({ params: { slug: hub.slug }, props: { hub } }));
 }
 const { hub } = Astro.props;
+const allAiring = hub.items.every((i) => i.entry.airing);
 ---
 <Base
   title={`${hub.label} anime: where to start the manga`}
@@ -13,13 +14,17 @@ const { hub } = Astro.props;
 >
   <p class="crumb"><a href="/#seasons">All seasons</a></p>
   <h1 class="hub-title">{hub.label}</h1>
-  <p class="muted sub">Finished something from {hub.label}? Here's where each one picks up.</p>
+  <p class="muted sub">{allAiring
+    ? "These are airing now. We add each show's starting chapter within 48 hours of its finale."
+    : `Finished something from ${hub.label}? Here's where each one picks up.`}</p>
   <ul class="rows list">
     {hub.items.map(({ series: s, entry: e }) => (
       <li>
         <a href={`/anime/${s.slug}#${e.id}`}>
-          <span><span class="row-title">{s.title}</span><br /><span class="row-sub">After {e.label}</span></span>
-          <span class="row-answer">{unitLabel(s.source) === 'Volume' ? 'Vol.' : 'Ch.'} {e.start_chapter}</span>
+          <span><span class="row-title">{s.title}</span><br /><span class="row-sub">{e.airing ? e.label : `After ${e.label}`}</span></span>
+          {e.airing
+            ? <span class="row-pending">Airing</span>
+            : <span class="row-answer">{unitLabel(s.source) === 'Volume' ? 'Vol.' : 'Ch.'} {e.start_chapter}</span>}
         </a>
       </li>
     ))}
