@@ -1,0 +1,29 @@
+slug: black-clover
+title: Black Clover
+aka: [ブラッククローバー]
+source: manga
+read_official:
+  - name: VIZ Media (English print & digital)
+    url: https://www.viz.com/search?search=black+clover
+  - name: MANGA Plus by Shueisha (official, free chapters)
+    url: https://mangaplus.shueisha.co.jp/
+entries:
+  - label: Season 2
+    kind: season
+    aired: 2026-fall
+    status: airing
+    last_checked: 2026-09-29
+  - label: TV series
+    kind: series
+    episodes: "1–170"
+    aired: 2017-fall
+    last_chapter: 270
+    start_chapter: 271
+    overlap: "Episode 170 stops just short of the final pages of Ch. 270. Start at 270 if you want those pages, or 271 for a clean break."
+    sources:
+      - name: ComicBook.com
+        url: https://comicbook.com/anime/news/black-clover-anime-ending-manga-where-to-read-explained/
+      - name: GoodNovel Q&A
+        url: https://www.goodnovel.com/qa/read-manga-anime-ends
+    confidence: agree
+    last_checked: 2026-09-29
