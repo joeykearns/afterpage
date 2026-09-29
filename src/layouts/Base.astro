@@ -18,7 +18,7 @@ interface Props {
 const { title, description, path = Astro.url.pathname, image = '/og.png' } = Astro.props;
 const canonical = new URL(path, SITE_URL).href;
 const ogImage = new URL(image, SITE_URL).href;
-const fullTitle = title === SITE_NAME ? `${SITE_NAME}: where the anime leaves off in the manga` : `${title} | ${SITE_NAME}`;
+const fullTitle = title === SITE_NAME ? `${SITE_NAME}: the exact manga chapter to start next` : `${title} | ${SITE_NAME}`;
 ---
 <!doctype html>
 <html lang="en">
@@ -136,7 +136,7 @@ const fullTitle = title === SITE_NAME ? `${SITE_NAME}: where the anime leaves of
     --amber-ink: #6B4A00;
     --shadow: 0 1px 2px rgba(23, 24, 28, 0.06), 0 8px 24px -12px rgba(23, 24, 28, 0.18);
     --display: 'Bricolage Grotesque Variable', 'Arial Narrow', system-ui, sans-serif;
-    --body: 'Afterpage Digits', 'Atkinson Hyperlegible', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    --body: 'Site Digits', 'Atkinson Hyperlegible', system-ui, -apple-system, 'Segoe UI', sans-serif;
     color-scheme: light;
   }
   :root[data-theme='dark'] {
@@ -174,7 +174,7 @@ const fullTitle = title === SITE_NAME ? `${SITE_NAME}: where the anime leaves of
     }
   }
   @font-face {
-    font-family: 'Afterpage Digits';
+    font-family: 'Site Digits';
     src: url('/digits.woff2') format('woff2');
     font-weight: 200 800;
     font-display: swap;
