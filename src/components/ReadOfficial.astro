@@ -1,0 +1,16 @@
+---
+// "Read it officially": publisher and official app links for a show.
+const { series } = Astro.props;
+---
+<section class="section read" aria-labelledby="read-h">
+  <h2 id="read-h">Read it officially</h2>
+  {series.read_official.length ? (
+    <ul class="rows">
+      {series.read_official.map((r) => (
+        <li><a href={r.url} rel="noopener" target="_blank"><span class="row-title">{r.name}</span><span class="row-sub">Opens in a new tab</span></a></li>
+      ))}
+    </ul>
+  ) : (
+    <p class="muted">We haven't found an official English release yet. Know of one? <a href="/submit">Tell us</a>.</p>
+  )}
+</section>

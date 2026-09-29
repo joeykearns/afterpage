@@ -1,8 +1,9 @@
 ---
 import { airedLabel, unitLabel } from '../lib/series.mjs';
-import { REPO } from '../config.mjs';
+import { feedbackUrl } from '../lib/feedback.mjs';
 
-const { series, entry } = Astro.props;
+const { series, entry, permalink, headingLevel = 2 } = Astro.props;
+const H = `h${headingLevel}`;
 const unit = unitLabel(series.source);
 const kindText = entry.kind === 'movie' ? 'Film' : entry.episodes ? `Episodes ${entry.episodes}` : '';
 const answerText = `${series.title}, after ${entry.label}: start at ${unit} ${entry.start_chapter}${entry.start_volume ? ` (Volume ${entry.start_volume})` : ''}`;
@@ -25,12 +26,13 @@ const pickerData = map && JSON.stringify({
 const firstEp = map ? map.first_episode : 1;
 const lastEp = map ? map.first_episode + map.rows.length - 1 : 1;
 
-const reportUrl = `https://github.com/${REPO}/issues/new?template=correction.yml&title=${encodeURIComponent(`Correction: ${series.title}, ${entry.label}`)}&series=${encodeURIComponent(series.slug)}&entry=${encodeURIComponent(entry.label)}`;
+const reportUrl = feedbackUrl({ type: 'correction', show: series.title, season: entry.label });
 ---
 <article class="answer" id={entry.id} aria-labelledby={`${entry.id}-h`}>
   <header class="answer-head">
-    <h2 id={`${entry.id}-h`}>After {entry.label}</h2>
+    <H id={`${entry.id}-h`}>After {entry.label}</H>
     <p class="muted">{[kindText, airedLabel(entry.aired)].filter(Boolean).join(', ')}</p>
+    {permalink && <a class="permalink" href={permalink}>Page for this {entry.kind === 'movie' ? 'film' : entry.kind === 'part' ? 'part' : 'season'}</a>}
   </header>
 
   <div class="start">
@@ -92,6 +94,13 @@ const reportUrl = `https://github.com/${REPO}/issues/new?template=correction.yml
   }
   .answer-head h2 { font-size: 1.4rem; }
   .answer-head p { margin-top: 4px; font-size: 0.95rem; }
+  .answer-head { position: relative; }
+  .answer-head :is(h2, h3) { font-size: 1.4rem; padding-right: 7.5rem; }
+  .permalink { position: absolute; top: 4px; right: 0; font-size: 0.85rem; color: var(--ink-soft); }
+  @media (max-width: 480px) {
+    .answer-head :is(h2, h3) { padding-right: 0; }
+    .permalink { position: static; display: inline-block; margin-top: 6px; }
+  }
 
   .start {
     position: relative;

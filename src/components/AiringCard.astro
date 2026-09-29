@@ -1,16 +1,18 @@
 ---
 import { airedLabel, unitLabel } from '../lib/series.mjs';
-import { REPO } from '../config.mjs';
+import { feedbackUrl } from '../lib/feedback.mjs';
 
-const { series, entry, hasEarlier } = Astro.props;
+const { series, entry, hasEarlier, permalink, headingLevel = 2 } = Astro.props;
+const H = `h${headingLevel}`;
 const unit = unitLabel(series.source).toLowerCase();
 const kindText = entry.kind === 'movie' ? 'Film' : entry.episodes ? `Episodes ${entry.episodes}` : '';
-const tipUrl = `https://github.com/${REPO}/issues/new?template=correction.yml&title=${encodeURIComponent(`Finale: ${series.title}, ${entry.label}`)}&series=${encodeURIComponent(series.slug)}&entry=${encodeURIComponent(entry.label)}`;
+const tipUrl = feedbackUrl({ type: 'finale', show: series.title, season: entry.label });
 ---
 <article class="answer airing" id={entry.id} aria-labelledby={`${entry.id}-h`}>
   <header class="answer-head">
-    <h2 id={`${entry.id}-h`}>{entry.label}</h2>
+    <H id={`${entry.id}-h`}>{entry.label}</H>
     <p class="muted">{[kindText, `${airedLabel(entry.aired)}, airing now`].filter(Boolean).join(', ')}</p>
+    {permalink && <a class="permalink" href={permalink}>Page for this {entry.kind === 'movie' ? 'film' : entry.kind === 'part' ? 'part' : 'season'}</a>}
   </header>
 
   <div class="pending">
@@ -37,6 +39,13 @@ const tipUrl = `https://github.com/${REPO}/issues/new?template=correction.yml&ti
   }
   .answer-head h2 { font-size: 1.4rem; }
   .answer-head p { margin-top: 4px; font-size: 0.95rem; }
+  .answer-head { position: relative; }
+  .answer-head :is(h2, h3) { font-size: 1.4rem; padding-right: 7.5rem; }
+  .permalink { position: absolute; top: 4px; right: 0; font-size: 0.85rem; color: var(--ink-soft); }
+  @media (max-width: 480px) {
+    .answer-head :is(h2, h3) { padding-right: 0; }
+    .permalink { position: static; display: inline-block; margin-top: 6px; }
+  }
   .pending {
     position: relative;
     margin-top: 20px;
