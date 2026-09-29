@@ -1,0 +1,228 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE_NAME } from '../config.mjs';
+import { loadAllSeries, allEntries, seasonHubs, airedLabel, unitLabel } from '../lib/series.mjs';
+
+const series = loadAllSeries();
+const recent = allEntries().filter((i) => i.entry.aired !== 'ongoing' && !i.entry.airing).slice(0, 6);
+const airingNow = allEntries().filter((i) => i.entry.airing).sort((a, b) => a.series.title.localeCompare(b.series.title));
+const hubs = seasonHubs();
+const POPULAR = [
+  ['jujutsu-kaisen', 'Jujutsu Kaisen'], ['frieren', 'Frieren'], ['chainsaw-man', 'Chainsaw Man'],
+  ['solo-leveling', 'Solo Leveling'], ['demon-slayer', 'Demon Slayer'], ['one-piece', 'One Piece'],
+];
+const popular = POPULAR.filter(([slug]) => series.some((s) => s.slug === slug)).map(([slug, title]) => ({ slug, title }));
+---
+<Base
+  title={SITE_NAME}
+  description="Finished an anime season? Get the exact manga chapter to start next. Numbers only, no spoilers, sources linked."
+>
+  <section class="hero">
+    <div class="hero-panel">
+      <h1>Where did the anime leave off?</h1>
+      <p class="lede">Get the exact chapter to start reading next. Numbers only, so nothing gets spoiled.</p>
+
+      <form class="search" action="/search" role="search" onsubmit="return false">
+        <label for="q" class="visually-hidden">Search for a show</label>
+        <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" /><path d="m15.5 15.5 5 5" /></svg>
+        <input id="q" name="q" type="search" autocomplete="off" placeholder="Search a show, like Frieren" aria-controls="results" />
+      </form>
+      <ul id="results" class="rows results" aria-live="polite"></ul>
+      <p id="empty" class="muted empty" hidden>
+        We don't have that one yet. <a href="/submit">Ask us to add it</a>.
+      </p>
+
+      <div class="popular">
+        <p class="muted">Popular right now</p>
+        <ul class="chip-list">
+          {popular.map((s) => (<li><a href={`/anime/${s.slug}`}>{s.title}</a></li>))}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="columns">
+    <section class="section" aria-labelledby="recent-h">
+      <h2 id="recent-h">Recently finished</h2>
+      <ul class="rows">
+        {recent.map(({ series: s, entry: e }) => (
+          <li>
+            <a href={`/anime/${s.slug}#${e.id}`}>
+              <span><span class="row-title">{s.title}</span><br /><span class="row-sub">{e.label}, {airedLabel(e.aired)}</span></span>
+              <span class="row-answer">{unitLabel(s.source) === 'Volume' ? 'Vol.' : 'Ch.'} {e.start_chapter}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    {airingNow.length > 0 && (
+      <section class="section" aria-labelledby="airing-h">
+        <h2 id="airing-h">Airing now</h2>
+        <p class="muted section-lede">We add each show's chapter within 48 hours of its finale.</p>
+        <ul class="rows">
+          {airingNow.map(({ series: s, entry: e }) => (
+            <li>
+              <a href={`/anime/${s.slug}#${e.id}`}>
+                <span><span class="row-title">{s.title}</span><br /><span class="row-sub">{e.label}</span></span>
+                <span class="row-pending">Airing</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+  </div>
+
+  <section class="section" id="seasons" aria-labelledby="seasons-h">
+    <h2 id="seasons-h">Browse by season</h2>
+    <ul class="chip-list">
+      {hubs.slice(0, 8).map((h) => (<li><a href={`/season/${h.slug}`}>{h.label} <span class="muted">({h.items.length})</span></a></li>))}
+    </ul>
+    {hubs.length > 8 && (
+      <details class="older">
+        <summary>Older seasons</summary>
+        <ul class="chip-list">
+          {hubs.slice(8).map((h) => (<li><a href={`/season/${h.slug}`}>{h.label} <span class="muted">({h.items.length})</span></a></li>))}
+        </ul>
+      </details>
+    )}
+  </section>
+
+  <section class="section" aria-labelledby="all-h">
+    <h2 id="all-h">All {series.length} shows</h2>
+    <ul class="az">
+      {series.map((s) => (<li><a href={`/anime/${s.slug}`}>{s.title}</a></li>))}
+    </ul>
+  </section>
+</Base>
+
+<script>
+  type Item = { slug: string; title: string; aka: string[]; latest: string | null; start: number | null; unit: string; airing: boolean };
+  const input = document.getElementById('q') as HTMLInputElement;
+  const list = document.getElementById('results') as HTMLUListElement;
+  const empty = document.getElementById('empty') as HTMLParagraphElement;
+  let index: Item[] | null = null;
+
+  const norm = (s: string) => s.toLowerCase().normalize('NFKD').replace(/[^\p{L}\p{N}]+/gu, ' ').trim();
+
+  async function getIndex() {
+    if (!index) index = await (await fetch('/search.json')).json();
+    return index!;
+  }
+
+  function score(item: Item, q: string) {
+    const names = [item.title, ...item.aka].map(norm);
+    if (names.some((n) => n === q)) return 3;
+    if (names.some((n) => n.startsWith(q))) return 2;
+    if (names.some((n) => n.includes(q))) return 1;
+    // every word of the query appears somewhere
+    const words = q.split(' ');
+    return names.some((n) => words.every((w) => n.includes(w))) ? 0.5 : 0;
+  }
+
+  function render(items: Item[], q: string) {
+    list.replaceChildren(
+      ...items.map((it) => {
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        a.href = `/anime/${it.slug}`;
+        const left = document.createElement('span');
+        left.innerHTML = '<span class="row-title"></span><br><span class="row-sub"></span>';
+        (left.querySelector('.row-title') as HTMLElement).textContent = it.title;
+        (left.querySelector('.row-sub') as HTMLElement).textContent = it.latest ? `After ${it.latest}${it.airing ? ' (new season airing)' : ''}` : 'Airing now';
+        const right = document.createElement('span');
+        right.className = it.start == null ? 'row-pending' : 'row-answer';
+        right.textContent = it.start == null ? 'Airing' : `${it.unit} ${it.start}`;
+        a.append(left, right);
+        li.append(a);
+        return li;
+      }),
+    );
+    empty.hidden = !(q && items.length === 0);
+  }
+
+  input.addEventListener('focus', getIndex, { once: true });
+  input.addEventListener('input', async () => {
+    const q = norm(input.value);
+    if (!q) return render([], '');
+    const items = (await getIndex())
+      .map((it) => ({ it, s: score(it, q) }))
+      .filter((x) => x.s > 0)
+      .sort((a, b) => b.s - a.s || a.it.title.localeCompare(b.it.title))
+      .slice(0, 8)
+      .map((x) => x.it);
+    render(items, q);
+  });
+  input.form?.addEventListener('submit', () => {
+    const first = list.querySelector('a');
+    if (first) location.href = first.getAttribute('href')!;
+  });
+</script>
+
+<style>
+  .hero { padding-top: 12px; }
+  .hero-panel {
+    position: relative;
+    background-color: var(--sheet);
+    border: 1px solid var(--rule);
+    border-radius: 20px;
+    padding: clamp(24px, 6vw, 48px);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    isolation: isolate;
+  }
+  .hero-panel::before {
+    content: '';
+    position: absolute; inset: 0 0 auto auto;
+    width: min(360px, 60%); height: 100%;
+    background-image: radial-gradient(var(--tone) 1.2px, transparent 1.4px);
+    background-size: 8px 8px;
+    -webkit-mask-image: linear-gradient(to left, #000 20%, transparent);
+    mask-image: linear-gradient(to left, #000 20%, transparent);
+    z-index: -1;
+  }
+  .hero-panel::after {
+    content: '';
+    position: absolute; top: 0; right: clamp(24px, 6vw, 48px);
+    width: 28px; height: 84px;
+    background: var(--ribbon);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 82%, 0 100%);
+  }
+  .hero h1 { font-size: clamp(2.4rem, 8.5vw, 4rem); max-width: 12ch; padding-right: 36px; }
+  @media (max-width: 520px) {
+    .hero-panel::after { width: 20px; height: 56px; right: 20px; }
+  }
+  .lede { margin-top: 14px; font-size: 1.15rem; color: var(--ink-soft); max-width: 40ch; }
+
+  .search { position: relative; margin-top: 28px; }
+  .search-icon { position: absolute; left: 16px; top: 50%; translate: 0 -50%; width: 22px; height: 22px; fill: none; stroke: var(--ink-soft); stroke-width: 2; stroke-linecap: round; pointer-events: none; }
+  .search input {
+    width: 100%;
+    font: inherit; font-size: 1.15rem;
+    padding: 16px 16px 16px 50px;
+    border: 2px solid var(--ink);
+    border-radius: 12px;
+    background: var(--paper);
+    color: var(--ink);
+  }
+  .search input:focus { outline: none; box-shadow: 0 0 0 4px color-mix(in srgb, var(--focus) 30%, transparent); border-color: var(--focus); }
+  .search input::placeholder { color: var(--ink-soft); }
+  .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  .results { margin-top: 10px; }
+  .empty { margin-top: 12px; }
+  .popular { margin-top: 22px; display: grid; gap: 10px; }
+  .popular p { font-size: 0.9rem; }
+  .popular .chip-list a { background: var(--paper); }
+
+  .columns { display: grid; gap: 0 48px; }
+  @media (min-width: 760px) { .columns { grid-template-columns: 1fr 1fr; } }
+  .section-lede { margin: -6px 0 12px; font-size: 0.95rem; }
+
+  .older { margin-top: 12px; }
+  .older summary { cursor: pointer; color: var(--ink-soft); margin-bottom: 10px; }
+  .az { list-style: none; padding: 0; margin: 0; columns: 2 200px; column-gap: 32px; }
+  .az li { padding: 6px 0; break-inside: avoid; border-bottom: 1px solid var(--rule); }
+  .az a { text-decoration: none; }
+  .az a:hover { text-decoration: underline; }
+</style>
