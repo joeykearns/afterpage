@@ -1,4 +1,4 @@
-import { loadAllSeries, latestAnswer } from '../lib/series.mjs';
+import { loadAllSeries, latestAnswer, answerKey } from '../lib/series.mjs';
 
 // Small index the search box downloads once. Titles and numbers only.
 export function GET() {
@@ -11,6 +11,7 @@ export function GET() {
       latest: latest ? latest.label : null,
       start: latest ? latest.start_chapter : null,
       airing: s.entries.some((e) => e.airing),
+      key: answerKey(s),
       unit: s.source === 'light_novel' ? 'Vol.' : 'Ch.',
     };
   });

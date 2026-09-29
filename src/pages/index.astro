@@ -22,7 +22,7 @@ const popular = POPULAR.filter(([slug]) => series.some((s) => s.slug === slug)).
       <h1>Where did the anime leave off?</h1>
       <p class="lede">Get the exact chapter to start reading next. Numbers only, so nothing gets spoiled.</p>
 
-      <form class="search" action="/search" role="search" onsubmit="return false">
+      <form class="search" id="search" action="/search" role="search" onsubmit="return false">
         <label for="q" class="visually-hidden">Search for a show</label>
         <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" /><path d="m15.5 15.5 5 5" /></svg>
         <input id="q" name="q" type="search" autocomplete="off" placeholder="Search a show, like Frieren" aria-controls="results" />
@@ -39,6 +39,12 @@ const popular = POPULAR.filter(([slug]) => series.some((s) => s.slug === slug)).
         </ul>
       </div>
     </div>
+  </section>
+
+  <section class="section my-shows" id="my-shows" aria-labelledby="my-h" hidden>
+    <h2 id="my-h">My shows</h2>
+    <p class="muted section-lede">Saved in this browser. Tap the star on any show to add it.</p>
+    <ul class="rows" id="my-list"></ul>
   </section>
 
   <div class="columns">
@@ -98,7 +104,7 @@ const popular = POPULAR.filter(([slug]) => series.some((s) => s.slug === slug)).
 </Base>
 
 <script>
-  type Item = { slug: string; title: string; aka: string[]; latest: string | null; start: number | null; unit: string; airing: boolean };
+  type Item = { slug: string; title: string; aka: string[]; latest: string | null; start: number | null; unit: string; airing: boolean; key: string };
   const input = document.getElementById('q') as HTMLInputElement;
   const list = document.getElementById('results') as HTMLUListElement;
   const empty = document.getElementById('empty') as HTMLParagraphElement;
@@ -158,6 +164,55 @@ const popular = POPULAR.filter(([slug]) => series.some((s) => s.slug === slug)).
     const first = list.querySelector('a');
     if (first) location.href = first.getAttribute('href')!;
   });
+
+  // Focus the search box when arriving via the "/" shortcut from another page.
+  if (location.hash === '#search') {
+    input.focus();
+    window.addEventListener('load', () => input.focus(), { once: true });
+  }
+
+  // "My shows": saved shows with badges for new answers and airing seasons.
+  (async () => {
+    let saved: Record<string, { seen: string }> = {};
+    try { saved = JSON.parse(localStorage.getItem('afterpage.myShows') || '{}') || {}; } catch { return; }
+    const slugs = Object.keys(saved);
+    if (!slugs.length) return;
+    const all = await getIndex();
+    const mine = all.filter((it) => saved[it.slug]).sort((a, b) => {
+      const na = saved[a.slug].seen !== a.key ? 0 : 1;
+      const nb = saved[b.slug].seen !== b.key ? 0 : 1;
+      return na - nb || a.title.localeCompare(b.title);
+    });
+    if (!mine.length) return;
+    const list = document.getElementById('my-list')!;
+    list.replaceChildren(...mine.map((it) => {
+      const li = document.createElement('li');
+      const a = document.createElement('a');
+      a.href = `/anime/${it.slug}`;
+      const left = document.createElement('span');
+      const title = document.createElement('span');
+      title.className = 'row-title';
+      title.textContent = it.title;
+      const isNew = saved[it.slug].seen !== it.key;
+      if (isNew) {
+        const badge = document.createElement('span');
+        badge.className = 'badge-new';
+        badge.textContent = 'New';
+        title.append(' ', badge);
+      }
+      const sub = document.createElement('span');
+      sub.className = 'row-sub';
+      sub.textContent = it.latest ? `After ${it.latest}${it.airing ? ' (new season airing)' : ''}` : 'Airing now';
+      left.append(title, document.createElement('br'), sub);
+      const right = document.createElement('span');
+      right.className = it.start == null ? 'row-pending' : 'row-answer';
+      right.textContent = it.start == null ? 'Airing' : `${it.unit} ${it.start}`;
+      a.append(left, right);
+      li.append(a);
+      return li;
+    }));
+    document.getElementById('my-shows')!.hidden = false;
+  })();
 </script>
 
 <style>
@@ -215,6 +270,11 @@ const popular = POPULAR.filter(([slug]) => series.some((s) => s.slug === slug)).
   .popular p { font-size: 0.9rem; }
   .popular .chip-list a { background: var(--paper); }
 
+  .my-shows { margin-top: 40px; }
+  :global(.badge-new) {
+    display: inline-block; margin-left: 6px; padding: 1px 8px; border-radius: 999px;
+    background: var(--ribbon); color: var(--ribbon-ink); font-size: 0.75rem; font-weight: 700; vertical-align: 0.15em;
+  }
   .columns { display: grid; gap: 0 48px; }
   @media (min-width: 760px) { .columns { grid-template-columns: 1fr 1fr; } }
   .section-lede { margin: -6px 0 12px; font-size: 0.95rem; }
