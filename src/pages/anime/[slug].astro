@@ -2,6 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import AnswerCard from '../../components/AnswerCard.astro';
 import AiringCard from '../../components/AiringCard.astro';
+import ReadOfficial from '../../components/ReadOfficial.astro';
 import { loadAllSeries, airedKey, sourceLabel, unitLabel, latestAnswer, answerKey } from '../../lib/series.mjs';
 
 export function getStaticPaths() {
@@ -65,22 +66,11 @@ const faq = {
 
   {entries.map((entry) =>
     entry.airing
-      ? <AiringCard series={series} entry={entry} hasEarlier={finished.length > 0} />
-      : <AnswerCard series={series} entry={entry} />
+      ? <AiringCard series={series} entry={entry} hasEarlier={finished.length > 0} permalink={`/anime/${series.slug}/${entry.id}`} />
+      : <AnswerCard series={series} entry={entry} permalink={`/anime/${series.slug}/${entry.id}`} />
   )}
 
-  <section class="section read" aria-labelledby="read-h">
-    <h2 id="read-h">Read it officially</h2>
-    {series.read_official.length ? (
-      <ul class="rows">
-        {series.read_official.map((r) => (
-          <li><a href={r.url} rel="noopener" target="_blank"><span class="row-title">{r.name}</span><span class="row-sub">Opens in a new tab</span></a></li>
-        ))}
-      </ul>
-    ) : (
-      <p class="muted">We haven't found an official English release yet. Know of one? <a href="/submit">Tell us</a>.</p>
-    )}
-  </section>
+  <ReadOfficial series={series} />
 </Base>
 
 <script>
