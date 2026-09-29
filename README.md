@@ -8,17 +8,14 @@ It's a static site: no server, no database, no accounts. Every answer lives in a
 
 You need a free [GitHub](https://github.com) account and a free [Cloudflare](https://dash.cloudflare.com/sign-up) account.
 
-1. **Edit your settings.** Open `src/config.mjs` and set:
-   - `SITE_URL`: your future address, for example `https://afterpage.pages.dev`
-   - `REPO`: your GitHub repo as `username/afterpage` (this powers the "This is wrong" and "Add a show" buttons)
-2. **Put the code on GitHub.** Create a new public repository named `afterpage`, then upload this folder (drag and drop works on github.com, or use `git push`).
-3. **Deploy on Cloudflare Pages.** In Cloudflare, go to Workers & Pages → Create → Pages → Connect to Git, and pick the repo. Use:
-   - Framework preset: **Astro**
+1. **Put the code on GitHub.** Create a new public repository named `afterpage`, then upload this folder's contents (drag and drop works on github.com).
+2. **Edit `src/config.mjs` on GitHub.** Set `REPO` to `your-username/afterpage` (this powers the "This is wrong" and "Add a show" buttons).
+3. **Deploy on Cloudflare.** In the dashboard go to Compute → Workers & Pages → Create application → Import a repository, connect GitHub, and pick the repo. Use:
    - Build command: `npm run build`
-   - Output directory: `dist`
+   - Deploy command: `npx wrangler deploy` (reads `wrangler.jsonc`)
    - Environment variable: `NODE_VERSION` = `22`
-4. **Done.** Every push to GitHub redeploys the site automatically. If the name you want isn't free on `.pages.dev`, pick another and update `SITE_URL`.
-5. **Optional:** turn on Cloudflare Web Analytics for the site (free, no cookie banner needed), and add a custom domain later (about $10–15 a year).
+4. **Set your address.** Copy the `*.workers.dev` address Cloudflare shows, paste it into `SITE_URL` in `src/config.mjs`, and commit. Every commit redeploys automatically.
+5. **Optional:** turn on Cloudflare Web Analytics (free), and add a custom domain later (about $10–15 a year).
 
 GitHub Pages also works: build locally with `npm run build` and publish the `dist` folder.
 
