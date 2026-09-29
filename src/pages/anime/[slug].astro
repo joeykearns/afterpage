@@ -49,6 +49,9 @@ const faq = {
         Finished <a href={`#${latest.id}`}>{latest.label}</a>? Start at <strong>{unit} {latest.start_chapter}</strong>.
       </p>
     )}
+    {finished.some((e) => e.episode_map) && (
+      <p class="muted hint">Stopped mid-season? Each season below has an episode finder.</p>
+    )}
   </header>
 
   {entries.length > 1 && (
@@ -133,6 +136,7 @@ const faq = {
   .series-title { font-size: clamp(2.2rem, 8vw, 3.4rem); margin-top: 12px; }
   .aka { margin-top: 8px; }
   .summary { margin-top: 14px; font-size: 1.1rem; }
+  .hint { margin-top: 6px; font-size: 0.95rem; }
   .summary strong { font-family: var(--display); font-weight: 800; white-space: nowrap; }
   .jump { margin-top: 28px; }
   .jump p { font-weight: 700; margin-bottom: 8px; }
