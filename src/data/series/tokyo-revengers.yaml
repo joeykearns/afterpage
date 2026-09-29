@@ -1,0 +1,27 @@
+slug: tokyo-revengers
+title: Tokyo Revengers
+aka: [東京卍リベンジャーズ, Tokyo Manji Revengers]
+source: manga
+read_official:
+  - name: Kodansha (English print & digital)
+    url: https://kodansha.us/?s=tokyo+revengers
+entries:
+  - label: War of the Three Titans Arc
+    kind: season
+    aired: 2026-fall
+    status: airing
+    last_checked: 2026-09-29
+  - label: Tenjiku Arc (Season 3)
+    kind: season
+    episodes: "1–13"
+    aired: 2023-fall
+    last_chapter: 185
+    start_chapter: 186
+    note: "If you stopped after Season 1 or 2, start the manga from where Season 3 begins instead. We'll add those entries soon."
+    sources:
+      - name: Sportskeeda
+        url: https://sportskeeda.com/anime/where-read-tokyo-revengers-manga-season-3
+      - name: MyAnimePulse
+        url: https://myanimepulse.com/manga-after-anime/tokyo-revengers
+    confidence: agree
+    last_checked: 2026-09-29

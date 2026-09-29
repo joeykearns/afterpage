@@ -8,6 +8,11 @@ read_official:
   - name: MANGA Plus by Shueisha (official, free chapters)
     url: https://mangaplus.shueisha.co.jp/
 entries:
+  - label: Season 2
+    kind: season
+    aired: 2026-fall
+    status: airing
+    last_checked: 2026-09-29
   - label: TV series
     kind: series
     episodes: "1–170"

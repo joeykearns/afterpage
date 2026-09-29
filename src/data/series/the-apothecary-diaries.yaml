@@ -1,0 +1,37 @@
+slug: the-apothecary-diaries
+title: The Apothecary Diaries
+aka: [Kusuriya no Hitorigoto, 薬屋のひとりごと]
+source: light_novel
+read_official: []
+entries:
+  - label: Season 3
+    kind: season
+    aired: 2026-fall
+    status: airing
+    last_checked: 2026-09-29
+  - label: Season 2
+    kind: season
+    episodes: "25–48"
+    aired: 2025-winter
+    last_chapter: 4
+    start_chapter: 5
+    note: "These are light novel volumes. The two manga versions split chapters differently, so we don't list manga chapters yet."
+    sources:
+      - name: FandomWire
+        url: https://fandomwire.com/where-to-start-reading-the-apothecary-diaries-after-season-2/
+      - name: Magnify Your Style
+        url: https://magnifyyourstyle.com/2025/03/18/apothecary-diaries-season-two-covers-light-novel-volume-three-and-four/
+    confidence: agree
+    last_checked: 2026-09-29
+  - label: Season 1
+    kind: season
+    episodes: "1–24"
+    aired: 2023-fall
+    last_chapter: 2
+    start_chapter: 3
+    note: "These are light novel volumes."
+    sources:
+      - name: Magnify Your Style
+        url: https://magnifyyourstyle.com/2025/03/18/apothecary-diaries-season-two-covers-light-novel-volume-three-and-four/
+    confidence: single
+    last_checked: 2026-09-29
