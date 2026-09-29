@@ -7,3 +7,4 @@ export const REPO = 'joeykearns/afterpage';
 export const GOOGLE_SITE_VERIFICATION = 'M_fMmrKgabGGSgN7g6Tvkw_We1_AG6Zimm5tp2TbAtY';
 
 export const CLOUDFLARE_ANALYTICS_TOKEN = '6c357de60f144f08a1a19f858edbf37f';
+xport const FEEDBACK_FORM_URL = 'https://tally.so/r/A71vKW';
