@@ -15,6 +15,16 @@ const trust = {
 
 const checked = new Date(`${entry.last_checked}T12:00:00Z`).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
 
+const map = entry.episode_map;
+const pickerData = map && JSON.stringify({
+  rows: map.rows,
+  firstEpisode: map.first_episode,
+  unit,
+  final: { start: entry.start_chapter, volume: entry.start_volume || null, overlap: entry.overlap || null },
+});
+const firstEp = map ? map.first_episode : 1;
+const lastEp = map ? map.first_episode + map.rows.length - 1 : 1;
+
 const reportUrl = `https://github.com/${REPO}/issues/new?template=correction.yml&title=${encodeURIComponent(`Correction: ${series.title}, ${entry.label}`)}&series=${encodeURIComponent(series.slug)}&entry=${encodeURIComponent(entry.label)}`;
 ---
 <article class="answer" id={entry.id} aria-labelledby={`${entry.id}-h`}>
@@ -33,6 +43,21 @@ const reportUrl = `https://github.com/${REPO}/issues/new?template=correction.yml
 
   {entry.overlap && (
     <p class="callout"><strong>Where it cuts off:</strong> {entry.overlap}</p>
+  )}
+
+  {map && (
+    <div class="picker" data-picker={pickerData}>
+      <p class="picker-title">Stopped partway through?</p>
+      <form class="picker-form">
+        <label for={`${entry.id}-ep`}>Last episode you watched</label>
+        <div class="picker-row">
+          <input id={`${entry.id}-ep`} type="number" inputmode="numeric" min="1" step="1" placeholder={firstEp > 1 ? `${firstEp}–${lastEp}` : `1–${lastEp}`} required />
+          <button type="submit">Find my chapter</button>
+        </div>
+      </form>
+      <p class="picker-result" aria-live="polite" hidden></p>
+      <p class="picker-source">Episode data from <a href={map.source.url} rel="nofollow noopener" target="_blank">{map.source.name}</a>. The season's final answer is checked against the sources below.</p>
+    </div>
   )}
 
   <dl class="facts">
@@ -104,6 +129,27 @@ const reportUrl = `https://github.com/${REPO}/issues/new?template=correction.yml
   }
   .copy:hover { background: var(--ink); color: var(--sheet); }
 
+  .picker {
+    margin-top: 16px; padding: 16px 18px; border-radius: 10px;
+    border: 1px solid var(--rule); background: var(--paper);
+  }
+  .picker-title { font-family: var(--display); font-weight: 800; font-size: 1.1rem; }
+  .picker-form { margin-top: 8px; }
+  .picker-form label { display: block; font-size: 0.92rem; color: var(--ink-soft); margin-bottom: 6px; }
+  .picker-row { display: flex; gap: 8px; flex-wrap: wrap; }
+  .picker-row input {
+    width: 7.5em; font: inherit; font-size: 1.05rem; padding: 8px 12px;
+    border: 1.5px solid var(--ink-soft); border-radius: 8px; background: var(--sheet); color: var(--ink);
+  }
+  .picker-row input:focus { outline: none; border-color: var(--focus); box-shadow: 0 0 0 3px color-mix(in srgb, var(--focus) 30%, transparent); }
+  .picker-row button {
+    font: inherit; font-weight: 700; font-size: 0.95rem; padding: 8px 16px; border-radius: 8px; cursor: pointer;
+    border: none; background: var(--ink); color: var(--sheet);
+  }
+  .picker-row button:hover { opacity: 0.88; }
+  .picker-result { margin-top: 12px; padding: 12px 14px; border-radius: 8px; background: var(--sheet); border-left: 4px solid var(--ribbon); }
+  .picker-result strong { font-family: var(--display); font-weight: 800; font-size: 1.15rem; }
+  .picker-source { margin-top: 10px; font-size: 0.85rem; color: var(--ink-soft); }
   .callout { margin-top: 16px; padding: 12px 14px; border-radius: 8px; background: var(--amber-bg); color: var(--amber-ink); }
 
   .facts { margin: 18px 0 0; display: grid; grid-template-columns: 1fr 1fr; gap: 12px 24px; }
@@ -125,6 +171,51 @@ const reportUrl = `https://github.com/${REPO}/issues/new?template=correction.yml
 </style>
 
 <script>
+  // "Stopped partway through?" episode finder.
+  type Row = { ep: number; first: number; last: number };
+  type Data = { rows: Row[]; firstEpisode: number; unit: string; final: { start: number; volume: number | null; overlap: string | null } };
+  document.querySelectorAll<HTMLElement>('.picker').forEach((box) => {
+    const data: Data = JSON.parse(box.dataset.picker || '{}');
+    const form = box.querySelector('form')!;
+    const input = box.querySelector('input')!;
+    const out = box.querySelector<HTMLElement>('.picker-result')!;
+    const count = data.rows.length;
+    const range = (a: number, b: number) => (a === b ? `${data.unit} ${a}` : `${data.unit}s ${a}–${b}`);
+
+    form.addEventListener('submit', (ev) => {
+      ev.preventDefault();
+      const n = Number(input.value);
+      // Accept the number within the season (1, 2, 3...) or the overall episode number.
+      let i = -1;
+      if (data.firstEpisode > 1 && n >= data.firstEpisode && n < data.firstEpisode + count) i = n - data.firstEpisode;
+      else if (n >= 1 && n <= count) i = n - 1;
+      out.hidden = false;
+      out.replaceChildren();
+      if (i < 0) {
+        out.textContent = data.firstEpisode > 1
+          ? `This season is episodes ${data.firstEpisode}–${data.firstEpisode + count - 1} (or 1–${count}). Try a number in that range.`
+          : `This season has ${count} episodes. Try a number from 1 to ${count}.`;
+        return;
+      }
+      const row = data.rows[i];
+      const label = data.firstEpisode > 1 ? `Episode ${data.firstEpisode + i}` : `Episode ${i + 1}`;
+      const strong = document.createElement('strong');
+      const rest = document.createElement('span');
+      if (i === count - 1) {
+        strong.textContent = `Start at ${data.unit} ${data.final.start}${data.final.volume ? ` (Volume ${data.final.volume})` : ''}.`;
+        rest.textContent = ` That's the season finale, so this matches the answer above.${data.final.overlap ? ` ${data.final.overlap}` : ''}`;
+      } else {
+        const next = data.rows[i + 1];
+        const partial = next.first <= row.last;
+        const start = partial ? row.last : row.last + 1;
+        strong.textContent = `Start at ${data.unit} ${start}.`;
+        rest.textContent = ` ${label} covers ${range(row.first, row.last)}.` +
+          (partial ? ` It stops partway through ${data.unit} ${row.last}, so start at the top of it; you'll reread a few pages.` : '');
+      }
+      out.append(strong, rest);
+    });
+  });
+
   document.querySelectorAll<HTMLButtonElement>('button.copy').forEach((btn) => {
     btn.addEventListener('click', async () => {
       const text = btn.dataset.copy || '';
