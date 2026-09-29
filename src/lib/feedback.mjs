@@ -4,7 +4,9 @@
 // Otherwise they fall back to GitHub issue forms, which need a GitHub account.
 import * as config from '../config.mjs';
 
-const FORM = (config.FEEDBACK_FORM_URL || '').trim();
+// Read optional settings without a build warning when they're not set yet.
+const settings = Object.fromEntries(Object.entries(config));
+const FORM = String(settings.FEEDBACK_FORM_URL || '').trim();
 const REPO = config.REPO;
 
 export const usesForm = Boolean(FORM);
