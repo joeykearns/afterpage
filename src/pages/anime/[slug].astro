@@ -2,7 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import AnswerCard from '../../components/AnswerCard.astro';
 import AiringCard from '../../components/AiringCard.astro';
-import { loadAllSeries, airedKey, sourceLabel } from '../../lib/series.mjs';
+import { loadAllSeries, airedKey, sourceLabel, unitLabel, latestAnswer } from '../../lib/series.mjs';
 
 export function getStaticPaths() {
   return loadAllSeries().map((series) => ({ params: { slug: series.slug }, props: { series } }));
@@ -11,6 +11,8 @@ export function getStaticPaths() {
 const { series } = Astro.props;
 const entries = [...series.entries].sort((a, b) => airedKey(b.aired) - airedKey(a.aired));
 const finished = entries.filter((e) => !e.airing);
+const latest = latestAnswer(series);
+const unit = unitLabel(series.source);
 const source = sourceLabel(series.source).toLowerCase();
 const title = `${series.title}: where to start the ${source} after the anime`;
 const description = `The ${source} chapter to start after each season of ${series.title}. Numbers only, no spoilers. Sources linked.`;
@@ -32,10 +34,16 @@ const faq = {
   {finished.length > 0 && <script type="application/ld+json" slot="head" set:html={JSON.stringify(faq)} />}
 
   <p class="crumb"><a href="/">All shows</a></p>
-  <h1 class="series-title">{series.title}</h1>
-  <p class="muted sub">
-    Adapted from the {source}{series.aka.length ? `. Also known as ${series.aka.join(', ')}` : ''}.
-  </p>
+  <header class="series-head">
+    <p class="format">{sourceLabel(series.source)}</p>
+    <h1 class="series-title">{series.title}</h1>
+    {series.aka.length > 0 && <p class="muted aka">Also known as {series.aka.join(', ')}</p>}
+    {latest && (
+      <p class="summary">
+        Finished <a href={`#${latest.id}`}>{latest.label}</a>? Start at <strong>{unit} {latest.start_chapter}</strong>.
+      </p>
+    )}
+  </header>
 
   {entries.length > 1 && (
     <nav class="jump" aria-label="Pick what you just finished">
@@ -68,9 +76,16 @@ const faq = {
 
 <style>
   .crumb { font-size: 0.92rem; color: var(--ink-soft); margin-top: 8px; }
-  .series-title { font-size: clamp(2rem, 7vw, 3rem); margin-top: 10px; }
-  .sub { margin-top: 8px; }
-  .jump { margin-top: 24px; }
+  .series-head { margin-top: 14px; }
+  .format {
+    display: inline-block; font-size: 0.85rem; font-weight: 700;
+    padding: 2px 10px; border-radius: 999px; border: 1.5px solid var(--ink);
+  }
+  .series-title { font-size: clamp(2.2rem, 8vw, 3.4rem); margin-top: 12px; }
+  .aka { margin-top: 8px; }
+  .summary { margin-top: 14px; font-size: 1.1rem; }
+  .summary strong { font-family: var(--display); font-weight: 800; white-space: nowrap; }
+  .jump { margin-top: 28px; }
   .jump p { font-weight: 700; margin-bottom: 8px; }
   .jump ul { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px; }
   .jump a {
