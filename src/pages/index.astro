@@ -53,7 +53,7 @@ const popular = POPULAR.filter(([slug]) => series.some((s) => s.slug === slug)).
       <ul class="rows">
         {recent.map(({ series: s, entry: e }) => (
           <li>
-            <a href={`/anime/${s.slug}#${e.id}`}>
+            <a href={`/anime/${s.slug}/${e.id}`}>
               <span><span class="row-title">{s.title}</span><br /><span class="row-sub">{e.label}, {airedLabel(e.aired)}</span></span>
               <span class="row-answer">{unitLabel(s.source) === 'Volume' ? 'Vol.' : 'Ch.'} {e.start_chapter}</span>
             </a>
@@ -69,7 +69,7 @@ const popular = POPULAR.filter(([slug]) => series.some((s) => s.slug === slug)).
         <ul class="rows">
           {airingNow.map(({ series: s, entry: e }) => (
             <li>
-              <a href={`/anime/${s.slug}#${e.id}`}>
+              <a href={`/anime/${s.slug}/${e.id}`}>
                 <span><span class="row-title">{s.title}</span><br /><span class="row-sub">{e.label}</span></span>
                 <span class="row-pending">Airing</span>
               </a>

@@ -1,8 +1,8 @@
 ---
 import Base from '../layouts/Base.astro';
-import { REPO } from '../config.mjs';
-const newShow = `https://github.com/${REPO}/issues/new?template=new-show.yml`;
-const correction = `https://github.com/${REPO}/issues/new?template=correction.yml`;
+import { feedbackUrl, usesForm } from '../lib/feedback.mjs';
+const newShow = feedbackUrl({ type: 'new-show' });
+const correction = feedbackUrl({ type: 'correction' });
 ---
 <Base title="Add a show or fix an answer" description="Suggest a show to add, or tell us a chapter number is wrong.">
   <article class="prose">
@@ -20,7 +20,7 @@ const correction = `https://github.com/${REPO}/issues/new?template=correction.ym
       </a>
     </div>
 
-    <p class="muted small">Both open a form on GitHub, which needs a free account. Please don't include plot details; numbers are all we need.</p>
+    <p class="muted small">{usesForm ? 'Both open a short form. No account needed.' : 'Both open a form on GitHub, which needs a free account.'} Please don't include plot details; numbers are all we need.</p>
   </article>
 </Base>
 

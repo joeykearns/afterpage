@@ -1,6 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
-import { SITE_NAME, REPO } from '../config.mjs';
+import { SITE_NAME } from '../config.mjs';
 ---
 <Base title="How we check answers" description={`How ${SITE_NAME} finds, checks and corrects its chapter numbers.`}>
   <article class="prose">
@@ -24,7 +24,7 @@ import { SITE_NAME, REPO } from '../config.mjs';
     </ul>
 
     <h2>Fixing mistakes</h2>
-    <p>Every card has a "This is wrong" link. It opens a short form; we check it against the chapter and update the page, usually within a few days. All changes are public in the <a href={`https://github.com/${REPO}`}>project's history</a>.</p>
+    <p>Every card has a "This is wrong" link. It opens a short form; we check it against the chapter and update the page, usually within a few days.</p>
   </article>
 </Base>
 
