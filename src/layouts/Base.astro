@@ -43,6 +43,7 @@ const fullTitle = title === SITE_NAME ? `${SITE_NAME}: where the anime leaves of
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="alternate" type="application/rss+xml" title={`${SITE_NAME}: new chapter answers`} href="/feed.xml" />
     <meta name="apple-mobile-web-app-title" content={SITE_NAME} />
     <link rel="preload" href="/digits.woff2" as="font" type="font/woff2" crossorigin />
     {googleVerification && <meta name="google-site-verification" content={googleVerification} />}
@@ -85,7 +86,7 @@ const fullTitle = title === SITE_NAME ? `${SITE_NAME}: where the anime leaves of
           {SITE_NAME}
         </p>
         <p>Numbers only, never plot. Every answer links its sources, and we only point to official releases.</p>
-        <p>Something wrong or missing? <a href="/submit">Tell us</a>, or read <a href="/about">how we check answers</a>.</p>
+        <p>Something wrong or missing? <a href="/submit">Tell us</a>, or read <a href="/about">how we check answers</a>. Follow new answers with the <a href="/feed.xml">RSS feed</a>.</p>
       </div>
     </footer>
     {analyticsToken && (
@@ -254,7 +255,7 @@ const fullTitle = title === SITE_NAME ? `${SITE_NAME}: where the anime leaves of
     content: ''; width: 9px; height: 13px; background: var(--ribbon);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 78%, 0 100%);
   }
-  .row-pending { color: var(--ink-soft); white-space: nowrap; font-size: 0.9rem; border: 1px dashed var(--ink-soft); border-radius: 999px; padding: 2px 10px; opacity: 0.85; }
+  .row-pending { color: var(--ink-soft); white-space: nowrap; font-size: 0.9rem; border: 1px dashed var(--ink-soft); border-radius: 999px; padding: 2px 10px; }
 
   .chip-list { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px; }
   .chip-list a {
