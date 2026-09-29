@@ -33,6 +33,8 @@ export function unitLabel(source) {
 }
 
 export function entryId(entry) {
+  // Long-running shows (like One Piece) keep one permanent address even as the label changes.
+  if (entry.aired === 'ongoing') return 'latest';
   return entry.label
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, '-')
@@ -50,6 +52,10 @@ function validate(series, file) {
   need(series.title, 'title is required');
   need(SOURCES.includes(series.source), `source must be one of ${SOURCES.join(', ')}`);
   need(Array.isArray(series.entries) && series.entries.length, 'at least one entry is required');
+
+  const ids = (series.entries || []).map((e) => (e && e.label ? entryId(e) : null)).filter(Boolean);
+  const dupes = ids.filter((id, i) => ids.indexOf(id) !== i);
+  need(!dupes.length, `two entries would share the page address "${dupes[0]}". Give them different labels`);
 
   (series.entries || []).forEach((e, i) => {
     const at = `entry ${i + 1} (${e.label || 'no label'})`;
