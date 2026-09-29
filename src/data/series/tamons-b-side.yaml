@@ -2,7 +2,9 @@ slug: tamons-b-side
 title: "Tamon's B-Side"
 aka: []
 source: manga
-read_official: []
+read_official:
+  - name: VIZ Media (English print & digital)
+    url: https://www.viz.com/search?search=tamon
 entries:
   - label: Season 1
     kind: season

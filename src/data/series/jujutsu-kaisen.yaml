@@ -27,12 +27,16 @@ entries:
     kind: season
     episodes: "25–47"
     aired: 2023-summer
-    last_chapter: 136
-    start_chapter: 137
+    last_chapter: 137
+    start_chapter: 138
+    start_volume: 16
+    overlap: "The final episode also covers Ch. 137, so some guides say start at 137. Start at 138 to skip what you've seen."
     sources:
-      - name: AnimeStoryGuide
-        url: https://www.animestoryguide.com/guides/jujutsu-kaisen
-    confidence: single
+      - name: The Escapist
+        url: https://www.escapistmagazine.com/what-chapter-does-jujutsu-kaisen-season-2-end-on/
+      - name: ComingSoon.net
+        url: https://www.comingsoon.net/guides/news/1422724-jujutsu-kaisen-season-2-where-to-start-manga-after-shibuya-incident-arc
+    confidence: agree
     last_checked: 2026-09-29
   - label: Season 3 (The Culling Game, Part 1)
     kind: season

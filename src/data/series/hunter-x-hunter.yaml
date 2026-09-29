@@ -12,9 +12,12 @@ entries:
     aired: 2011-fall
     last_chapter: 339
     start_chapter: 340
+    start_volume: 32
     note: "The 2011 anime ends where a major story arc wraps up. The manga continues from the next chapter, with long publishing breaks."
     sources:
       - name: GoodNovel Q&A
         url: https://www.goodnovel.com/qa/read-manga-anime-ends
-    confidence: single
+      - name: Ripperholics
+        url: https://ripperholics.com/blogs/ripperholics-blog/hunter-x-hunter-manga-after-anime
+    confidence: agree
     last_checked: 2026-09-29

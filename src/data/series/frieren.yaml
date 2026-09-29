@@ -15,7 +15,9 @@ entries:
     sources:
       - name: AnimeStoryGuide
         url: https://www.animestoryguide.com/guides/frieren
-    confidence: single
+      - name: The Escapist
+        url: https://www.escapistmagazine.com/how-to-read-the-frieren-manga-after-the-anime/
+    confidence: agree
     last_checked: 2026-09-29
   - label: Season 2
     kind: season

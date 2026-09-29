@@ -15,7 +15,9 @@ entries:
     sources:
       - name: MangaShed
         url: https://mangashed.com/where-does-the-solo-leveling-anime-end-in-the-manhwa/
-    confidence: single
+      - name: The Escapist
+        url: https://www.escapistmagazine.com/where-to-start-solo-levelings-manhwa-after-watching-the-anime/
+    confidence: agree
     last_checked: 2026-09-29
   - label: "Season 2: Arise from the Shadow"
     kind: season
