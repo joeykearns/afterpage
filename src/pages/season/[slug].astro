@@ -20,7 +20,7 @@ const allAiring = hub.items.every((i) => i.entry.airing);
   <ul class="rows list">
     {hub.items.map(({ series: s, entry: e }) => (
       <li>
-        <a href={`/anime/${s.slug}#${e.id}`}>
+        <a href={`/anime/${s.slug}/${e.id}`}>
           <span><span class="row-title">{s.title}</span><br /><span class="row-sub">{e.airing ? e.label : `After ${e.label}`}</span></span>
           {e.airing
             ? <span class="row-pending">Airing</span>
