@@ -4,7 +4,8 @@ import { SITE_NAME } from '../config.mjs';
 import { loadAllSeries, allEntries, seasonHubs, airedLabel, unitLabel } from '../lib/series.mjs';
 
 const series = loadAllSeries();
-const recent = allEntries().filter((i) => i.entry.aired !== 'ongoing').slice(0, 6);
+const recent = allEntries().filter((i) => i.entry.aired !== 'ongoing' && !i.entry.airing).slice(0, 6);
+const airingNow = allEntries().filter((i) => i.entry.airing).sort((a, b) => a.series.title.localeCompare(b.series.title));
 const hubs = seasonHubs();
 ---
 <Base
@@ -24,6 +25,23 @@ const hubs = seasonHubs();
       We don't have that one yet. <a href="/submit">Ask us to add it</a>.
     </p>
   </section>
+
+  {airingNow.length > 0 && (
+    <section class="section" aria-labelledby="airing-h">
+      <h2 id="airing-h">Airing now</h2>
+      <p class="muted section-lede">We add each show's chapter within 48 hours of its finale.</p>
+      <ul class="rows">
+        {airingNow.map(({ series: s, entry: e }) => (
+          <li>
+            <a href={`/anime/${s.slug}#${e.id}`}>
+              <span><span class="row-title">{s.title}</span><br /><span class="row-sub">{e.label}</span></span>
+              <span class="row-pending">Airing</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
 
   <section class="section" aria-labelledby="recent-h">
     <h2 id="recent-h">Recently finished</h2>
@@ -63,7 +81,7 @@ const hubs = seasonHubs();
 </Base>
 
 <script>
-  type Item = { slug: string; title: string; aka: string[]; latest: string; start: number; unit: string };
+  type Item = { slug: string; title: string; aka: string[]; latest: string | null; start: number | null; unit: string; airing: boolean };
   const input = document.getElementById('q') as HTMLInputElement;
   const list = document.getElementById('results') as HTMLUListElement;
   const empty = document.getElementById('empty') as HTMLParagraphElement;
@@ -95,10 +113,10 @@ const hubs = seasonHubs();
         const left = document.createElement('span');
         left.innerHTML = '<span class="row-title"></span><br><span class="row-sub"></span>';
         (left.querySelector('.row-title') as HTMLElement).textContent = it.title;
-        (left.querySelector('.row-sub') as HTMLElement).textContent = `After ${it.latest}`;
+        (left.querySelector('.row-sub') as HTMLElement).textContent = it.latest ? `After ${it.latest}${it.airing ? ' (new season airing)' : ''}` : 'Airing now';
         const right = document.createElement('span');
-        right.className = 'row-answer';
-        right.textContent = `${it.unit} ${it.start}`;
+        right.className = it.start == null ? 'row-pending' : 'row-answer';
+        right.textContent = it.start == null ? 'Airing' : `${it.unit} ${it.start}`;
         a.append(left, right);
         li.append(a);
         return li;
@@ -142,6 +160,7 @@ const hubs = seasonHubs();
   }
   .search input::placeholder { color: var(--ink-soft); }
   .results { margin-top: 12px; }
+  .section-lede { margin: -6px 0 12px; }
   .results:empty { border-top: 0; }
   .empty { margin-top: 12px; }
   .chips { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px; }
