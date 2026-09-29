@@ -19,6 +19,23 @@ entries:
         url: https://www.escapistmagazine.com/where-to-start-solo-levelings-manhwa-after-watching-the-anime/
     confidence: agree
     last_checked: 2026-09-29
+    episode_map:
+      source:
+        name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/solo-leveling/
+      rows:  # [episode within this season, first chapter, last chapter]
+        - [1, 1, 4]
+        - [2, 4, 10]
+        - [3, 11, 13]
+        - [4, 14, 17]
+        - [5, 18, 21]
+        - [6, 21, 24]
+        - [7, 25, 27]
+        - [8, 27, 28]
+        - [9, 29, 34]
+        - [10, 34, 37]
+        - [11, 37, 41]
+        - [12, 41, 45]
   - label: "Season 2: Arise from the Shadow"
     kind: season
     episodes: "13–25"
@@ -34,3 +51,21 @@ entries:
         url: https://beebom.com/where-to-start-manhwa-after-solo-leveling-season-2/
     confidence: agree
     last_checked: 2026-09-29
+    episode_map:
+      source:
+        name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/solo-leveling/
+      rows:  # [episode within this season, first chapter, last chapter]
+        - [1, 46, 51]
+        - [2, 51, 55]
+        - [3, 56, 61]
+        - [4, 61, 66]
+        - [5, 67, 71]
+        - [6, 72, 76]
+        - [7, 77, 81]
+        - [8, 82, 87]
+        - [9, 88, 91]
+        - [10, 92, 96]
+        - [11, 96, 100]
+        - [12, 101, 104]
+        - [13, 104, 108]

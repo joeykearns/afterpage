@@ -20,6 +20,20 @@ entries:
         url: https://www.gamesradar.com/entertainment/anime-movies/demon-slayer-manga-where-to-continue-reading-after-infinity-castle/
     confidence: agree
     last_checked: 2026-09-29
+    episode_map:
+      source:
+        name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/demon-slayer/
+      overall_first: 56  # these are episodes 56–63 of the whole series
+      rows:  # [episode within this season, first chapter, last chapter]
+        - [1, 128, 131]
+        - [2, 130, 131]
+        - [3, 132, 132]
+        - [4, 132, 132]
+        - [5, 132, 133]
+        - [6, 134, 135]
+        - [7, 135, 136]
+        - [8, 137, 139]
   - label: Infinity Castle (Film 1)
     kind: movie
     aired: 2025-summer
