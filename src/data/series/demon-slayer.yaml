@@ -1,0 +1,36 @@
+slug: demon-slayer
+title: "Demon Slayer: Kimetsu no Yaiba"
+aka: [Kimetsu no Yaiba, 鬼滅の刃]
+source: manga
+read_official:
+  - name: VIZ Media (English print & digital)
+    url: https://www.viz.com/search?search=demon+slayer
+entries:
+  - label: Season 4 (Hashira Training)
+    kind: season
+    episodes: "1–8"
+    aired: 2024-spring
+    last_chapter: 139
+    start_chapter: 140
+    note: "If you've seen the Infinity Castle film, use the entry below instead."
+    sources:
+      - name: AnimeStoryGuide
+        url: https://www.animestoryguide.com/guides/demon-slayer
+      - name: GamesRadar+
+        url: https://www.gamesradar.com/entertainment/anime-movies/demon-slayer-manga-where-to-continue-reading-after-infinity-castle/
+    confidence: agree
+    last_checked: 2026-09-29
+  - label: Infinity Castle (Film 1)
+    kind: movie
+    aired: 2025-summer
+    last_chapter: 157
+    start_chapter: 158
+    start_volume: 18
+    overlap: "The film stops partway through Ch. 157. Start at 157 if you want the full chapter, or 158 for a clean break."
+    sources:
+      - name: GamesRadar+
+        url: https://www.gamesradar.com/entertainment/anime-movies/demon-slayer-manga-where-to-continue-reading-after-infinity-castle/
+      - name: ComicBook.com
+        url: https://comicbook.com/anime/news/where-to-start-demon-slayer-manga-after-infinity-castle-movie/
+    confidence: agree
+    last_checked: 2026-09-29

@@ -1,0 +1,22 @@
+slug: gachiakuta
+title: Gachiakuta
+aka: [ガチアクタ]
+source: manga
+read_official:
+  - name: Kodansha (English print & digital)
+    url: https://kodansha.us/?s=gachiakuta
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–24"
+    aired: 2025-summer
+    last_chapter: 87
+    start_chapter: 88
+    start_volume: 11
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/what-chapter-does-gachiakuta-anime-end/
+      - name: CBR
+        url: https://www.cbr.com/gachiakuta-manga-chapter-88-to-read-after-finishing-anime/
+    confidence: agree
+    last_checked: 2026-09-29

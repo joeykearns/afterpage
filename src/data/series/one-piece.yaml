@@ -1,0 +1,24 @@
+slug: one-piece
+title: One Piece
+aka: [ワンピース, OP]
+source: manga
+read_official:
+  - name: VIZ Media (English print & digital)
+    url: https://www.viz.com/search?search=one+piece
+  - name: MANGA Plus by Shueisha (official, free chapters)
+    url: https://mangaplus.shueisha.co.jp/
+entries:
+  - label: Latest episode (1180)
+    kind: series
+    episodes: "1–1180"
+    aired: ongoing
+    last_chapter: 1151
+    start_chapter: 1151
+    start_volume: 113
+    overlap: "Episode 1180 ends partway through Ch. 1151 (around page 3). Start at page 4 of Ch. 1151."
+    note: "Still airing, so this changes every week. Check the date below."
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/one-piece/
+    confidence: single
+    last_checked: 2026-09-29

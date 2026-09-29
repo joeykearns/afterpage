@@ -1,0 +1,20 @@
+slug: hunter-x-hunter
+title: Hunter x Hunter (2011)
+aka: [HxH, ハンター×ハンター]
+source: manga
+read_official:
+  - name: VIZ Media (English print & digital)
+    url: https://www.viz.com/search?search=hunter+x+hunter
+entries:
+  - label: Full series
+    kind: series
+    episodes: "1–148"
+    aired: 2011-fall
+    last_chapter: 339
+    start_chapter: 340
+    note: "The 2011 anime ends where a major story arc wraps up. The manga continues from the next chapter, with long publishing breaks."
+    sources:
+      - name: GoodNovel Q&A
+        url: https://www.goodnovel.com/qa/read-manga-anime-ends
+    confidence: single
+    last_checked: 2026-09-29

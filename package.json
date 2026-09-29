@@ -1,0 +1,17 @@
+{
+  "name": "afterpage",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Spoiler-free: the exact manga chapter to start after any anime season.",
+  "scripts": {
+    "dev": "astro dev",
+    "check-data": "node scripts/check-data.mjs",
+    "build": "node scripts/check-data.mjs && astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "^7.3.5",
+    "js-yaml": "^5.4.2"
+  }
+}

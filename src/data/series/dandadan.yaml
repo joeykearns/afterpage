@@ -1,0 +1,38 @@
+slug: dandadan
+title: Dandadan
+aka: [DAN DA DAN, ダンダダン]
+source: manga
+read_official:
+  - name: VIZ Media (English print & digital)
+    url: https://www.viz.com/search?search=dandadan
+  - name: MANGA Plus by Shueisha (official, free chapters)
+    url: https://mangaplus.shueisha.co.jp/
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–12"
+    aired: 2024-fall
+    last_chapter: 33
+    start_chapter: 34
+    overlap: "Sources differ on whether the season ends with Ch. 33 or partway into 34. Starting at 34 covers both."
+    sources:
+      - name: Soap Central (ends Ch. 33)
+        url: https://www.soapcentral.com/anime/where-pick-up-dandadan-manga-after-season-2-ended-explained
+      - name: AnimeStoryGuide (lists 1–34)
+        url: https://www.animestoryguide.com/guides/dandadan
+    confidence: differ
+    last_checked: 2026-09-29
+  - label: Season 2
+    kind: season
+    episodes: "13–24"
+    aired: 2025-summer
+    last_chapter: 71
+    start_chapter: 72
+    start_volume: 9
+    sources:
+      - name: Soap Central
+        url: https://www.soapcentral.com/anime/where-pick-up-dandadan-manga-after-season-2-ended-explained
+      - name: AnimeStoryGuide
+        url: https://www.animestoryguide.com/guides/dandadan
+    confidence: agree
+    last_checked: 2026-09-29

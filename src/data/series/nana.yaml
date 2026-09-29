@@ -1,0 +1,22 @@
+slug: nana
+title: NANA
+aka: [ナナ]
+source: manga
+read_official:
+  - name: VIZ Media (English print)
+    url: https://www.viz.com/search?search=nana
+entries:
+  - label: TV series
+    kind: series
+    episodes: "1–47"
+    aired: 2006-spring
+    last_chapter: 42
+    start_chapter: 43
+    start_volume: 12
+    overlap: "Reread the end of Ch. 42 for a smoother handoff."
+    note: "The manga has been on hiatus for years, so it also stops without an ending."
+    sources:
+      - name: NANA Lighter
+        url: https://www.nanalighter.com/blog/where-does-the-nana-anime-end-in-the-manga-chapter-comparison/
+    confidence: single
+    last_checked: 2026-09-29

@@ -1,0 +1,154 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE_NAME } from '../config.mjs';
+import { loadAllSeries, allEntries, seasonHubs, airedLabel, unitLabel } from '../lib/series.mjs';
+
+const series = loadAllSeries();
+const recent = allEntries().filter((i) => i.entry.aired !== 'ongoing').slice(0, 6);
+const hubs = seasonHubs();
+---
+<Base
+  title={SITE_NAME}
+  description="Finished an anime season? Get the exact manga chapter to start next. Numbers only, no spoilers, sources linked."
+>
+  <section class="hero">
+    <h1>Where did the anime leave off?</h1>
+    <p class="lede">Get the exact chapter to start reading next. Numbers only, so nothing gets spoiled.</p>
+
+    <form class="search" action="/search" role="search" onsubmit="return false">
+      <label for="q">Search for a show</label>
+      <input id="q" name="q" type="search" autocomplete="off" placeholder="Try Frieren or Chainsaw Man" aria-controls="results" />
+    </form>
+    <ul id="results" class="rows results" aria-live="polite"></ul>
+    <p id="empty" class="muted empty" hidden>
+      We don't have that one yet. <a href="/submit">Ask us to add it</a>.
+    </p>
+  </section>
+
+  <section class="section" aria-labelledby="recent-h">
+    <h2 id="recent-h">Recently finished</h2>
+    <ul class="rows">
+      {recent.map(({ series: s, entry: e }) => (
+        <li>
+          <a href={`/anime/${s.slug}#${e.id}`}>
+            <span><span class="row-title">{s.title}</span><br /><span class="row-sub">{e.label}, {airedLabel(e.aired)}</span></span>
+            <span class="row-answer">{unitLabel(s.source) === 'Volume' ? 'Vol.' : 'Ch.'} {e.start_chapter}</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="section" id="seasons" aria-labelledby="seasons-h">
+    <h2 id="seasons-h">Browse by season</h2>
+    <ul class="chips">
+      {hubs.slice(0, 8).map((h) => (<li><a href={`/season/${h.slug}`}>{h.label} <span class="muted">({h.items.length})</span></a></li>))}
+    </ul>
+    {hubs.length > 8 && (
+      <details class="older">
+        <summary>Older seasons</summary>
+        <ul class="chips">
+          {hubs.slice(8).map((h) => (<li><a href={`/season/${h.slug}`}>{h.label} <span class="muted">({h.items.length})</span></a></li>))}
+        </ul>
+      </details>
+    )}
+  </section>
+
+  <section class="section" aria-labelledby="all-h">
+    <h2 id="all-h">All {series.length} shows</h2>
+    <ul class="az">
+      {series.map((s) => (<li><a href={`/anime/${s.slug}`}>{s.title}</a></li>))}
+    </ul>
+  </section>
+</Base>
+
+<script>
+  type Item = { slug: string; title: string; aka: string[]; latest: string; start: number; unit: string };
+  const input = document.getElementById('q') as HTMLInputElement;
+  const list = document.getElementById('results') as HTMLUListElement;
+  const empty = document.getElementById('empty') as HTMLParagraphElement;
+  let index: Item[] | null = null;
+
+  const norm = (s: string) => s.toLowerCase().normalize('NFKD').replace(/[^\p{L}\p{N}]+/gu, ' ').trim();
+
+  async function getIndex() {
+    if (!index) index = await (await fetch('/search.json')).json();
+    return index!;
+  }
+
+  function score(item: Item, q: string) {
+    const names = [item.title, ...item.aka].map(norm);
+    if (names.some((n) => n === q)) return 3;
+    if (names.some((n) => n.startsWith(q))) return 2;
+    if (names.some((n) => n.includes(q))) return 1;
+    // every word of the query appears somewhere
+    const words = q.split(' ');
+    return names.some((n) => words.every((w) => n.includes(w))) ? 0.5 : 0;
+  }
+
+  function render(items: Item[], q: string) {
+    list.replaceChildren(
+      ...items.map((it) => {
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        a.href = `/anime/${it.slug}`;
+        const left = document.createElement('span');
+        left.innerHTML = '<span class="row-title"></span><br><span class="row-sub"></span>';
+        (left.querySelector('.row-title') as HTMLElement).textContent = it.title;
+        (left.querySelector('.row-sub') as HTMLElement).textContent = `After ${it.latest}`;
+        const right = document.createElement('span');
+        right.className = 'row-answer';
+        right.textContent = `${it.unit} ${it.start}`;
+        a.append(left, right);
+        li.append(a);
+        return li;
+      }),
+    );
+    empty.hidden = !(q && items.length === 0);
+  }
+
+  input.addEventListener('focus', getIndex, { once: true });
+  input.addEventListener('input', async () => {
+    const q = norm(input.value);
+    if (!q) return render([], '');
+    const items = (await getIndex())
+      .map((it) => ({ it, s: score(it, q) }))
+      .filter((x) => x.s > 0)
+      .sort((a, b) => b.s - a.s || a.it.title.localeCompare(b.it.title))
+      .slice(0, 8)
+      .map((x) => x.it);
+    render(items, q);
+  });
+  input.form?.addEventListener('submit', () => {
+    const first = list.querySelector('a');
+    if (first) location.href = first.getAttribute('href')!;
+  });
+</script>
+
+<style>
+  .hero { padding-top: 40px; }
+  .hero h1 { font-size: clamp(2.3rem, 8vw, 3.6rem); max-width: 14ch; }
+  .lede { margin-top: 14px; font-size: 1.15rem; color: var(--ink-soft); max-width: 44ch; }
+  .search { margin-top: 28px; }
+  .search label { display: block; font-weight: 700; margin-bottom: 8px; }
+  .search input {
+    width: 100%;
+    font: inherit; font-size: 1.15rem;
+    padding: 14px 16px;
+    border: 2px solid var(--ink);
+    border-radius: 10px;
+    background: var(--sheet);
+    color: var(--ink);
+  }
+  .search input::placeholder { color: var(--ink-soft); }
+  .results { margin-top: 12px; }
+  .results:empty { border-top: 0; }
+  .empty { margin-top: 12px; }
+  .chips { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+  .chips a { display: inline-block; padding: 7px 14px; border-radius: 999px; border: 1px solid var(--rule); background: var(--sheet); text-decoration: none; }
+  .chips a:hover { border-color: var(--ink); }
+  .older { margin-top: 12px; }
+  .older summary { cursor: pointer; color: var(--ink-soft); margin-bottom: 10px; }
+  .az { columns: 2 220px; padding-left: 18px; margin: 0; }
+  .az li { margin: 4px 0; break-inside: avoid; }
+</style>

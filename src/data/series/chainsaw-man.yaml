@@ -1,0 +1,38 @@
+slug: chainsaw-man
+title: Chainsaw Man
+aka: [チェンソーマン, CSM]
+source: manga
+read_official:
+  - name: VIZ Media (English print & digital)
+    url: https://www.viz.com/search?search=chainsaw+man
+  - name: MANGA Plus by Shueisha (official, free chapters)
+    url: https://mangaplus.shueisha.co.jp/
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–12"
+    aired: 2022-fall
+    last_chapter: 38
+    start_chapter: 39
+    start_volume: 5
+    note: "The Reze Arc film picks up right here. If you've seen it, use the entry below."
+    sources:
+      - name: AnimeStoryGuide
+        url: https://www.animestoryguide.com/guides/chainsaw-man
+      - name: GamesRadar+ (film begins at Ch. 39)
+        url: https://www.gamesradar.com/entertainment/anime-movies/chainsaw-man-manga-continue-reading-after-reze-arc-movie-chapter-numbers/
+    confidence: agree
+    last_checked: 2026-09-29
+  - label: "The Movie: Reze Arc"
+    kind: movie
+    aired: 2025-fall
+    last_chapter: 52
+    start_chapter: 53
+    start_volume: 7
+    sources:
+      - name: GamesRadar+
+        url: https://www.gamesradar.com/entertainment/anime-movies/chainsaw-man-manga-continue-reading-after-reze-arc-movie-chapter-numbers/
+      - name: AnimeStoryGuide
+        url: https://www.animestoryguide.com/guides/chainsaw-man
+    confidence: agree
+    last_checked: 2026-09-29

@@ -1,0 +1,77 @@
+---
+import Base from '../../layouts/Base.astro';
+import AnswerCard from '../../components/AnswerCard.astro';
+import { loadAllSeries, airedKey, sourceLabel } from '../../lib/series.mjs';
+
+export function getStaticPaths() {
+  return loadAllSeries().map((series) => ({ params: { slug: series.slug }, props: { series } }));
+}
+
+const { series } = Astro.props;
+const entries = [...series.entries].sort((a, b) => airedKey(b.aired) - airedKey(a.aired));
+const latest = entries[0];
+const source = sourceLabel(series.source).toLowerCase();
+const title = `${series.title}: where to start the ${source} after the anime`;
+const description = `The ${source} chapter to start after each season of ${series.title}. Numbers only, no spoilers. Sources linked.`;
+
+const faq = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: entries.map((e) => ({
+    '@type': 'Question',
+    name: `Where do I start the ${source} after ${series.title} ${e.label}?`,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: `Start at chapter ${e.start_chapter}${e.start_volume ? ` (volume ${e.start_volume})` : ''}.`,
+    },
+  })),
+};
+---
+<Base title={title} description={description}>
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(faq)} />
+
+  <p class="crumb"><a href="/">All shows</a></p>
+  <h1 class="series-title">{series.title}</h1>
+  <p class="muted sub">
+    Adapted from the {source}{series.aka.length ? `. Also known as ${series.aka.join(', ')}` : ''}.
+  </p>
+
+  {entries.length > 1 && (
+    <nav class="jump" aria-label="Pick what you just finished">
+      <p>What did you just finish?</p>
+      <ul>
+        {entries.map((e) => (<li><a href={`#${e.id}`}>{e.label}</a></li>))}
+      </ul>
+    </nav>
+  )}
+
+  {entries.map((entry) => <AnswerCard series={series} entry={entry} />)}
+
+  <section class="section read" aria-labelledby="read-h">
+    <h2 id="read-h">Read it officially</h2>
+    {series.read_official.length ? (
+      <ul class="rows">
+        {series.read_official.map((r) => (
+          <li><a href={r.url} rel="noopener" target="_blank"><span class="row-title">{r.name}</span><span class="row-sub">Opens in a new tab</span></a></li>
+        ))}
+      </ul>
+    ) : (
+      <p class="muted">We haven't found an official English release yet. Know of one? <a href="/submit">Tell us</a>.</p>
+    )}
+  </section>
+</Base>
+
+<style>
+  .crumb { font-size: 0.92rem; color: var(--ink-soft); margin-top: 8px; }
+  .series-title { font-size: clamp(2rem, 7vw, 3rem); margin-top: 10px; }
+  .sub { margin-top: 8px; }
+  .jump { margin-top: 24px; }
+  .jump p { font-weight: 700; margin-bottom: 8px; }
+  .jump ul { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+  .jump a {
+    display: inline-block; padding: 7px 14px; border-radius: 999px;
+    border: 1px solid var(--rule); background: var(--sheet);
+    text-decoration: none; font-size: 0.95rem;
+  }
+  .jump a:hover { border-color: var(--ink); }
+</style>

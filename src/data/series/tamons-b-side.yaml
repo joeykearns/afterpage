@@ -1,0 +1,18 @@
+slug: tamons-b-side
+title: "Tamon's B-Side"
+aka: []
+source: manga
+read_official: []
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–13"
+    aired: 2026-winter
+    last_chapter: 33
+    start_chapter: 34
+    start_volume: 7
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/what-chapter-does-tamons-b-side-anime-end/
+    confidence: single
+    last_checked: 2026-09-29

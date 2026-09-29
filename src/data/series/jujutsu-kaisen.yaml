@@ -1,0 +1,51 @@
+slug: jujutsu-kaisen
+title: Jujutsu Kaisen
+aka: [JJK, 呪術廻戦]
+source: manga
+read_official:
+  - name: VIZ Media (English print & digital)
+    url: https://www.viz.com/search?search=jujutsu+kaisen
+  - name: MANGA Plus by Shueisha (official, free chapters)
+    url: https://mangaplus.shueisha.co.jp/
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–24"
+    aired: 2020-fall
+    last_chapter: 63
+    start_chapter: 64
+    start_volume: 8
+    note: "Watch the Jujutsu Kaisen 0 film too. It adapts the separate prequel volume (Vol. 0), so it doesn't change where you start."
+    sources:
+      - name: AnimeStoryGuide
+        url: https://www.animestoryguide.com/guides/jujutsu-kaisen
+      - name: AfterAnime (mentions Ch. 64, Vol. 8)
+        url: https://afteranime.net/anime/jujutsu-kaisen
+    confidence: agree
+    last_checked: 2026-09-29
+  - label: Season 2
+    kind: season
+    episodes: "25–47"
+    aired: 2023-summer
+    last_chapter: 136
+    start_chapter: 137
+    sources:
+      - name: AnimeStoryGuide
+        url: https://www.animestoryguide.com/guides/jujutsu-kaisen
+    confidence: single
+    last_checked: 2026-09-29
+  - label: Season 3 (The Culling Game, Part 1)
+    kind: season
+    episodes: "48–59"
+    aired: 2026-winter
+    last_chapter: 180
+    start_chapter: 181
+    start_volume: 21
+    overlap: "The finale also shows the opening pages of Ch. 181. Start at the top of 181; you'll reread a few pages."
+    sources:
+      - name: Bored Panda
+        url: https://www.boredpanda.com/finished-jujutsu-kaisen-season-3-where-to-continue-the-manga/
+      - name: note.com (Kazu)
+        url: https://note.com/kazu_manga_anime/n/n0363a8191582?hl=en
+    confidence: agree
+    last_checked: 2026-09-29

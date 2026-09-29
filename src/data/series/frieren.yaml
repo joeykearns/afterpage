@@ -1,0 +1,33 @@
+slug: frieren
+title: "Frieren: Beyond Journey's End"
+aka: [Sousou no Frieren, Frieren]
+source: manga
+read_official:
+  - name: VIZ Media (English print & digital)
+    url: https://www.viz.com/search?search=frieren
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–28"
+    aired: 2023-fall
+    last_chapter: 60
+    start_chapter: 61
+    sources:
+      - name: AnimeStoryGuide
+        url: https://www.animestoryguide.com/guides/frieren
+    confidence: single
+    last_checked: 2026-09-29
+  - label: Season 2
+    kind: season
+    episodes: "29–38"
+    aired: 2026-winter
+    last_chapter: 80
+    start_chapter: 81
+    start_volume: 10
+    sources:
+      - name: AnimeStoryGuide
+        url: https://www.animestoryguide.com/guides/frieren
+      - name: Noleep
+        url: https://noleep.com/en/what-chapter-does-frieren-season-2-end/
+    confidence: agree
+    last_checked: 2026-09-29
