@@ -1,6 +1,6 @@
-# Afterpage
+# After The Anime
 
-Finished an anime season? Afterpage tells you the exact manga chapter to start next, with no spoilers and a source link on every answer.
+Finished an anime season? After The Anime tells you the exact manga chapter to start next, with no spoilers and a source link on every answer.
 
 It's a static site: no server, no database, no accounts. Every answer lives in a small YAML file in `src/data/series/`, so every change is reviewable in Git.
 

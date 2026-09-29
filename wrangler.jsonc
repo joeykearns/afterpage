@@ -1,10 +1,15 @@
 {
-  // Cloudflare deploy settings. "name" becomes your free address:
-  // https://afterpage.<your-account>.workers.dev
+  // Cloudflare deploy settings. Keep "name" as it is: it's the Worker your
+  // custom domain is attached to (and the old afterpage.<account>.workers.dev address).
   "name": "afterpage",
   "compatibility_date": "2026-09-28",
+  // Small script that forwards the old workers.dev address and www. to SITE_URL.
+  "main": "worker.js",
   "assets": {
     "directory": "./dist",
-    "not_found_handling": "404-page"
+    "binding": "ASSETS",
+    "not_found_handling": "404-page",
+    // Run the forwarding script for pages, but serve fonts, scripts and images directly.
+    "run_worker_first": ["/*", "!/_astro/*", "!/og/*"]
   }
 }
