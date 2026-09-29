@@ -110,6 +110,14 @@ export function latestAnswer(series) {
   return [...series.entries].filter((e) => !e.airing).sort((a, b) => airedKey(b.aired) - airedKey(a.aired))[0];
 }
 
+// A short fingerprint of a show's current state. When it changes, people who
+// saved the show see a "New" badge.
+export function answerKey(series) {
+  const latest = latestAnswer(series);
+  const airing = series.entries.filter((e) => e.airing).map((e) => e.label).join(',');
+  return `${latest ? `${latest.label}:${latest.start_chapter}` : '-'}|${airing}`;
+}
+
 // Every entry flattened with its series, newest first.
 export function allEntries() {
   return loadAllSeries()
