@@ -1,0 +1,41 @@
+---
+import Base from '../layouts/Base.astro';
+import { feedbackUrl, usesForm } from '../lib/feedback.mjs';
+const newShow = feedbackUrl({ type: 'new-show' });
+const correction = feedbackUrl({ type: 'correction' });
+---
+<Base title="Add a show or fix an answer" description="Suggest a show to add, or tell us a chapter number is wrong.">
+  <article class="prose">
+    <h1>Add a show or fix an answer</h1>
+    <p class="lede">Both take about a minute. We check every suggestion before it goes live.</p>
+
+    <div class="choices">
+      <a class="choice" href={newShow} rel="nofollow">
+        <strong>Add a show</strong>
+        <span>Tell us the show, the season, and where you started reading, with a link if you have one.</span>
+      </a>
+      <a class="choice" href={correction} rel="nofollow">
+        <strong>Fix an answer</strong>
+        <span>Tell us which answer is off and the chapter it should be.</span>
+      </a>
+    </div>
+
+    <p class="muted small">{usesForm ? 'Both open a short form. No account needed.' : 'Both open a form on GitHub, which needs a free account.'} Please don't include plot details; numbers are all we need.</p>
+  </article>
+</Base>
+
+<style>
+  .prose { max-width: 62ch; padding-top: 16px; }
+  .prose h1 { font-size: clamp(2rem, 7vw, 2.8rem); }
+  .lede { margin-top: 12px; font-size: 1.15rem; color: var(--ink-soft); }
+  .choices { display: grid; gap: 12px; margin: 28px 0 16px; }
+  .choice {
+    display: grid; gap: 4px; padding: 18px 20px;
+    background: var(--sheet); border: 1px solid var(--rule); border-radius: 12px;
+    text-decoration: none;
+  }
+  .choice:hover { border-color: var(--ink); }
+  .choice strong { font-family: var(--display); font-size: 1.2rem; }
+  .choice span { color: var(--ink-soft); }
+  .small { font-size: 0.9rem; }
+</style>
