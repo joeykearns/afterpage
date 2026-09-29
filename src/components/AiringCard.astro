@@ -29,12 +29,13 @@ const tipUrl = `https://github.com/${REPO}/issues/new?template=correction.yml&ti
   .answer {
     background: var(--sheet);
     border: 1px solid var(--rule);
-    border-radius: 14px;
-    padding: 24px;
+    border-radius: 16px;
+    padding: clamp(20px, 5vw, 28px);
+    box-shadow: var(--shadow);
     margin-top: 20px;
     scroll-margin-top: 16px;
   }
-  .answer-head h2 { font-size: 1.3rem; }
+  .answer-head h2 { font-size: 1.4rem; }
   .answer-head p { margin-top: 4px; font-size: 0.95rem; }
   .pending {
     position: relative;
