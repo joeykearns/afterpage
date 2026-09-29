@@ -1,0 +1,37 @@
+slug: sakamoto-days
+title: Sakamoto Days
+aka: [サカモトデイズ]
+source: manga
+read_official:
+  - name: VIZ Media (English print & digital)
+    url: https://www.viz.com/search?search=sakamoto+days
+  - name: MANGA Plus by Shueisha (official, free chapters)
+    url: https://mangaplus.shueisha.co.jp/
+entries:
+  - label: Part 2
+    kind: part
+    episodes: "12–22"
+    aired: 2025-summer
+    last_chapter: 74
+    start_chapter: 75
+    start_volume: 9
+    overlap: "Some guides suggest starting at Ch. 74 for a little overlap. Ch. 75 is the clean break."
+    note: "Season 2 is due in January 2027."
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/sakamoto-days/
+      - name: iCrewPlay Anime (Italian)
+        url: https://anime.icrewplay.com/sakamoto-days-manga-dopo-anime/
+    confidence: agree
+    last_checked: 2026-09-29
+  - label: Part 1
+    kind: part
+    episodes: "1–11"
+    aired: 2025-winter
+    last_chapter: 37
+    start_chapter: 38
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/sakamoto-days/
+    confidence: single
+    last_checked: 2026-09-29

@@ -1,0 +1,26 @@
+slug: the-summer-hikaru-died
+title: The Summer Hikaru Died
+aka: [Hikaru ga Shinda Natsu, 光が死んだ夏]
+source: manga
+read_official:
+  - name: Yen Press (English print & digital)
+    url: https://yenpress.com/search?query=the+summer+hikaru+died
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–12"
+    aired: 2025-summer
+    last_chapter: 26
+    start_chapter: 27
+    start_volume: 6
+    overlap: "The finale trims the end of Ch. 26 and wraps it up a little differently. Start at Ch. 26 if you want the manga's version."
+    note: "Season 2 has been announced but not dated."
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/the-summer-hikaru-died/
+      - name: Pawaka Labs
+        url: https://pawakalabs.com/2026/09/12/summer-hikaru-died-manga-ending-read-ahead/
+      - name: note.com (Anime Review Lab)
+        url: https://note.com/anime_review_lab/n/n1e17b92a22c6?hl=en
+    confidence: agree
+    last_checked: 2026-09-29

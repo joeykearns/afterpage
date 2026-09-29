@@ -1,0 +1,32 @@
+slug: my-dress-up-darling
+title: My Dress-Up Darling
+aka: [Sono Bisque Doll wa Koi wo Suru, その着せ替え人形は恋をする]
+source: manga
+read_official:
+  - name: Square Enix Manga (English print & digital)
+    url: https://squareenixmangaandbooks.square-enix-games.com/en-us/series/my-dress-up-darling
+entries:
+  - label: Season 2
+    kind: season
+    episodes: "13–24"
+    aired: 2025-summer
+    last_chapter: 86
+    start_chapter: 86
+    start_volume: 11
+    overlap: "The finale stops a few pages into Ch. 86. Start at the top of 86; you'll reread a little."
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/my-dress-up-darling/
+    confidence: single
+    last_checked: 2026-09-29
+  - label: Season 1
+    kind: season
+    episodes: "1–12"
+    aired: 2022-winter
+    last_chapter: 39
+    start_chapter: 40
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/my-dress-up-darling/
+    confidence: single
+    last_checked: 2026-09-29

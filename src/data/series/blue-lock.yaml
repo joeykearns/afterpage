@@ -1,0 +1,34 @@
+slug: blue-lock
+title: Blue Lock
+aka: [ブルーロック]
+source: manga
+read_official:
+  - name: Kodansha (English print & digital)
+    url: https://kodansha.us/?s=blue+lock
+entries:
+  - label: "Season 2: vs. U-20 Japan"
+    kind: season
+    episodes: "25–38"
+    aired: 2024-fall
+    last_chapter: 149
+    start_chapter: 150
+    start_volume: 18
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/blue-lock/
+      - name: Anime Corner
+        url: https://animecorner.me/where-to-continue-blue-lock-manga-after-season-2-of-the-anime/
+    confidence: agree
+    last_checked: 2026-09-29
+  - label: Season 1
+    kind: season
+    episodes: "1–24"
+    aired: 2022-fall
+    last_chapter: 94
+    start_chapter: 95
+    note: "The Episode Nagi film retells Season 1 from another angle, so it doesn't change where you start."
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/blue-lock/
+    confidence: single
+    last_checked: 2026-09-29

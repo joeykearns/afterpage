@@ -1,0 +1,47 @@
+slug: oshi-no-ko
+title: Oshi no Ko
+aka: ["【推しの子】", "[Oshi no Ko]", My Star]
+source: manga
+read_official:
+  - name: Yen Press (English print & digital)
+    url: https://yenpress.com/search?query=oshi+no+ko
+entries:
+  - label: Season 3
+    kind: season
+    episodes: "25–35"
+    aired: 2026-winter
+    last_chapter: 127
+    start_chapter: 127
+    start_volume: 13
+    overlap: "The finale stops partway through Ch. 127. Start at the top of 127; you'll reread a few pages."
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/oshi-no-ko/
+      - name: Dexerto (French)
+        url: https://www.dexerto.fr/anime/ou-reprendre-manga-oshi-no-ko-episode-final-saison-3-1643634/
+    confidence: agree
+    last_checked: 2026-09-29
+  - label: Season 2
+    kind: season
+    episodes: "12–24"
+    aired: 2024-summer
+    last_chapter: 80
+    start_chapter: 81
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/oshi-no-ko/
+    confidence: single
+    last_checked: 2026-09-29
+  - label: Season 1
+    kind: season
+    episodes: "1–11"
+    aired: 2023-spring
+    last_chapter: 40
+    start_chapter: 41
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/oshi-no-ko/
+      - name: Sportskeeda
+        url: https://sportskeeda.com/anime/where-pick-oshi-no-ko-manga-season-1-anime-explained
+    confidence: agree
+    last_checked: 2026-09-29

@@ -1,0 +1,36 @@
+slug: mashle
+title: "Mashle: Magic and Muscles"
+aka: [Mashle, マッシュル]
+source: manga
+read_official:
+  - name: VIZ Media (English print & digital)
+    url: https://www.viz.com/search?search=mashle
+entries:
+  - label: Season 2
+    kind: season
+    episodes: "13–24"
+    aired: 2024-winter
+    last_chapter: 74
+    start_chapter: 75
+    start_volume: 9
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/mashle/
+      - name: ONE Esports
+        url: https://www.oneesports.gg/anime/where-does-the-mashle-anime-end-in-the-manga/
+    confidence: agree
+    last_checked: 2026-09-29
+  - label: Season 1
+    kind: season
+    episodes: "1–12"
+    aired: 2023-spring
+    last_chapter: 38
+    start_chapter: 39
+    overlap: "Sources differ on whether Season 1 finishes Ch. 38 or runs into 39. Starting at 39 covers both."
+    sources:
+      - name: ONE Esports (ends Ch. 38)
+        url: https://www.oneesports.gg/anime/where-does-the-mashle-anime-end-in-the-manga/
+      - name: Anime Filler Guide (lists 1–39)
+        url: https://www.animefillerguide.com/anime/mashle/
+    confidence: differ
+    last_checked: 2026-09-29

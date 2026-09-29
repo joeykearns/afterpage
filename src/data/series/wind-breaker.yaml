@@ -1,0 +1,31 @@
+slug: wind-breaker
+title: Wind Breaker
+aka: [ウィンドブレイカー]
+source: manga
+read_official:
+  - name: Kodansha (English print & digital)
+    url: https://kodansha.us/?s=wind+breaker
+entries:
+  - label: Season 2
+    kind: season
+    episodes: "14–25"
+    aired: 2025-spring
+    last_chapter: 90
+    start_chapter: 91
+    start_volume: 12
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/wind-breaker/
+    confidence: single
+    last_checked: 2026-09-29
+  - label: Season 1
+    kind: season
+    episodes: "1–13"
+    aired: 2024-spring
+    last_chapter: 41
+    start_chapter: 42
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/wind-breaker/
+    confidence: single
+    last_checked: 2026-09-29

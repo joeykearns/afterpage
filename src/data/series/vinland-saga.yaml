@@ -1,0 +1,35 @@
+slug: vinland-saga
+title: Vinland Saga
+aka: [ヴィンランド・サガ]
+source: manga
+read_official:
+  - name: Kodansha (English print & digital)
+    url: https://kodansha.us/?s=vinland+saga
+entries:
+  - label: Season 2
+    kind: season
+    episodes: "25–48"
+    aired: 2023-winter
+    last_chapter: 100
+    start_chapter: 101
+    start_volume: 15
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/vinland-saga/
+      - name: Sportskeeda
+        url: https://www.sportskeeda.com/anime/where-pick-vinland-saga-manga-season-2-explained
+    confidence: agree
+    last_checked: 2026-09-29
+  - label: Season 1
+    kind: season
+    episodes: "1–24"
+    aired: 2019-summer
+    last_chapter: 54
+    start_chapter: 55
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/vinland-saga/
+      - name: Sportskeeda
+        url: https://sportskeeda.com/anime/what-chapter-vinland-saga-end-on-explained
+    confidence: agree
+    last_checked: 2026-09-29
