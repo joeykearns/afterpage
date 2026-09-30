@@ -185,3 +185,25 @@ export function seasonHubs() {
     .map(([slug, items]) => ({ slug, label: airedLabel(slug), items }))
     .sort((a, b) => airedKey(b.slug) - airedKey(a.slug));
 }
+
+// ---- A–Z directory ----
+// Titles are filed ignoring a leading "The", "A" or "An" ("The Apothecary Diaries" goes under A).
+export const LETTERS = [...'ABCDEFGHIJKLMNOPQRSTUVWXYZ', '#'];
+export const letterSlug = (letter) => (letter === '#' ? '0-9' : letter.toLowerCase());
+
+export function sortTitle(title) {
+  return title.replace(/^(the|a|an)\s+/i, '').trim();
+}
+
+export function letterOf(series) {
+  const first = sortTitle(series.title).normalize('NFKD').charAt(0).toUpperCase();
+  return first >= 'A' && first <= 'Z' ? first : '#';
+}
+
+// Shows grouped by letter, each group sorted by filing title. Letters with no shows are left out.
+export function showsByLetter() {
+  const groups = new Map(LETTERS.map((l) => [l, []]));
+  for (const s of loadAllSeries()) groups.get(letterOf(s)).push(s);
+  for (const list of groups.values()) list.sort((a, b) => sortTitle(a.title).localeCompare(sortTitle(b.title)));
+  return LETTERS.filter((l) => groups.get(l).length).map((letter) => ({ letter, slug: letterSlug(letter), shows: groups.get(letter) }));
+}
