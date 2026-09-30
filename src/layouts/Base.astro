@@ -63,7 +63,7 @@ const fullTitle = title === SITE_NAME ? `${SITE_NAME}: the exact manga chapter t
     <header class="site-header">
       <div class="bar">
         <a class="brand" href="/" aria-label={`${SITE_NAME} home`}>
-          <img class="brand-mark" src="/logo-mark.png" width="46" height="29" alt="" />
+          <img class="brand-mark" src="/logo-mark.png" width="66" height="41" alt="" />
           <span>{SITE_NAME}</span>
         </a>
         <nav aria-label="Main">
@@ -257,8 +257,9 @@ const fullTitle = title === SITE_NAME ? `${SITE_NAME}: the exact manga chapter t
 
   .site-header { border-top: 3px solid var(--ribbon); }
   .bar { display: flex; align-items: center; justify-content: space-between; gap: 12px 24px; padding: 18px 0; flex-wrap: wrap; }
-  .brand { display: inline-flex; align-items: center; gap: 10px; font-family: var(--display); font-weight: 600; font-size: 1.3rem; letter-spacing: -0.01em; text-decoration: none; }
-  .brand-mark { width: 46px; height: auto; flex: none; }
+  .brand { display: inline-flex; align-items: center; gap: 12px; font-family: var(--display); font-weight: 600; font-size: 1.3rem; letter-spacing: -0.01em; text-decoration: none; }
+  .brand-mark { width: 66px; height: auto; flex: none; }
+  @media (max-width: 480px) { .site-header .brand-mark { width: 56px; } }
   .bar nav { display: flex; gap: 4px; font-size: 0.95rem; margin-inline: -10px; }
   .bar nav a { text-decoration: none; color: var(--ink-soft); padding: 6px 10px; border-radius: 8px; }
   .bar nav a:hover { color: var(--ink); background: var(--hover); }
