@@ -1,0 +1,198 @@
+---
+// The show directory: /shows/ (overview) and /shows/a/, /shows/b/ ... /shows/0-9/ (one page per letter).
+// Built to stay tidy with thousands of shows: the overview previews a few titles per letter,
+// and each letter page lists all of its shows with a quick filter.
+import Base from '../../layouts/Base.astro';
+import LetterBar from '../../components/LetterBar.astro';
+import { loadAllSeries, latestAnswer, showsByLetter, seasonHubs, sortTitle } from '../../lib/series.mjs';
+
+export function getStaticPaths() {
+  const groups = showsByLetter();
+  return [
+    { params: { letter: undefined }, props: { group: null } },
+    ...groups.map((group) => ({ params: { letter: group.slug }, props: { group } })),
+  ];
+}
+
+const { group } = Astro.props;
+const total = loadAllSeries().length;
+const groups = showsByLetter();
+const hubs = seasonHubs();
+const PREVIEW = 6;
+// A letter page only gets its own filter box once it has enough shows to need one.
+const showFind = !group || group.shows.length > 12;
+
+const unit = (s) => (s.source === 'light_novel' ? 'Vol.' : 'Ch.');
+const answer = (s) => {
+  const latest = latestAnswer(s);
+  return latest ? `${unit(s)} ${latest.start_chapter}` : null;
+};
+
+const heading = group
+  ? group.letter === '#' ? 'Shows starting with a number or symbol' : `Shows starting with ${group.letter}`
+  : 'All shows';
+const title = group ? `${heading}: where to start the manga` : 'All shows A–Z: where to start the manga after the anime';
+const description = group
+  ? `${group.shows.length} ${group.shows.length === 1 ? 'show' : 'shows'} starting with ${group.letter === '#' ? 'a number or symbol' : group.letter}, each with the exact chapter to start after the anime. No spoilers.`
+  : `Every show we cover, A to Z (${total} and counting), each with the exact manga chapter to start after the anime. No spoilers.`;
+---
+<Base title={title} description={description}>
+  <div class="dir">
+    {group ? (
+      <p class="crumb"><a href="/shows">All shows</a></p>
+    ) : null}
+    <h1>{heading}</h1>
+    <p class="lede muted">
+      {group
+        ? `${group.shows.length} ${group.shows.length === 1 ? 'show' : 'shows'}. Pick one to see the chapter to start after each season.`
+        : `${total} shows and counting. Pick a letter, or type to find a show.`}
+    </p>
+
+    <div class="bar-wrap">
+      <LetterBar current={group?.letter} />
+    </div>
+
+    {showFind && <div class="find glass">
+      <label for="find">{group ? `Filter these ${group.shows.length} shows` : 'Find a show'}</label>
+      <input id="find" type="search" autocomplete="off" placeholder={group ? 'Type part of a title' : 'Search every show, like Frieren'} data-mode={group ? 'local' : 'all'} />
+      <ul class="rows find-results" hidden></ul>
+      <p class="find-empty muted" hidden>No match. <a href="/submit">Ask us to add it</a>.</p>
+    </div>}
+
+    {group ? (
+      <ul class="rows show-list" id="show-list">
+        {group.shows.map((s) => (
+          <li data-name={[s.title, ...(s.aka || [])].join(' | ').toLowerCase()}>
+            <a href={`/anime/${s.slug}`}>
+              <span class="row-title">{s.title}</span>
+              {answer(s) ? <span class="row-answer">{answer(s)}</span> : <span class="row-pending">Airing</span>}
+            </a>
+          </li>
+        ))}
+      </ul>
+    ) : (
+      <>
+        <div class="letter-grid">
+          {groups.map((g) => (
+            <section class="letter-card glass" aria-labelledby={`l-${g.slug}`}>
+              <h2 id={`l-${g.slug}`}><a href={`/shows/${g.slug}`}>{g.letter}</a></h2>
+              <ul>
+                {g.shows.slice(0, PREVIEW).map((s) => (<li><a href={`/anime/${s.slug}`}>{s.title}</a></li>))}
+              </ul>
+              {g.shows.length > PREVIEW && (
+                <a class="see-all" href={`/shows/${g.slug}`}>See all {g.shows.length}<span class="visually-hidden"> shows starting with {g.letter}</span></a>
+              )}
+            </section>
+          ))}
+        </div>
+
+        <section class="section" aria-labelledby="seasons-h">
+          <h2 id="seasons-h">Browse by season</h2>
+          <ul class="chip-list">
+            {hubs.map((h) => (<li><a href={`/season/${h.slug}`}>{h.label} <span class="muted">({h.items.length})</span></a></li>))}
+          </ul>
+        </section>
+      </>
+    )}
+
+    <p class="missing muted">Can't find your show? <a href="/submit">Ask us to add it</a>.</p>
+  </div>
+</Base>
+
+<script>
+  // One search box, two behaviors:
+  //  - on a letter page it filters the list below (no download needed);
+  //  - on the overview it searches every show using the same small index as the home page.
+  type Item = { slug: string; title: string; aka: string[]; start: number | null; unit: string };
+  const input = document.getElementById('find') as HTMLInputElement | null;
+  if (input) {
+    const box = input.closest('.find')!;
+    const results = box.querySelector<HTMLUListElement>('.find-results')!;
+    const empty = box.querySelector<HTMLParagraphElement>('.find-empty')!;
+    const norm = (s: string) => s.toLowerCase().normalize('NFKD').replace(/[^\p{L}\p{N}]+/gu, ' ').trim();
+
+    if (input.dataset.mode === 'local') {
+      const rows = [...document.querySelectorAll<HTMLLIElement>('#show-list li')];
+      input.addEventListener('input', () => {
+        const q = norm(input.value);
+        let shown = 0;
+        for (const li of rows) {
+          const hit = !q || q.split(' ').every((w) => norm(li.dataset.name || '').includes(w));
+          li.hidden = !hit;
+          if (hit) shown++;
+        }
+        empty.hidden = shown > 0;
+      });
+    } else {
+      let index: Item[] | null = null;
+      const getIndex = async () => (index ??= await (await fetch('/search.json')).json());
+      input.addEventListener('focus', () => { getIndex(); }, { once: true });
+      input.addEventListener('input', async () => {
+        const q = norm(input.value);
+        if (!q) { results.hidden = true; empty.hidden = true; return; }
+        const words = q.split(' ');
+        const hits = (await getIndex())
+          .map((it) => {
+            const names = [it.title, ...it.aka].map(norm);
+            const s = names.some((n) => n.startsWith(q)) ? 2 : names.some((n) => words.every((w) => n.includes(w))) ? 1 : 0;
+            return { it, s };
+          })
+          .filter((x) => x.s > 0)
+          .sort((a, b) => b.s - a.s || a.it.title.localeCompare(b.it.title))
+          .slice(0, 10);
+        results.replaceChildren(...hits.map(({ it }) => {
+          const li = document.createElement('li');
+          const a = document.createElement('a');
+          a.href = `/anime/${it.slug}`;
+          const t = document.createElement('span');
+          t.className = 'row-title';
+          t.textContent = it.title;
+          const r = document.createElement('span');
+          r.className = it.start == null ? 'row-pending' : 'row-answer';
+          r.textContent = it.start == null ? 'Airing' : `${it.unit} ${it.start}`;
+          a.append(t, r);
+          li.append(a);
+          return li;
+        }));
+        results.hidden = hits.length === 0;
+        empty.hidden = hits.length > 0;
+      });
+    }
+  }
+</script>
+
+<style>
+  .dir { padding-top: 16px; }
+  .crumb { font-size: 0.95rem; margin-bottom: 10px; }
+  h1 { font-size: clamp(2rem, 7vw, 2.9rem); }
+  .lede { margin-top: 10px; font-size: 1.1rem; }
+  .bar-wrap { margin-top: 22px; }
+
+  .find { margin-top: 20px; padding: 16px 18px; border-radius: 16px; display: grid; gap: 8px; }
+  .find label { font-weight: 700; font-size: 0.95rem; }
+  .find input {
+    width: 100%; font: inherit; font-size: 1.05rem; padding: 12px 14px;
+    border: 1.5px solid var(--ink-soft); border-radius: 10px; background: var(--sheet); color: var(--ink);
+  }
+  .find input:focus { outline: none; border-color: var(--focus); box-shadow: 0 0 0 4px color-mix(in srgb, var(--focus) 30%, transparent); }
+  .find input::placeholder { color: var(--ink-soft); }
+  .find-results { margin-top: 4px; }
+  .find-empty { font-size: 0.95rem; }
+
+  .show-list { margin-top: 22px; }
+  .show-list li[hidden] { display: none; }
+
+  .letter-grid { margin-top: 28px; display: grid; gap: 14px; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); }
+  @media (max-width: 520px) { .letter-grid { grid-template-columns: 1fr 1fr; gap: 10px; } .letter-card { padding: 12px 14px 14px; } .letter-card li a { font-size: 0.92rem; } }
+  .letter-card { border-radius: 16px; padding: 14px 18px 16px; display: flex; flex-direction: column; gap: 6px; }
+  .letter-card h2 { font-size: 1.6rem; line-height: 1; }
+  .letter-card h2 a { text-decoration: none; }
+  .letter-card h2 a:hover { color: var(--ribbon); }
+  .letter-card ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
+  .letter-card li a { text-decoration: none; font-size: 0.97rem; }
+  .letter-card li a:hover { text-decoration: underline; }
+  .see-all { margin-top: 4px; font-size: 0.92rem; font-weight: 700; }
+  .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+
+  .missing { margin-top: 36px; font-size: 0.95rem; }
+</style>
