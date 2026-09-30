@@ -1,5 +1,6 @@
 ---
-import '@fontsource-variable/bricolage-grotesque/opsz.css';
+import '@fontsource/rubik/500.css';
+import '@fontsource/rubik/600.css';
 import '@fontsource/atkinson-hyperlegible/400.css';
 import '@fontsource/atkinson-hyperlegible/700.css';
 import * as config from '../config.mjs';
@@ -38,9 +39,9 @@ const fullTitle = title === SITE_NAME ? `${SITE_NAME}: the exact manga chapter t
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content={`${SITE_NAME}: the exact chapter to start after the anime`} />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="theme-color" content="#F3F4F6" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#131417" media="(prefers-color-scheme: dark)" />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta name="theme-color" content="#EEF1F8" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0B1020" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href="/favicon.png" type="image/png" sizes="64x64" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/manifest.webmanifest" />
     <link rel="alternate" type="application/rss+xml" title={`${SITE_NAME}: new chapter answers`} href="/feed.xml" />
@@ -62,7 +63,7 @@ const fullTitle = title === SITE_NAME ? `${SITE_NAME}: the exact manga chapter t
     <header class="site-header">
       <div class="bar">
         <a class="brand" href="/" aria-label={`${SITE_NAME} home`}>
-          <svg class="brand-mark" viewBox="0 0 20 28" aria-hidden="true"><path d="M2 0h16v28l-8-6-8 6z" /></svg>
+          <img class="brand-mark" src="/logo-mark.png" width="46" height="29" alt="" />
           <span>{SITE_NAME}</span>
         </a>
         <nav aria-label="Main">
@@ -82,7 +83,7 @@ const fullTitle = title === SITE_NAME ? `${SITE_NAME}: the exact manga chapter t
     <footer class="site-footer">
       <div class="footer-inner">
         <p class="footer-brand">
-          <svg class="brand-mark" viewBox="0 0 20 28" aria-hidden="true"><path d="M2 0h16v28l-8-6-8 6z" /></svg>
+          <img class="brand-mark" src="/logo-mark.png" width="46" height="29" alt="" />
           {SITE_NAME}
         </p>
         <p>Numbers only, never plot. Every answer links its sources, and we only point to official releases.</p>
@@ -122,55 +123,84 @@ const fullTitle = title === SITE_NAME ? `${SITE_NAME}: the exact manga chapter t
 
 <style is:global>
   :root {
-    --paper: #F3F4F6;
+    --paper: #EEF1F8;
     --sheet: #FFFFFF;
-    --ink: #17181C;
-    --ink-soft: #545A66;
-    --rule: #DADDE3;
-    --hover: #E9EBEF;
-    --ribbon: #D7261E;
+    --panel: rgba(236, 240, 248, 0.78);
+    --glass: rgba(255, 255, 255, 0.56);
+    --glass-edge: rgba(255, 255, 255, 0.85);
+    --glass-shine: rgba(255, 255, 255, 0.7);
+    --ink: #20283D;
+    --ink-soft: #505A73;
+    --rule: #D3D9E6;
+    --hover: rgba(32, 40, 61, 0.06);
+    --ribbon: #D9473F;
     --ribbon-ink: #FFFFFF;
-    --tone: rgba(23, 24, 28, 0.13);
-    --focus: #1D5FD1;
+    --badge: #C63D35;
+    --badge-ink: #FFFFFF;
+    --tone: rgba(32, 40, 61, 0.13);
+    --focus: #3D5AFE;
     --amber-bg: #FFF4D6;
     --amber-ink: #6B4A00;
-    --shadow: 0 1px 2px rgba(23, 24, 28, 0.06), 0 8px 24px -12px rgba(23, 24, 28, 0.18);
-    --display: 'Bricolage Grotesque Variable', 'Arial Narrow', system-ui, sans-serif;
+    --glow-1: rgba(217, 71, 63, 0.24);
+    --glow-2: rgba(84, 110, 240, 0.26);
+    --glow-3: rgba(32, 40, 61, 0.10);
+    --shadow: 0 1px 2px rgba(32, 40, 61, 0.05), 0 14px 36px -18px rgba(32, 40, 61, 0.32);
+    --display: 'Rubik', system-ui, -apple-system, 'Segoe UI', sans-serif;
     --body: 'Site Digits', 'Atkinson Hyperlegible', system-ui, -apple-system, 'Segoe UI', sans-serif;
     color-scheme: light;
   }
   :root[data-theme='dark'] {
     color-scheme: dark;
-    --paper: #131417;
-    --sheet: #1C1D22;
-    --ink: #ECEDF0;
-    --ink-soft: #A3A8B3;
-    --rule: #32343B;
-    --hover: #24262C;
-    --ribbon: #F2493F;
-    --ribbon-ink: #16080A;
-    --tone: rgba(236, 237, 240, 0.12);
-    --focus: #7FA8FF;
+    --paper: #0B1020;
+    --sheet: #161D31;
+    --panel: rgba(9, 13, 26, 0.5);
+    --glass: rgba(26, 33, 54, 0.55);
+    --glass-edge: rgba(255, 255, 255, 0.1);
+    --glass-shine: rgba(255, 255, 255, 0.06);
+    --ink: #E9EDF6;
+    --ink-soft: #A7B0C8;
+    --rule: #2B3452;
+    --hover: rgba(233, 237, 246, 0.07);
+    --ribbon: #F05B50;
+    --ribbon-ink: #1A0806;
+    --badge: #F05B50;
+    --badge-ink: #1A0806;
+    --tone: rgba(233, 237, 246, 0.1);
+    --focus: #8EA6FF;
     --amber-bg: #3A2F12;
     --amber-ink: #F2D48A;
-    --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 10px 30px -14px rgba(0, 0, 0, 0.7);
+    --glow-1: rgba(240, 91, 80, 0.22);
+    --glow-2: rgba(84, 110, 240, 0.26);
+    --glow-3: rgba(120, 90, 220, 0.12);
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.35), 0 16px 40px -18px rgba(0, 0, 0, 0.75);
   }
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme='light']) {
       color-scheme: dark;
-      --paper: #131417;
-      --sheet: #1C1D22;
-      --ink: #ECEDF0;
-      --ink-soft: #A3A8B3;
-      --rule: #32343B;
-      --hover: #24262C;
-      --ribbon: #F2493F;
-      --ribbon-ink: #16080A;
-      --tone: rgba(236, 237, 240, 0.12);
-      --focus: #7FA8FF;
+      --paper: #0B1020;
+      --sheet: #161D31;
+      --panel: rgba(9, 13, 26, 0.5);
+      --glass: rgba(26, 33, 54, 0.55);
+      --glass-edge: rgba(255, 255, 255, 0.1);
+      --glass-shine: rgba(255, 255, 255, 0.06);
+      --ink: #E9EDF6;
+      --ink-soft: #A7B0C8;
+      --rule: #2B3452;
+      --hover: rgba(233, 237, 246, 0.07);
+      --ribbon: #F05B50;
+      --ribbon-ink: #1A0806;
+      --badge: #F05B50;
+      --badge-ink: #1A0806;
+    --badge: #F05B50;
+    --badge-ink: #1A0806;
+      --tone: rgba(233, 237, 246, 0.1);
+      --focus: #8EA6FF;
       --amber-bg: #3A2F12;
       --amber-ink: #F2D48A;
-      --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 10px 30px -14px rgba(0, 0, 0, 0.7);
+      --glow-1: rgba(240, 91, 80, 0.22);
+      --glow-2: rgba(84, 110, 240, 0.26);
+      --glow-3: rgba(120, 90, 220, 0.12);
+      --shadow: 0 1px 2px rgba(0, 0, 0, 0.35), 0 16px 40px -18px rgba(0, 0, 0, 0.75);
     }
   }
   @font-face {
@@ -184,6 +214,8 @@ const fullTitle = title === SITE_NAME ? `${SITE_NAME}: the exact manga chapter t
   html { -webkit-text-size-adjust: 100%; }
   body {
     margin: 0;
+    position: relative;
+    isolation: isolate;
     background: var(--paper);
     color: var(--ink);
     font-family: var(--body);
@@ -191,26 +223,48 @@ const fullTitle = title === SITE_NAME ? `${SITE_NAME}: the exact manga chapter t
     line-height: 1.55;
     -webkit-font-smoothing: antialiased;
   }
+  /* Soft color glow behind everything, so the frosted-glass cards have something to blur. */
+  body::before {
+    content: '';
+    position: fixed; inset: 0; z-index: -1; pointer-events: none;
+    background:
+      radial-gradient(38rem 30rem at 88% -6%, var(--glow-1), transparent 70%),
+      radial-gradient(42rem 34rem at -8% 28%, var(--glow-2), transparent 70%),
+      radial-gradient(36rem 30rem at 60% 108%, var(--glow-3), transparent 70%);
+  }
+
+  /* Frosted glass: shared by cards and panels. Falls back to a solid surface where blur isn't supported. */
+  .glass, :where(.answer, .hero-panel, .choice, .site-footer) {
+    background: var(--glass);
+    -webkit-backdrop-filter: blur(18px) saturate(160%);
+    backdrop-filter: blur(18px) saturate(160%);
+    border: 1px solid var(--glass-edge);
+    box-shadow: inset 0 1px 0 var(--glass-shine), var(--shadow);
+  }
+  @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+    .glass, :where(.answer, .hero-panel, .choice, .site-footer) { background: var(--sheet); }
+  }
+
   a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 3px; }
   a:hover { text-decoration-thickness: 2px; }
   :focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; border-radius: 4px; }
-  h1, h2, h3 { font-family: var(--display); font-weight: 800; line-height: 1.05; letter-spacing: -0.02em; margin: 0; text-wrap: balance; }
+  h1, h2, h3 { font-family: var(--display); font-weight: 600; line-height: 1.08; letter-spacing: -0.015em; margin: 0; text-wrap: balance; }
   p { margin: 0; text-wrap: pretty; }
   .skip { position: absolute; left: -999px; }
   .skip:focus { left: 16px; top: 12px; background: var(--sheet); padding: 8px 12px; z-index: 10; }
 
   .bar, main, .footer-inner { width: min(760px, 100% - 32px); margin-inline: auto; }
 
-  .site-header { border-top: 4px solid var(--ribbon); }
+  .site-header { border-top: 3px solid var(--ribbon); }
   .bar { display: flex; align-items: center; justify-content: space-between; gap: 12px 24px; padding: 18px 0; flex-wrap: wrap; }
-  .brand { display: inline-flex; align-items: center; gap: 10px; font-family: var(--display); font-weight: 800; font-size: 1.3rem; letter-spacing: -0.02em; text-decoration: none; }
-  .brand-mark { width: 14px; height: 20px; fill: var(--ribbon); flex: none; }
+  .brand { display: inline-flex; align-items: center; gap: 10px; font-family: var(--display); font-weight: 600; font-size: 1.3rem; letter-spacing: -0.01em; text-decoration: none; }
+  .brand-mark { width: 46px; height: auto; flex: none; }
   .bar nav { display: flex; gap: 4px; font-size: 0.95rem; margin-inline: -10px; }
   .bar nav a { text-decoration: none; color: var(--ink-soft); padding: 6px 10px; border-radius: 8px; }
   .bar nav a:hover { color: var(--ink); background: var(--hover); }
   .theme-toggle {
     display: inline-grid; place-items: center; width: 36px; height: 36px; margin-left: 4px;
-    border: 1px solid var(--rule); border-radius: 999px; background: var(--sheet); color: var(--ink-soft); cursor: pointer;
+    border: 1px solid var(--glass-edge); border-radius: 999px; background: var(--glass); color: var(--ink-soft); cursor: pointer;
   }
   .theme-toggle:hover { color: var(--ink); border-color: var(--ink-soft); }
   .theme-toggle svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
@@ -225,10 +279,10 @@ const fullTitle = title === SITE_NAME ? `${SITE_NAME}: the exact manga chapter t
 
   main { padding-bottom: 72px; }
 
-  .site-footer { border-top: 1px solid var(--rule); background: var(--sheet); }
+  .site-footer { border-width: 1px 0 0; box-shadow: inset 0 1px 0 var(--glass-shine); }
   .footer-inner { padding: 28px 0 44px; color: var(--ink-soft); font-size: 0.9rem; display: grid; gap: 8px; }
-  .footer-brand { display: inline-flex; align-items: center; gap: 8px; font-family: var(--display); font-weight: 800; color: var(--ink); font-size: 1.05rem; margin-bottom: 4px; }
-  .footer-brand .brand-mark { width: 11px; height: 16px; }
+  .footer-brand { display: inline-flex; align-items: center; gap: 10px; font-family: var(--display); font-weight: 600; color: var(--ink); font-size: 1.05rem; margin-bottom: 4px; }
+  .footer-brand .brand-mark { width: 36px; }
 
   .muted { color: var(--ink-soft); }
   .section { margin-top: 56px; }
@@ -249,7 +303,7 @@ const fullTitle = title === SITE_NAME ? `${SITE_NAME}: the exact manga chapter t
   .row-sub { color: var(--ink-soft); font-size: 0.92rem; }
   .row-answer {
     display: inline-flex; align-items: center; gap: 8px;
-    font-family: var(--display); font-weight: 800; white-space: nowrap; font-size: 1.1rem; letter-spacing: -0.01em;
+    font-family: var(--display); font-weight: 600; white-space: nowrap; font-size: 1.1rem; letter-spacing: 0;
   }
   .row-answer::before {
     content: ''; width: 9px; height: 13px; background: var(--ribbon);
@@ -260,7 +314,7 @@ const fullTitle = title === SITE_NAME ? `${SITE_NAME}: the exact manga chapter t
   .chip-list { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px; }
   .chip-list a {
     display: inline-block; padding: 7px 14px; border-radius: 999px;
-    border: 1px solid var(--rule); background: var(--sheet); text-decoration: none; font-size: 0.95rem;
+    border: 1px solid var(--glass-edge); background: var(--glass); text-decoration: none; font-size: 0.95rem;
     transition: border-color 120ms ease;
   }
   .chip-list a:hover { border-color: var(--ink); }
