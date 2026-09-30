@@ -34,7 +34,7 @@ const faq = {
 <Base title={title} description={description} image={`/og/${series.slug}.png`}>
   {finished.length > 0 && <script type="application/ld+json" slot="head" set:html={JSON.stringify(faq)} />}
 
-  <p class="crumb"><a href="/">All shows</a></p>
+  <p class="crumb"><a href="/shows">All shows</a></p>
   <header class="series-head">
     <div class="head-row">
       <p class="format">{sourceLabel(series.source)}</p>
