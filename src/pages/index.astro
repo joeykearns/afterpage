@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import LetterBar from '../components/LetterBar.astro';
 import { SITE_NAME } from '../config.mjs';
 import { loadAllSeries, allEntries, seasonHubs, airedLabel, unitLabel } from '../lib/series.mjs';
 
@@ -95,11 +96,13 @@ const popular = POPULAR.filter(([slug]) => series.some((s) => s.slug === slug)).
     )}
   </section>
 
-  <section class="section" aria-labelledby="all-h">
-    <h2 id="all-h">All {series.length} shows</h2>
-    <ul class="az">
-      {series.map((s) => (<li><a href={`/anime/${s.slug}`}>{s.title}</a></li>))}
-    </ul>
+  <section class="section all-shows" aria-labelledby="all-h">
+    <div class="all-head">
+      <h2 id="all-h">All shows</h2>
+      <a class="browse-all" href="/shows">Browse all {series.length} shows</a>
+    </div>
+    <p class="section-lede muted">Jump to a letter, or use the search at the top.</p>
+    <LetterBar />
   </section>
 </Base>
 
@@ -278,8 +281,12 @@ const popular = POPULAR.filter(([slug]) => series.some((s) => s.slug === slug)).
 
   .older { margin-top: 12px; }
   .older summary { cursor: pointer; color: var(--ink-soft); margin-bottom: 10px; }
-  .az { list-style: none; padding: 0; margin: 0; columns: 2 200px; column-gap: 32px; }
-  .az li { padding: 6px 0; break-inside: avoid; border-bottom: 1px solid var(--rule); }
-  .az a { text-decoration: none; }
-  .az a:hover { text-decoration: underline; }
+  .all-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
+  .all-head h2 { margin-bottom: 0; }
+  .browse-all {
+    display: inline-block; padding: 8px 16px; border-radius: 999px; font-weight: 700; font-size: 0.95rem; text-decoration: none;
+    background: var(--ink); color: var(--paper);
+  }
+  .browse-all:hover { opacity: 0.9; }
+  .all-shows .section-lede { margin: 0 0 14px; }
 </style>
