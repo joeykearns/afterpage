@@ -1,0 +1,41 @@
+---
+// A–Z jump bar for the show directory. Letters with no shows are shown but not clickable.
+import { LETTERS, letterSlug, showsByLetter } from '../lib/series.mjs';
+
+const { current = null, label = 'Browse shows by letter' } = Astro.props;
+const available = new Set(showsByLetter().map((g) => g.letter));
+---
+<nav class="letters" aria-label={label}>
+  <ul>
+    {LETTERS.map((l) => (
+      <li>
+        {available.has(l) ? (
+          <a href={`/shows/${letterSlug(l)}`} aria-current={l === current ? 'page' : undefined} aria-label={l === '#' ? 'Numbers and symbols' : `Shows starting with ${l}`}>{l}</a>
+        ) : (
+          <span aria-hidden="true">{l}</span>
+        )}
+      </li>
+    ))}
+  </ul>
+</nav>
+
+<style>
+  /* 27 keys: two even rows of 14 on wider screens, three rows of 9 on phones. */
+  .letters ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(14, minmax(0, 1fr)); gap: 6px; }
+  .letters a, .letters span {
+    display: grid; place-items: center;
+    height: 40px; border-radius: 10px;
+    font-family: var(--display); font-weight: 600; font-size: 1rem; text-decoration: none;
+  }
+  .letters a {
+    border: 1px solid var(--glass-edge); background: var(--glass); color: var(--ink);
+    transition: background-color 120ms ease, border-color 120ms ease;
+  }
+  .letters a:hover { border-color: var(--ink-soft); }
+  .letters a[aria-current='page'] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  .letters span { color: var(--ink-soft); opacity: 0.45; }
+  @media (max-width: 600px) {
+    .letters ul { grid-template-columns: repeat(9, minmax(0, 1fr)); gap: 5px; }
+    .letters a, .letters span { height: 36px; font-size: 0.95rem; }
+  }
+</style>
