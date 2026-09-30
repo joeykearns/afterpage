@@ -84,11 +84,8 @@ const reportUrl = feedbackUrl({ type: 'correction', show: series.title, season: 
 
 <style>
   .answer {
-    background: var(--sheet);
-    border: 1px solid var(--rule);
-    border-radius: 16px;
+    border-radius: 18px;
     padding: clamp(20px, 5vw, 28px);
-    box-shadow: var(--shadow);
     margin-top: 20px;
     scroll-margin-top: 16px;
   }
@@ -107,7 +104,7 @@ const reportUrl = feedbackUrl({ type: 'correction', show: series.title, season: 
     margin: 20px 0 0;
     padding: 22px 22px 20px 64px;
     border-radius: 10px;
-    background-color: var(--paper);
+    background-color: var(--panel);
     background-image: radial-gradient(var(--tone) 1.1px, transparent 1.3px);
     background-size: 7px 7px;
     overflow: hidden;
@@ -121,10 +118,10 @@ const reportUrl = feedbackUrl({ type: 'correction', show: series.title, season: 
   .start-label { font-weight: 700; }
   .start-number {
     font-family: var(--display);
-    font-weight: 800;
+    font-weight: 600;
     font-size: clamp(3rem, 12vw, 4.75rem);
     line-height: 0.95;
-    letter-spacing: -0.03em;
+    letter-spacing: -0.02em;
     margin-top: 4px;
   }
   .unit { font-size: 0.42em; letter-spacing: 0; font-weight: 500; vertical-align: 0.55em; margin-right: 0.15em; }
@@ -140,9 +137,9 @@ const reportUrl = feedbackUrl({ type: 'correction', show: series.title, season: 
 
   .picker {
     margin-top: 16px; padding: 16px 18px; border-radius: 10px;
-    border: 1px solid var(--rule); background: var(--paper);
+    border: 1px solid var(--glass-edge); background: var(--panel);
   }
-  .picker-title { font-family: var(--display); font-weight: 800; font-size: 1.1rem; }
+  .picker-title { font-family: var(--display); font-weight: 600; font-size: 1.1rem; }
   .picker-form { margin-top: 8px; }
   .picker-form label { display: block; font-size: 0.92rem; color: var(--ink-soft); margin-bottom: 6px; }
   .picker-row { display: flex; gap: 8px; flex-wrap: wrap; }
@@ -157,7 +154,7 @@ const reportUrl = feedbackUrl({ type: 'correction', show: series.title, season: 
   }
   .picker-row button:hover { opacity: 0.88; }
   .picker-result { margin-top: 12px; padding: 12px 14px; border-radius: 8px; background: var(--sheet); border-left: 4px solid var(--ribbon); }
-  .picker-result strong { font-family: var(--display); font-weight: 800; font-size: 1.15rem; }
+  .picker-result strong { font-family: var(--display); font-weight: 600; font-size: 1.15rem; }
   .picker-source { margin-top: 10px; font-size: 0.85rem; color: var(--ink-soft); }
   .callout { margin-top: 16px; padding: 12px 14px; border-radius: 8px; background: var(--amber-bg); color: var(--amber-ink); }
 

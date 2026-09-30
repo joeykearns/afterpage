@@ -29,11 +29,8 @@ const tipUrl = feedbackUrl({ type: 'finale', show: series.title, season: entry.l
 
 <style>
   .answer {
-    background: var(--sheet);
-    border: 1px solid var(--rule);
-    border-radius: 16px;
+    border-radius: 18px;
     padding: clamp(20px, 5vw, 28px);
-    box-shadow: var(--shadow);
     margin-top: 20px;
     scroll-margin-top: 16px;
   }
@@ -61,7 +58,7 @@ const tipUrl = feedbackUrl({ type: 'finale', show: series.title, season: entry.l
     background: var(--rule);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 80%, 0 100%);
   }
-  .pending-title { font-family: var(--display); font-weight: 800; font-size: 1.6rem; line-height: 1.1; }
+  .pending-title { font-family: var(--display); font-weight: 600; font-size: 1.6rem; line-height: 1.1; }
   .note { margin-top: 16px; }
   .tip { margin-top: 16px; font-size: 0.92rem; color: var(--ink-soft); }
 </style>
