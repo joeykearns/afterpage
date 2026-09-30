@@ -219,11 +219,8 @@ const popular = POPULAR.filter(([slug]) => series.some((s) => s.slug === slug)).
   .hero { padding-top: 12px; }
   .hero-panel {
     position: relative;
-    background-color: var(--sheet);
-    border: 1px solid var(--rule);
-    border-radius: 20px;
+    border-radius: 22px;
     padding: clamp(24px, 6vw, 48px);
-    box-shadow: var(--shadow);
     overflow: hidden;
     isolation: isolate;
   }
@@ -258,7 +255,7 @@ const popular = POPULAR.filter(([slug]) => series.some((s) => s.slug === slug)).
     padding: 16px 16px 16px 50px;
     border: 2px solid var(--ink);
     border-radius: 12px;
-    background: var(--paper);
+    background: var(--sheet);
     color: var(--ink);
   }
   .search input:focus { outline: none; box-shadow: 0 0 0 4px color-mix(in srgb, var(--focus) 30%, transparent); border-color: var(--focus); }
@@ -268,12 +265,12 @@ const popular = POPULAR.filter(([slug]) => series.some((s) => s.slug === slug)).
   .empty { margin-top: 12px; }
   .popular { margin-top: 22px; display: grid; gap: 10px; }
   .popular p { font-size: 0.9rem; }
-  .popular .chip-list a { background: var(--paper); }
+  .popular .chip-list a { background: var(--panel); }
 
   .my-shows { margin-top: 40px; }
   :global(.badge-new) {
     display: inline-block; margin-left: 6px; padding: 1px 8px; border-radius: 999px;
-    background: var(--ribbon); color: var(--ribbon-ink); font-size: 0.75rem; font-weight: 700; vertical-align: 0.15em;
+    background: var(--badge); color: var(--badge-ink); font-size: 0.75rem; font-weight: 700; vertical-align: 0.15em;
   }
   .columns { display: grid; gap: 0 48px; }
   @media (min-width: 760px) { .columns { grid-template-columns: 1fr 1fr; } }

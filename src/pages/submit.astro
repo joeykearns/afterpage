@@ -31,11 +31,11 @@ const correction = feedbackUrl({ type: 'correction' });
   .choices { display: grid; gap: 12px; margin: 28px 0 16px; }
   .choice {
     display: grid; gap: 4px; padding: 18px 20px;
-    background: var(--sheet); border: 1px solid var(--rule); border-radius: 12px;
+    border-radius: 14px;
     text-decoration: none;
   }
-  .choice:hover { border-color: var(--ink); }
-  .choice strong { font-family: var(--display); font-size: 1.2rem; }
+  .choice:hover { border-color: var(--ink-soft); }
+  .choice strong { font-family: var(--display); font-weight: 600; font-size: 1.2rem; }
   .choice span { color: var(--ink-soft); }
   .small { font-size: 0.9rem; }
 </style>
