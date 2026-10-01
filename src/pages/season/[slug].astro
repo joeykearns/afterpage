@@ -1,6 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { seasonHubs, unitLabel } from '../../lib/series.mjs';
+import { seasonHubs, unitLabel, shortAnswer } from '../../lib/series.mjs';
 
 export function getStaticPaths() {
   return seasonHubs().map((hub) => ({ params: { slug: hub.slug }, props: { hub } }));
@@ -24,7 +24,7 @@ const allAiring = hub.items.every((i) => i.entry.airing);
           <span><span class="row-title">{s.title}</span><br /><span class="row-sub">{e.airing ? e.label : `After ${e.label}`}</span></span>
           {e.airing
             ? <span class="row-pending">Airing</span>
-            : <span class="row-answer">{unitLabel(s.source) === 'Volume' ? 'Vol.' : 'Ch.'} {e.start_chapter}</span>}
+            : <span class="row-answer">{shortAnswer(s, e)}</span>}
         </a>
       </li>
     ))}
