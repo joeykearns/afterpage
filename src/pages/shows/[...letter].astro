@@ -4,7 +4,7 @@
 // and each letter page lists all of its shows with a quick filter.
 import Base from '../../layouts/Base.astro';
 import LetterBar from '../../components/LetterBar.astro';
-import { loadAllSeries, latestAnswer, showsByLetter, seasonHubs, sortTitle } from '../../lib/series.mjs';
+import { loadAllSeries, latestAnswer, showsByLetter, seasonHubs, shortAnswer } from '../../lib/series.mjs';
 
 export function getStaticPaths() {
   const groups = showsByLetter();
@@ -22,11 +22,7 @@ const PREVIEW = 6;
 // A letter page only gets its own filter box once it has enough shows to need one.
 const showFind = !group || group.shows.length > 12;
 
-const unit = (s) => (s.source === 'light_novel' ? 'Vol.' : 'Ch.');
-const answer = (s) => {
-  const latest = latestAnswer(s);
-  return latest ? `${unit(s)} ${latest.start_chapter}` : null;
-};
+const answer = (s) => shortAnswer(s, latestAnswer(s));
 
 const heading = group
   ? group.letter === '#' ? 'Shows starting with a number or symbol' : `Shows starting with ${group.letter}`
@@ -103,7 +99,7 @@ const description = group
   // One search box, two behaviors:
   //  - on a letter page it filters the list below (no download needed);
   //  - on the overview it searches every show using the same small index as the home page.
-  type Item = { slug: string; title: string; aka: string[]; start: number | null; unit: string };
+  type Item = { slug: string; title: string; aka: string[]; answer: string | null };
   const input = document.getElementById('find') as HTMLInputElement | null;
   if (input) {
     const box = input.closest('.find')!;
@@ -148,8 +144,8 @@ const description = group
           t.className = 'row-title';
           t.textContent = it.title;
           const r = document.createElement('span');
-          r.className = it.start == null ? 'row-pending' : 'row-answer';
-          r.textContent = it.start == null ? 'Airing' : `${it.unit} ${it.start}`;
+          r.className = it.answer == null ? 'row-pending' : 'row-answer';
+          r.textContent = it.answer ?? 'Airing';
           a.append(t, r);
           li.append(a);
           return li;
