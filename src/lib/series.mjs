@@ -5,7 +5,7 @@ import path from 'node:path';
 import { load } from 'js-yaml';
 
 const DATA_DIR = path.join(process.cwd(), 'src', 'data', 'series');
-const SOURCES = ['manga', 'manhwa', 'light_novel', 'webtoon'];
+const SOURCES = ['manga', 'manhwa', 'light_novel', 'webtoon', 'novel'];
 const KINDS = ['season', 'movie', 'series', 'part'];
 const CONFIDENCE = ['agree', 'differ', 'single'];
 const SEASON_ORDER = { winter: 1, spring: 2, summer: 3, fall: 4 };
@@ -25,11 +25,11 @@ export function airedLabel(aired) {
 }
 
 export function sourceLabel(source) {
-  return { manga: 'Manga', manhwa: 'Manhwa', light_novel: 'Light novel', webtoon: 'Webtoon' }[source];
+  return { manga: 'Manga', manhwa: 'Manhwa', light_novel: 'Light novel', webtoon: 'Webtoon', novel: 'Novel' }[source];
 }
 
 export function unitLabel(source) {
-  return source === 'light_novel' ? 'Volume' : 'Chapter';
+  return source === 'light_novel' || source === 'novel' ? 'Volume' : 'Chapter';
 }
 
 export function entryId(entry) {
@@ -41,7 +41,7 @@ export function entryId(entry) {
     .replace(/^-|-$/g, '');
 }
 
-function validate(series, file) {
+export function validate(series, file) {
   const errors = [];
   const need = (cond, msg) => { if (!cond) errors.push(`${file}: ${msg}`); };
   need(series && typeof series === 'object', 'file is empty or not a map');
@@ -50,6 +50,7 @@ function validate(series, file) {
   need(/^[a-z0-9-]+$/.test(series.slug || ''), 'slug must be lowercase letters, numbers and dashes');
   need(`${series.slug}.yaml` === file, `slug "${series.slug}" must match the file name`);
   need(series.title, 'title is required');
+  need(series.aka == null || (Array.isArray(series.aka) && series.aka.every((a) => typeof a === 'string')), 'aka must be a list of names (put quotes around names that contain a colon)');
   need(SOURCES.includes(series.source), `source must be one of ${SOURCES.join(', ')}`);
   need(Array.isArray(series.entries) && series.entries.length, 'at least one entry is required');
 
@@ -66,6 +67,14 @@ function validate(series, file) {
     const airing = e.status === 'airing';
     if (airing) {
       need(e.start_chapter == null, `${at}: an airing entry can't have start_chapter yet. Remove "status: airing" once the finale has aired`);
+    } else if (e.covers_all != null) {
+      // The anime adapts the source all the way to its end: there's nothing left to start.
+      need(e.covers_all === true, `${at}: covers_all must be true, or left out`);
+      need(e.start_chapter == null, `${at}: an entry with covers_all can't also have start_chapter`);
+      need(Number.isInteger(e.last_chapter), `${at}: covers_all needs last_chapter (the source's final chapter or volume)`);
+      need(CONFIDENCE.includes(e.confidence), `${at}: confidence must be one of ${CONFIDENCE.join(', ')}`);
+      need(Array.isArray(e.sources) && e.sources.length, `${at}: at least one source link is required`);
+      need(e.confidence !== 'agree' || (e.sources || []).length >= 2, `${at}: "agree" needs two or more sources`);
     } else {
       need(Number.isInteger(e.start_chapter), `${at}: start_chapter must be a whole number`);
       need(CONFIDENCE.includes(e.confidence), `${at}: confidence must be one of ${CONFIDENCE.join(', ')}`);
@@ -153,6 +162,27 @@ export function loadAllSeries() {
   return cache;
 }
 
+// ---- Answers in words ----
+// covers_all: the anime adapts the source all the way to its end.
+export const isComplete = (entry) => entry?.covers_all === true;
+export const unitAbbr = (source) => (unitLabel(source) === 'Volume' ? 'Vol.' : 'Ch.');
+
+// Short form for lists and badges: "Ch. 81", "Vol. 5", "Whole story", or null while airing.
+export function shortAnswer(series, entry) {
+  if (!entry || entry.airing) return null;
+  if (isComplete(entry)) return 'Whole story';
+  return `${unitAbbr(series.source)} ${entry.start_chapter}`;
+}
+
+// One plain sentence, e.g. "Start at Chapter 81 (Volume 10)." or
+// "The anime covers the whole manga, through Chapter 108 (the final chapter)."
+export function answerSentence(series, entry) {
+  const unit = unitLabel(series.source);
+  const source = sourceLabel(series.source).toLowerCase();
+  if (isComplete(entry)) return `The anime covers the whole ${source}, through ${unit} ${entry.last_chapter} (the final ${unit.toLowerCase()}).`;
+  return `Start at ${unit} ${entry.start_chapter}${entry.start_volume ? ` (Volume ${entry.start_volume})` : ''}.`;
+}
+
 // Newest finished entry of a series (the one with an answer), or undefined.
 export function latestAnswer(series) {
   return [...series.entries].filter((e) => !e.airing).sort((a, b) => airedKey(b.aired) - airedKey(a.aired))[0];
@@ -163,7 +193,7 @@ export function latestAnswer(series) {
 export function answerKey(series) {
   const latest = latestAnswer(series);
   const airing = series.entries.filter((e) => e.airing).map((e) => e.label).join(',');
-  return `${latest ? `${latest.label}:${latest.start_chapter}` : '-'}|${airing}`;
+  return `${latest ? `${latest.label}:${latest.covers_all ? 'all' : latest.start_chapter}` : '-'}|${airing}`;
 }
 
 // Every entry flattened with its series, newest first.

@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import satori from 'satori';
 import { Resvg } from '@resvg/resvg-js';
-import { unitLabel } from './series.mjs';
+import { unitLabel, sourceLabel, isComplete } from './series.mjs';
 import { SITE_NAME } from '../config.mjs';
 
 const font = (pkg, file) => fs.readFileSync(path.join(process.cwd(), 'node_modules', '@fontsource', pkg, 'files', file));
@@ -50,7 +50,14 @@ export async function renderShareImage({ series, latest, subtitle }) {
   const unit = unitLabel(series.source);
   const titleSize = series.title.length > 30 ? 60 : series.title.length > 18 ? 72 : 88;
 
-  const answer = latest
+  const answer = latest && isComplete(latest)
+    ? h('div', { display: 'flex', flexDirection: 'column', position: 'relative', background: 'rgba(255,255,255,0.78)', border: '2px solid rgba(255,255,255,0.95)', borderRadius: 28, padding: '30px 40px 30px 96px', boxShadow: '0 16px 32px -16px rgba(32,40,61,0.38)', maxWidth: 520 },
+        img(ribbon(34, 80), 34, 80, { position: 'absolute', left: 36, top: -2 }),
+        h('div', { fontFamily: 'Body', fontWeight: 700, fontSize: 26, color: INK }, 'The anime covers'),
+        h('div', { fontFamily: 'Display', fontWeight: 600, fontSize: 58, lineHeight: 1.05, letterSpacing: -1, color: INK, marginTop: 8 }, `The whole ${sourceLabel(series.source).toLowerCase()}`),
+        h('div', { fontFamily: 'Display', fontWeight: 500, fontSize: 28, color: INK, marginTop: 10 }, `Through ${unit} ${latest.last_chapter}`),
+      )
+    : latest
     ? h('div', { display: 'flex', flexDirection: 'column', position: 'relative', background: 'rgba(255,255,255,0.78)', border: '2px solid rgba(255,255,255,0.95)', borderRadius: 28, padding: '30px 40px 30px 96px', boxShadow: '0 16px 32px -16px rgba(32,40,61,0.38)' },
         img(ribbon(34, 80), 34, 80, { position: 'absolute', left: 36, top: -2 }),
         h('div', { fontFamily: 'Body', fontWeight: 700, fontSize: 26, color: INK }, 'Start reading at'),
