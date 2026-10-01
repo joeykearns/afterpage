@@ -1,6 +1,6 @@
 // RSS feed of answers, newest first, so Discord servers, readers and
 // aggregators can pick up new chapters automatically.
-import { loadAllSeries, airedKey, unitLabel } from '../lib/series.mjs';
+import { loadAllSeries, airedKey, unitLabel, sourceLabel, isComplete, answerSentence } from '../lib/series.mjs';
 import { SITE_NAME, SITE_URL } from '../config.mjs';
 
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -15,12 +15,15 @@ export function GET() {
   const body = items.map(({ series, entry }) => {
     const unit = unitLabel(series.source);
     const link = new URL(`/anime/${series.slug}/${entry.id}/`, SITE_URL).href;
-    const title = `${series.title}, after ${entry.label}: start at ${unit} ${entry.start_chapter}`;
-    const text = `Start at ${unit} ${entry.start_chapter}${entry.start_volume ? ` (Volume ${entry.start_volume})` : ''}. No spoilers; sources on the page.`;
+    const complete = isComplete(entry);
+    const title = complete
+      ? `${series.title}, ${entry.label}: the anime covers the whole ${sourceLabel(series.source).toLowerCase()}`
+      : `${series.title}, after ${entry.label}: start at ${unit} ${entry.start_chapter}`;
+    const text = `${answerSentence(series, entry)} No spoilers; sources on the page.`;
     return `    <item>
       <title>${esc(title)}</title>
       <link>${esc(link)}</link>
-      <guid isPermaLink="false">${esc(`${series.slug}/${entry.id}/${entry.start_chapter}`)}</guid>
+      <guid isPermaLink="false">${esc(`${series.slug}/${entry.id}/${complete ? 'all' : entry.start_chapter}`)}</guid>
       <pubDate>${new Date(`${entry.last_checked}T12:00:00Z`).toUTCString()}</pubDate>
       <description>${esc(text)}</description>
     </item>`;

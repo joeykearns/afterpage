@@ -2,7 +2,7 @@
 import Base from '../layouts/Base.astro';
 import LetterBar from '../components/LetterBar.astro';
 import { SITE_NAME } from '../config.mjs';
-import { loadAllSeries, allEntries, seasonHubs, airedLabel, unitLabel } from '../lib/series.mjs';
+import { loadAllSeries, allEntries, seasonHubs, airedLabel, unitLabel, shortAnswer } from '../lib/series.mjs';
 
 const series = loadAllSeries();
 const recent = allEntries().filter((i) => i.entry.aired !== 'ongoing' && !i.entry.airing).slice(0, 6);
@@ -56,7 +56,7 @@ const popular = POPULAR.filter(([slug]) => series.some((s) => s.slug === slug)).
           <li>
             <a href={`/anime/${s.slug}/${e.id}`}>
               <span><span class="row-title">{s.title}</span><br /><span class="row-sub">{e.label}, {airedLabel(e.aired)}</span></span>
-              <span class="row-answer">{unitLabel(s.source) === 'Volume' ? 'Vol.' : 'Ch.'} {e.start_chapter}</span>
+              <span class="row-answer">{shortAnswer(s, e)}</span>
             </a>
           </li>
         ))}
@@ -107,7 +107,7 @@ const popular = POPULAR.filter(([slug]) => series.some((s) => s.slug === slug)).
 </Base>
 
 <script>
-  type Item = { slug: string; title: string; aka: string[]; latest: string | null; start: number | null; unit: string; airing: boolean; key: string };
+  type Item = { slug: string; title: string; aka: string[]; latest: string | null; answer: string | null; airing: boolean; key: string };
   const input = document.getElementById('q') as HTMLInputElement;
   const list = document.getElementById('results') as HTMLUListElement;
   const empty = document.getElementById('empty') as HTMLParagraphElement;
@@ -141,8 +141,8 @@ const popular = POPULAR.filter(([slug]) => series.some((s) => s.slug === slug)).
         (left.querySelector('.row-title') as HTMLElement).textContent = it.title;
         (left.querySelector('.row-sub') as HTMLElement).textContent = it.latest ? `After ${it.latest}${it.airing ? ' (new season airing)' : ''}` : 'Airing now';
         const right = document.createElement('span');
-        right.className = it.start == null ? 'row-pending' : 'row-answer';
-        right.textContent = it.start == null ? 'Airing' : `${it.unit} ${it.start}`;
+        right.className = it.answer == null ? 'row-pending' : 'row-answer';
+        right.textContent = it.answer ?? 'Airing';
         a.append(left, right);
         li.append(a);
         return li;
@@ -208,8 +208,8 @@ const popular = POPULAR.filter(([slug]) => series.some((s) => s.slug === slug)).
       sub.textContent = it.latest ? `After ${it.latest}${it.airing ? ' (new season airing)' : ''}` : 'Airing now';
       left.append(title, document.createElement('br'), sub);
       const right = document.createElement('span');
-      right.className = it.start == null ? 'row-pending' : 'row-answer';
-      right.textContent = it.start == null ? 'Airing' : `${it.unit} ${it.start}`;
+      right.className = it.answer == null ? 'row-pending' : 'row-answer';
+      right.textContent = it.answer ?? 'Airing';
       a.append(left, right);
       li.append(a);
       return li;

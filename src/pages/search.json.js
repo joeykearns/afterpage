@@ -1,4 +1,4 @@
-import { loadAllSeries, latestAnswer, answerKey } from '../lib/series.mjs';
+import { loadAllSeries, latestAnswer, answerKey, shortAnswer } from '../lib/series.mjs';
 
 // Small index the search box downloads once. Titles and numbers only.
 export function GET() {
@@ -9,10 +9,9 @@ export function GET() {
       title: s.title,
       aka: s.aka,
       latest: latest ? latest.label : null,
-      start: latest ? latest.start_chapter : null,
+      answer: shortAnswer(s, latest),
       airing: s.entries.some((e) => e.airing),
       key: answerKey(s),
-      unit: s.source === 'light_novel' ? 'Vol.' : 'Ch.',
     };
   });
   return new Response(JSON.stringify(index), { headers: { 'Content-Type': 'application/json' } });
