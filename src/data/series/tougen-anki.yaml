@@ -1,0 +1,17 @@
+slug: tougen-anki
+title: Tougen Anki
+aka: ["Tougen Anki: Dark Demon of Paradise"]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–24"
+    aired: 2025-summer
+    last_chapter: 76
+    start_chapter: 77
+    start_volume: 9
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/tougen-anki/
+    confidence: single
+    last_checked: 2026-09-30

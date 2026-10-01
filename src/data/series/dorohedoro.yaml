@@ -1,0 +1,28 @@
+slug: dorohedoro
+title: Dorohedoro
+aka: [Dorohedoro]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–12"
+    aired: 2020-winter
+    last_chapter: 42
+    start_chapter: 43
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/dorohedoro/
+    confidence: single
+    last_checked: 2026-09-30
+  - label: Season 2
+    kind: season
+    episodes: "13–23"
+    aired: 2026-spring
+    last_chapter: 79
+    start_chapter: 80
+    start_volume: 14
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/dorohedoro/
+    confidence: single
+    last_checked: 2026-09-30

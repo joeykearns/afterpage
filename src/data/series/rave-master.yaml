@@ -1,0 +1,19 @@
+slug: rave-master
+title: "Rave Master"
+aka: ["Groove Adventure Rave"]
+source: manga
+entries:
+  - label: "Original series (2001–2002)"
+    kind: series
+    episodes: "1–51"
+    aired: 2001-fall
+    last_chapter: 95
+    start_chapter: 96
+    start_volume: 12
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/rave-master/
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/Groove_Adventure_Rave
+    confidence: single
+    last_checked: 2026-09-30

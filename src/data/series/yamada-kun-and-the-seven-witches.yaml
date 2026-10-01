@@ -1,0 +1,16 @@
+slug: yamada-kun-and-the-seven-witches
+title: Yamada-kun and the Seven Witches
+aka: [Yamada-kun to 7-nin no Majo]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–12"
+    aired: 2015-spring
+    last_chapter: 90
+    start_chapter: 91
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/yamada-kun-to-7-nin-no-majo/
+    confidence: single
+    last_checked: 2026-09-30

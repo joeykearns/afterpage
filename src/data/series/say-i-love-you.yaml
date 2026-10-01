@@ -1,0 +1,17 @@
+slug: say-i-love-you
+title: Say "I Love You".
+aka: [Suki tte Ii na yo.]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–13"
+    aired: 2012-fall
+    last_chapter: 28
+    start_chapter: 29
+    start_volume: 8
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/suki-tte-ii-na-yo/
+    confidence: single
+    last_checked: 2026-09-30

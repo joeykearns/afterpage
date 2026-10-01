@@ -1,0 +1,28 @@
+slug: to-your-eternity
+title: To Your Eternity
+aka: [Fumetsu no Anata e]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–20"
+    aired: 2021-spring
+    last_chapter: 54
+    start_chapter: 55
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/fumetsu-no-anata-e/
+    confidence: single
+    last_checked: 2026-09-30
+  - label: Season 2
+    kind: season
+    episodes: "21–40"
+    aired: 2022-fall
+    last_chapter: 116
+    start_chapter: 117
+    start_volume: 13
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/fumetsu-no-anata-e/
+    confidence: single
+    last_checked: 2026-09-30

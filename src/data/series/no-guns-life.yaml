@@ -1,0 +1,18 @@
+slug: no-guns-life
+title: No Guns Life
+aka: [No Guns Life]
+source: manga
+entries:
+  - label: Seasons 1–2
+    kind: series
+    episodes: "1–24"
+    aired: 2019-fall
+    last_chapter: 40
+    start_chapter: 41
+    start_volume: 7
+    note: "Both seasons (12 episodes each) are covered together; the source only gives a combined endpoint."
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/no-guns-life/
+    confidence: single
+    last_checked: 2026-09-30

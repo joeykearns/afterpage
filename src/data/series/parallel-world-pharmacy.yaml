@@ -1,0 +1,16 @@
+slug: parallel-world-pharmacy
+title: Parallel World Pharmacy
+aka: [Isekai Yakkyoku]
+source: light_novel
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–12"
+    aired: 2022-summer
+    last_chapter: 2
+    start_chapter: 3
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/isekai-yakkyoku/
+    confidence: single
+    last_checked: 2026-09-30

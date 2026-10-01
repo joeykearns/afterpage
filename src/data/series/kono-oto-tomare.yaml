@@ -1,0 +1,16 @@
+slug: kono-oto-tomare
+title: "Kono Oto Tomare! Sounds of Life"
+aka: [Kono Oto Tomare!]
+source: manga
+entries:
+  - label: Season 1 (both parts, 2019)
+    kind: season
+    aired: 2019-spring
+    last_chapter: 54
+    start_chapter: 55
+    note: "The anime aired in two parts in 2019 (spring and fall); this covers both."
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/kono-oto-tomare/
+    confidence: single
+    last_checked: 2026-09-30

@@ -1,0 +1,45 @@
+slug: hajime-no-ippo
+title: "Hajime no Ippo"
+aka: ["Fighting Spirit", "Hajime no Ippo: The Fighting!"]
+source: manga
+entries:
+  - label: "Season 1"
+    kind: season
+    episodes: "1–76"
+    aired: 2000-fall
+    last_chapter: 269
+    start_chapter: 270
+    note: "Two TV specials adapt chapters between Season 1 and New Challenger; see the Anime Filler Guide page for their chapter ranges."
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/hajime-no-ippo/
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/Hajime_no_Ippo
+    confidence: single
+    last_checked: 2026-09-30
+  - label: "Season 2: New Challenger"
+    kind: season
+    episodes: "77–102"
+    aired: 2009-winter
+    last_chapter: 389
+    start_chapter: 390
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/hajime-no-ippo/
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/Hajime_no_Ippo
+    confidence: single
+    last_checked: 2026-09-30
+  - label: "Season 3: Rising"
+    kind: season
+    episodes: "103–127"
+    aired: 2013-fall
+    last_chapter: 557
+    start_chapter: 558
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/hajime-no-ippo/
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/Hajime_no_Ippo
+    confidence: single
+    last_checked: 2026-09-30

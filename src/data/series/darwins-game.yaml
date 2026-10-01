@@ -1,0 +1,17 @@
+slug: darwins-game
+title: "Darwin's Game"
+aka: ["Darwin's Game"]
+source: manga
+entries:
+  - label: "Season 1"
+    kind: season
+    episodes: "1–11"
+    aired: 2020-winter
+    last_chapter: 31
+    start_chapter: 31
+    overlap: "The finale ends partway through Ch. 31. Start at page 23 of Ch. 31."
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/darwins-game/
+    confidence: single
+    last_checked: 2026-09-30

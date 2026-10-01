@@ -1,0 +1,19 @@
+slug: my-love-story
+title: My Love Story!!
+aka: [Ore Monogatari!!]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–24"
+    aired: 2015-spring
+    last_chapter: 34
+    start_chapter: 35
+    overlap: "Chapter numbering differs between sources (the anime is listed as covering up to Ch. 34 or Ch. 35). Start at Ch. 35 to avoid missing anything."
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/ore-monogatari/
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/My_Love_Story!!
+    confidence: differ
+    last_checked: 2026-09-30

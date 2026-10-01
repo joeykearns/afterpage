@@ -1,0 +1,18 @@
+slug: akame-ga-kill
+title: Akame ga Kill!
+aka: [Akame ga Kiru]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–24"
+    aired: 2014-summer
+    last_chapter: 38
+    start_chapter: 39
+    start_volume: 9
+    note: "The anime switches to its own ending in the final episodes; the manga continues from here."
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/akame-ga-kill/
+    confidence: single
+    last_checked: 2026-09-30

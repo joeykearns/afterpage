@@ -1,0 +1,17 @@
+slug: twin-star-exorcists
+title: "Twin Star Exorcists"
+aka: [Sousei no Onmyouji]
+source: manga
+entries:
+  - label: "Original series (2016–2017)"
+    kind: series
+    episodes: "1–50"
+    aired: 2016-spring
+    last_chapter: 15
+    start_chapter: 16
+    note: "Only a small share of the 50 episodes adapt the manga; the rest is anime-original, so the manga picks up well before where the story feels like it ended."
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/twin-star-exorcists/
+    confidence: single
+    last_checked: 2026-09-30

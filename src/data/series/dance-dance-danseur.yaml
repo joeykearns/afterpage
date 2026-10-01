@@ -1,0 +1,18 @@
+slug: dance-dance-danseur
+title: "Dance Dance Danseur"
+aka: [Dance Dance Danseur]
+source: manga
+entries:
+  - label: "Season 1"
+    kind: season
+    episodes: "1–11"
+    aired: 2022-spring
+    last_chapter: 50
+    start_chapter: 51
+    start_volume: 5
+    overlap: "The finale ends partway through Ch. 51 (page 19 is the first unadapted page). Start at the top of 51."
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/dance-dance-danseur/
+    confidence: single
+    last_checked: 2026-09-30

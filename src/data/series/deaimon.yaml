@@ -1,0 +1,17 @@
+slug: deaimon
+title: Deaimon
+aka: ["Deaimon: Recipe for Happiness"]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–12"
+    aired: 2022-spring
+    last_chapter: 23
+    start_chapter: 24
+    start_volume: 5
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/deaimon/
+    confidence: single
+    last_checked: 2026-09-30

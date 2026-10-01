@@ -1,0 +1,19 @@
+slug: my-home-hero
+title: "My Home Hero"
+aka: ["My Home Hero"]
+source: manga
+entries:
+  - label: "Season 1"
+    kind: season
+    episodes: "1–12"
+    aired: 2023-spring
+    last_chapter: 48
+    start_chapter: 48
+    overlap: "The finale ends partway through Ch. 48. Start at page 18 of Ch. 48."
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/my-home-hero/
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/My_Home_Hero
+    confidence: single
+    last_checked: 2026-09-30

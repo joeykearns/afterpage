@@ -1,0 +1,19 @@
+slug: vermeil-in-gold
+title: "Vermeil in Gold"
+aka: ["Kinsou no Vermeil"]
+source: manga
+entries:
+  - label: "Season 1"
+    kind: season
+    episodes: "1–12"
+    aired: 2022-summer
+    last_chapter: 17
+    start_chapter: 18
+    note: "The anime rearranges some events relative to the manga, so expect some reordering."
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/kinsou-no-vermeil/
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/Vermeil_in_Gold
+    confidence: single
+    last_checked: 2026-09-30

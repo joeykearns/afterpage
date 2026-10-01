@@ -1,0 +1,19 @@
+slug: talentless-nana
+title: "Talentless Nana"
+aka: ["Munou na Nana"]
+source: manga
+entries:
+  - label: "Season 1"
+    kind: season
+    episodes: "1–13"
+    aired: 2020-fall
+    last_chapter: 28
+    start_chapter: 29
+    start_volume: 5
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/munou-na-nana/
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/Talentless_Nana
+    confidence: single
+    last_checked: 2026-09-30

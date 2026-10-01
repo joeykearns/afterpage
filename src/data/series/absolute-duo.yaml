@@ -1,0 +1,16 @@
+slug: absolute-duo
+title: Absolute Duo
+aka: [Absolute Duo]
+source: light_novel
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–12"
+    aired: 2015-winter
+    last_chapter: 4
+    start_chapter: 5
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/absolute-duo/
+    confidence: single
+    last_checked: 2026-09-30

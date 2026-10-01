@@ -1,0 +1,19 @@
+slug: viral-hit
+title: "Viral Hit"
+aka: ["Kenka Dokugaku"]
+source: webtoon
+entries:
+  - label: "Season 1"
+    kind: season
+    episodes: "1–12"
+    aired: 2024-spring
+    last_chapter: 26
+    start_chapter: 27
+    note: "The last pages of Ch. 26 were not adapted and lead into Ch. 27, so glance at them first."
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/kenka-dokugaku/
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/Viral_Hit
+    confidence: single
+    last_checked: 2026-09-30

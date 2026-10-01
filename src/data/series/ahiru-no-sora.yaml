@@ -1,0 +1,20 @@
+slug: ahiru-no-sora
+title: "Ahiru no Sora"
+aka: ["Ahiru no Sora"]
+source: manga
+entries:
+  - label: "Season 1"
+    kind: season
+    episodes: "1–50"
+    aired: 2019-fall
+    last_chapter: 146
+    start_chapter: 147
+    start_volume: 19
+    note: "The anime skips a few chapters near its end (chapters 142 to 144 are not adapted), so those are worth reading too."
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/ahiru-no-sora/
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/Ahiru_no_Sora
+    confidence: single
+    last_checked: 2026-09-30

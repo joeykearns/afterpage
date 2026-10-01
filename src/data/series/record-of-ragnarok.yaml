@@ -1,0 +1,31 @@
+slug: record-of-ragnarok
+title: "Record of Ragnarok"
+aka: ["Shuumatsu no Valkyrie"]
+source: manga
+entries:
+  - label: "Season 1"
+    kind: season
+    episodes: "1–12"
+    aired: 2021-spring
+    last_chapter: 20
+    start_chapter: 21
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/shuumatsu-no-valkyrie/
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/Record_of_Ragnarok
+    confidence: single
+    last_checked: 2026-09-30
+  - label: "Season 3"
+    kind: season
+    episodes: "28–42"
+    aired: 2025-fall
+    last_chapter: 85
+    start_chapter: 86
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/shuumatsu-no-valkyrie/
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/Record_of_Ragnarok
+    confidence: single
+    last_checked: 2026-09-30

@@ -1,0 +1,16 @@
+slug: love-and-lies
+title: Love and Lies
+aka: [Koi to Uso]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–12"
+    aired: 2017-summer
+    last_chapter: 118
+    start_chapter: 119
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/koi-to-uso/
+    confidence: single
+    last_checked: 2026-09-30

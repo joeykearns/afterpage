@@ -1,0 +1,27 @@
+slug: the-dangers-in-my-heart
+title: The Dangers in My Heart
+aka: [Boku no Kokoro no Yabai Yatsu, BokuYaba]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–12"
+    aired: 2023-spring
+    last_chapter: 57
+    start_chapter: 58
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/boku-no-kokoro-no-yabai-yatsu/
+    confidence: single
+    last_checked: 2026-09-30
+  - label: Season 2
+    kind: season
+    episodes: "13–25"
+    aired: 2024-winter
+    last_chapter: 113
+    start_chapter: 114
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/boku-no-kokoro-no-yabai-yatsu/
+    confidence: single
+    last_checked: 2026-09-30

@@ -1,0 +1,19 @@
+slug: drifters
+title: "Drifters"
+aka: [Drifters]
+source: manga
+entries:
+  - label: "Season 1"
+    kind: season
+    episodes: "1–15"
+    aired: 2016-fall
+    last_chapter: 55
+    start_chapter: 56
+    start_volume: 6
+    note: "Episodes 13–15 were released as OVAs. The last episode ends partway through Ch. 56 (it begins at page 8)."
+    overlap: "The finale ends partway through Ch. 56. Start at the top of 56."
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/drifters/
+    confidence: single
+    last_checked: 2026-09-30

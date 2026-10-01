@@ -1,0 +1,18 @@
+slug: zatch-bell
+title: "Zatch Bell!"
+aka: [Konjiki no Gash Bell!!]
+source: manga
+entries:
+  - label: "Original series (2003–2006)"
+    kind: series
+    episodes: "1–150"
+    aired: 2003-spring
+    last_chapter: 211
+    start_chapter: 212
+    start_volume: 22
+    note: "The anime ends without adapting the rest of the manga, which runs to Ch. 323. Anime Filler Guide lists the last manga-based episode as episode 138."
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/konjiki-no-gash-bell/
+    confidence: single
+    last_checked: 2026-09-30

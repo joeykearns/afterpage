@@ -1,0 +1,28 @@
+slug: fairy-tail
+title: Fairy Tail
+aka: [Fairy Tail]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–48"
+    aired: 2009-fall
+    last_chapter: 128
+    start_chapter: 129
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/fairy-tail/
+    confidence: single
+    last_checked: 2026-09-30
+  - label: Final Season
+    kind: season
+    episodes: "278–328"
+    aired: 2018-fall
+    covers_all: true
+    last_chapter: 545
+    note: "The anime ends with the manga's completion (545 chapters). A sequel manga, Fairy Tail: 100 Years Quest, continues the story."
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/fairy-tail/
+    confidence: single
+    last_checked: 2026-09-30

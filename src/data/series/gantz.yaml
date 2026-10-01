@@ -1,0 +1,18 @@
+slug: gantz
+title: "Gantz"
+aka: [Gantz]
+source: manga
+entries:
+  - label: "Original series (2004)"
+    kind: series
+    episodes: "1–26"
+    aired: 2004-spring
+    last_chapter: 90
+    start_chapter: 91
+    start_volume: 8
+    note: "The last five episodes (22–26) are anime-original. The manga continues far beyond this point."
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/gantz/
+    confidence: single
+    last_checked: 2026-09-30

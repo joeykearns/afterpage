@@ -1,0 +1,17 @@
+slug: the-young-lady-and-her-guard-dog
+title: "The Young Lady and Her Guard Dog"
+aka: [Ojou to Banken-kun]
+source: manga
+entries:
+  - label: "Season 1"
+    kind: season
+    episodes: "1–13"
+    aired: 2023-summer
+    last_chapter: 25
+    start_chapter: 26
+    overlap: "The finale ends near the end of Ch. 26 (page 28 is the first unadapted page). Start at Ch. 26 to be safe."
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/ojou-to-banken-kun/
+    confidence: single
+    last_checked: 2026-09-30

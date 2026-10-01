@@ -1,0 +1,18 @@
+slug: boarding-school-juliet
+title: Boarding School Juliet
+aka: [Kishuku Gakkou no Juliet]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–12"
+    aired: 2018-fall
+    last_chapter: 19
+    start_chapter: 19
+    start_volume: 4
+    overlap: "The anime ends partway through Ch. 19. Start Ch. 19 at page 6, in Volume 4."
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/kishuku-gakkou-no-juliet/
+    confidence: single
+    last_checked: 2026-09-30

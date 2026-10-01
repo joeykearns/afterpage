@@ -1,0 +1,18 @@
+slug: 07-ghost
+title: 07-Ghost
+aka: [07-Ghost]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–25"
+    aired: 2009-spring
+    last_chapter: 25
+    start_chapter: 25
+    start_volume: 5
+    overlap: "The anime ends partway through Ch. 25 (around page 20). Start at the top of 25."
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/07-ghost/
+    confidence: single
+    last_checked: 2026-09-30

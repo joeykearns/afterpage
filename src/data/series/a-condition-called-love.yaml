@@ -1,0 +1,17 @@
+slug: a-condition-called-love
+title: A Condition Called Love
+aka: [Hananoi-kun to Koi no Yamai]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–12"
+    aired: 2024-spring
+    last_chapter: 22
+    start_chapter: 23
+    start_volume: 6
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/hananoi-kun-to-koi-no-yamai/
+    confidence: single
+    last_checked: 2026-09-30

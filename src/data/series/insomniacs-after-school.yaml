@@ -1,0 +1,17 @@
+slug: insomniacs-after-school
+title: "Insomniacs After School"
+aka: [Kimi wa Houkago Insomnia]
+source: manga
+entries:
+  - label: "Season 1"
+    kind: season
+    episodes: "1–13"
+    aired: 2023-spring
+    last_chapter: 56
+    start_chapter: 57
+    start_volume: 7
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/kimi-wa-houkago-insomnia/
+    confidence: single
+    last_checked: 2026-09-30

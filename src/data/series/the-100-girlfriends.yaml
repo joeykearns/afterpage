@@ -1,0 +1,27 @@
+slug: the-100-girlfriends
+title: The 100 Girlfriends Who Really, Really, Really, Really, Really Love You
+aka: [Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo, 100 Kanojo]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–12"
+    aired: 2023-fall
+    last_chapter: 22
+    start_chapter: 23
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/the-100-girlfriend/
+    confidence: single
+    last_checked: 2026-09-30
+  - label: Season 2
+    kind: season
+    episodes: "13–24"
+    aired: 2025-winter
+    last_chapter: 50
+    start_chapter: 51
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/the-100-girlfriend/
+    confidence: single
+    last_checked: 2026-09-30

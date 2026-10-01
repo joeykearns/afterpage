@@ -1,0 +1,17 @@
+slug: a-couple-of-cuckoos
+title: "A Couple of Cuckoos"
+aka: [Kakkou no Iinazuke]
+source: manga
+entries:
+  - label: "Season 2"
+    kind: season
+    episodes: "25–36"
+    aired: 2025-summer
+    last_chapter: 112
+    start_chapter: 113
+    start_volume: 13
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/kakkou-no-iinazuke/
+    confidence: single
+    last_checked: 2026-09-30

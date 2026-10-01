@@ -1,0 +1,18 @@
+slug: kengan-ashura
+title: "Kengan Ashura"
+aka: ["Kengan Asura"]
+source: manga
+entries:
+  - label: "Season 1"
+    kind: season
+    episodes: "1–24"
+    aired: 2019-summer
+    last_chapter: 136
+    start_chapter: 137
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/kengan-ashura/
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/Kengan_Ashura
+    confidence: single
+    last_checked: 2026-09-30
