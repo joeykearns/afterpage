@@ -1,0 +1,27 @@
+slug: spy-x-family
+title: Spy x Family
+aka: [SxF, Spy Family]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–25"
+    aired: 2022-spring
+    last_chapter: 38
+    start_chapter: 39
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/spy-x-family/
+    confidence: single
+    last_checked: 2026-09-30
+  - label: Season 2
+    kind: season
+    episodes: "26–37"
+    aired: 2023-fall
+    last_chapter: 59
+    start_chapter: 60
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/spy-x-family/
+    confidence: single
+    last_checked: 2026-09-30

@@ -1,0 +1,17 @@
+slug: lv1-demon-lord-and-one-room-hero
+title: Level 1 Demon Lord and One Room Hero
+aka: [Lv1 Maou to One Room Yuusha]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–12"
+    aired: 2023-summer
+    last_chapter: 26
+    start_chapter: 26
+    overlap: "The finale ends partway through Ch. 26. Start at the top of 26 to avoid missing anything."
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/lv1-maou-to-one-room-yuusha/
+    confidence: single
+    last_checked: 2026-09-30

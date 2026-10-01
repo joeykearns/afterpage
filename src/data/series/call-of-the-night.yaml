@@ -1,0 +1,21 @@
+slug: call-of-the-night
+title: Call of the Night
+aka: [Yofukashi no Uta]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–13"
+    aired: 2022-summer
+    last_chapter: 46
+    start_chapter: 47
+    start_volume: 5
+    sources:
+      - name: Epicstream
+        url: https://epicstream.com/article/where-start-reading-call-of-the-night-after-anime
+      - name: After Anime
+        url: https://afteranime.net/anime/call-of-the-night
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-call-of-the-night-anime-leave-off-in-the-manga/
+    confidence: agree
+    last_checked: 2026-09-30

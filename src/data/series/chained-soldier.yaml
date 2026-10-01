@@ -1,0 +1,28 @@
+slug: chained-soldier
+title: Chained Soldier
+aka: [Mato Seihei no Slave]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–12"
+    aired: 2024-winter
+    last_chapter: 45
+    start_chapter: 46
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/mato-seihei-no-slave/
+    confidence: single
+    last_checked: 2026-09-30
+  - label: Season 2
+    kind: season
+    episodes: "13–24"
+    aired: 2026-winter
+    last_chapter: 86
+    start_chapter: 87
+    start_volume: 11
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/mato-seihei-no-slave/
+    confidence: single
+    last_checked: 2026-09-30

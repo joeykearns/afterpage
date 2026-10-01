@@ -1,0 +1,24 @@
+slug: fullmetal-alchemist
+title: Fullmetal Alchemist
+aka: [Hagane no Renkinjutsushi, FMA, FMAB]
+source: manga
+read_official:
+  - name: VIZ Media (English print & digital)
+    url: https://www.viz.com/fullmetal-alchemist
+entries:
+  - label: "Fullmetal Alchemist: Brotherhood"
+    kind: series
+    episodes: "1–64"
+    aired: 2009-spring
+    covers_all: true
+    last_chapter: 108
+    note: "Brotherhood follows the manga to its final chapter (108 chapters, 27 volumes). The 2003 anime is a separate adaptation that goes its own way early on."
+    sources:
+      - name: Wikipedia (Fullmetal Alchemist Brotherhood)
+        url: https://en.wikipedia.org/wiki/Fullmetal_Alchemist:_Brotherhood
+      - name: SlashFilm
+        url: https://www.slashfilm.com/1585458/correct-order-to-watch-fullmetal-alchemist-franchise/
+      - name: Wikipedia (List of chapters)
+        url: https://en.wikipedia.org/wiki/List_of_Fullmetal_Alchemist_chapters
+    confidence: agree
+    last_checked: 2026-09-30

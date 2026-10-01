@@ -1,0 +1,20 @@
+slug: golden-kamuy
+title: Golden Kamuy
+aka: [Golden Kamuy]
+source: manga
+entries:
+  - label: Final Season
+    kind: season
+    episodes: "50–62"
+    aired: 2026-winter
+    last_chapter: 302
+    start_chapter: 303
+    start_volume: 31
+    note: "Chapters 303 to 314 make up the final volume."
+    sources:
+      - name: Anime Review Lab (note)
+        url: https://note.com/anime_review_lab/n/ne035fa6dc26c?hl=en
+      - name: Anime Explained
+        url: https://www.animeexplained.com/news/golden-kamuy-final-season-is-not-over-yet/
+    confidence: agree
+    last_checked: 2026-09-30

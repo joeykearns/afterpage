@@ -1,0 +1,19 @@
+slug: inuyasha
+title: Inuyasha
+aka: [InuYasha]
+source: manga
+entries:
+  - label: "The Final Act (2009–2010)"
+    kind: series
+    episodes: "168–193"
+    aired: 2009-fall
+    covers_all: true
+    last_chapter: 558
+    note: "The Final Act adapts the end of the manga (volumes 36–56); together with the original 2000 series, the whole story is covered."
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/inuyasha/
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/Inuyasha
+    confidence: agree
+    last_checked: 2026-09-30

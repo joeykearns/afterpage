@@ -1,0 +1,22 @@
+slug: attack-on-titan
+title: Attack on Titan
+aka: [Shingeki no Kyojin, AoT, SnK]
+source: manga
+read_official:
+  - name: Kodansha (English print & digital)
+    url: https://kodansha.us/series/attack-on-titan/
+entries:
+  - label: Full series
+    kind: series
+    episodes: "1–94"
+    aired: 2013-spring
+    covers_all: true
+    last_chapter: 139
+    note: "The anime adapts the manga through its final chapter (Ch. 139). Seasons 1–3 plus The Final Season, including The Final Chapters specials (episodes 88–94)."
+    sources:
+      - name: Wikipedia (Attack on Titan season 4)
+        url: https://en.wikipedia.org/wiki/Attack_on_Titan_season_4
+      - name: Attack on Titan Wiki (Chapter 139)
+        url: https://attackontitan.fandom.com/wiki/Toward_the_Tree_on_That_Hill_(Chapter)
+    confidence: agree
+    last_checked: 2026-09-30

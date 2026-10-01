@@ -1,0 +1,17 @@
+slug: gangsta
+title: "Gangsta."
+aka: [Gangsta]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–12"
+    aired: 2015-summer
+    last_chapter: 28
+    start_chapter: 29
+    start_volume: 6
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/gangsta/
+    confidence: single
+    last_checked: 2026-09-30

@@ -1,0 +1,20 @@
+slug: reborn
+title: Reborn!
+aka: [Katekyou Hitman Reborn!, KHR]
+source: manga
+entries:
+  - label: "Original series (2006–2010)"
+    kind: series
+    episodes: "1–203"
+    aired: 2006-fall
+    last_chapter: 282
+    start_chapter: 283
+    start_volume: 30
+    note: "The anime ends after the Future Arc; the manga continues for over 120 more chapters."
+    sources:
+      - name: MangaShed
+        url: https://mangashed.com/where-does-the-katekyo-hitman-reborn-anime-end-in-the-manga/
+      - name: Wikipedia (List of Reborn! chapters)
+        url: https://en.wikipedia.org/wiki/List_of_Reborn!_chapters
+    confidence: single
+    last_checked: 2026-09-30

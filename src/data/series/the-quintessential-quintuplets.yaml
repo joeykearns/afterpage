@@ -1,0 +1,33 @@
+slug: the-quintessential-quintuplets
+title: The Quintessential Quintuplets
+aka: [5-toubun no Hanayome, Gotoubun no Hanayome]
+source: manga
+entries:
+  - label: Season 2
+    kind: season
+    episodes: "13–24"
+    aired: 2021-winter
+    last_chapter: 86
+    start_chapter: 87
+    start_volume: 11
+    note: "The story continues in The Quintessential Quintuplets Movie (2022), which adapts the rest of the manga."
+    sources:
+      - name: WatchOrdr
+        url: https://watchordr.com/series/quintuplets/
+    confidence: single
+    last_checked: 2026-09-30
+  - label: The Movie
+    kind: movie
+    aired: 2022-spring
+    covers_all: true
+    last_chapter: 122
+    note: "The film adapts the final four volumes (11–14)."
+    sources:
+      - name: Wikipedia (The Quintessential Quintuplets Movie)
+        url: https://en.wikipedia.org/wiki/The_Quintessential_Quintuplets_Movie
+      - name: WatchOrdr
+        url: https://watchordr.com/series/quintuplets/
+      - name: Anime News Network (2026 announcement)
+        url: https://www.animenewsnetwork.com/news/2026-05-02/the-quintessential-quintuplets-franchise-gets-new-tv-anime-new-original-video-anime/.237016
+    confidence: agree
+    last_checked: 2026-09-30

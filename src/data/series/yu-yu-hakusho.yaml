@@ -1,0 +1,18 @@
+slug: yu-yu-hakusho
+title: Yu Yu Hakusho
+aka: [Yuu Yuu Hakusho, YYH]
+source: manga
+entries:
+  - label: Full series
+    kind: series
+    episodes: "1–112"
+    aired: 1992-fall
+    covers_all: true
+    last_chapter: 175
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/yu-yu-hakusho/
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/Yu_Yu_Hakusho
+    confidence: agree
+    last_checked: 2026-09-30

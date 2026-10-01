@@ -1,0 +1,17 @@
+slug: zom-100
+title: "Zom 100: Bucket List of the Dead"
+aka: ["Zom 100: Zombie ni Naru made ni Shitai 100 no Koto"]
+source: manga
+entries:
+  - label: "Season 1"
+    kind: season
+    episodes: "1–12"
+    aired: 2023-summer
+    last_chapter: 22
+    start_chapter: 23
+    start_volume: 7
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/zom-100-zombie-ni-naru-made-ni-shitai-100-no-koto/
+    confidence: single
+    last_checked: 2026-09-30

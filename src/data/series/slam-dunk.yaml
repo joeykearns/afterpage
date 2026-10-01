@@ -1,0 +1,18 @@
+slug: slam-dunk
+title: "Slam Dunk"
+aka: [Slam Dunk]
+source: manga
+entries:
+  - label: "Original series (1993–1996)"
+    kind: series
+    episodes: "1–101"
+    aired: 1993-fall
+    last_chapter: 197
+    start_chapter: 198
+    start_volume: 23
+    note: "The Anime Filler Guide counts the anime as reaching Chapter 197 at episode 96, with the remaining episodes being non-canon."
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/slam-dunk/
+    confidence: single
+    last_checked: 2026-09-30

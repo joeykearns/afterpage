@@ -1,0 +1,22 @@
+slug: black-lagoon
+title: Black Lagoon
+aka: [Black Lagoon]
+source: manga
+entries:
+  - label: "Roberta's Blood Trail (OVA)"
+    kind: part
+    episodes: "1–5"
+    aired: 2010-summer
+    last_chapter: 76
+    start_chapter: 77
+    start_volume: 10
+    note: "This OVA is the last anime installment and adapts the El Baile de la Muerte arc, which runs from chapter 56 to 76 (volumes 8–9). Seasons 1 and 2 cover earlier material."
+    sources:
+      - name: Wikipedia (Black Lagoon TV series)
+        url: https://en.wikipedia.org/wiki/Black_Lagoon_(TV_series)
+      - name: Wikipedia (List of Black Lagoon chapters)
+        url: https://en.wikipedia.org/wiki/List_of_Black_Lagoon_chapters
+      - name: MangaShed
+        url: https://mangashed.com/where-does-the-black-lagoon-anime-end-in-the-manga/
+    confidence: agree
+    last_checked: 2026-09-30

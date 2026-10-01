@@ -1,0 +1,19 @@
+slug: black-bullet
+title: Black Bullet
+aka: [Black Bullet]
+source: light_novel
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–13"
+    aired: 2014-spring
+    last_chapter: 4
+    start_chapter: 5
+    note: "Numbers are light novel volumes."
+    sources:
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-black-bullet-anime-end-in-the-light-novels/
+      - name: English Light Novels
+        url: https://www.englishlightnovels.com/2017/04/29/after-the-anime-what-ln-volume-to-read-first/
+    confidence: agree
+    last_checked: 2026-09-30

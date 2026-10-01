@@ -1,0 +1,19 @@
+slug: elfen-lied
+title: Elfen Lied
+aka: [Elfen Lied]
+source: manga
+entries:
+  - label: TV series
+    kind: series
+    episodes: "1–13"
+    aired: 2004-summer
+    start_chapter: 62
+    note: "The anime condenses and changes a lot of the manga and switches to its own ending around this point; the manga continues to Ch. 107. Many fans suggest reading from Ch. 1."
+    overlap: "Sources place the divergence around Ch. 60–62. Start at Ch. 62 (or earlier to be safe)."
+    sources:
+      - name: Where Does The Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-elfen-lied-anime-leave-off-in-the-manga/
+      - name: Insightful Jan (manga review)
+        url: https://www.insightfuljan.com/elfen-lied-manga-review-what-the-anime-never-showed-you-and-why-it-changes-everything/
+    confidence: differ
+    last_checked: 2026-09-30

@@ -1,0 +1,40 @@
+slug: tokyo-ghoul
+title: Tokyo Ghoul
+aka: ["Tokyo Ghoul:re"]
+source: manga
+read_official:
+  - name: VIZ Media (Tokyo Ghoul)
+    url: https://www.viz.com/tokyo-ghoul
+  - name: VIZ Media (Tokyo Ghoul:re)
+    url: https://www.viz.com/read/manga/tokyo-ghoul-re/all
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–12"
+    aired: 2014-summer
+    last_chapter: 66
+    start_chapter: 67
+    note: "Season 2 (Tokyo Ghoul √A, 2015) mostly tells its own story instead of following the manga, so Chapter 67 of the original Tokyo Ghoul manga is also the place to pick up after √A."
+    sources:
+      - name: Let's Weaboo
+        url: https://letsweaboo.com/news/where-to-start-reading-tokyo-ghoul-manga-after-season-1-ends_a143
+      - name: Where Does The Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-did-the-tokyo-ghoul-anime-leave-off-in-the-manga/
+    confidence: agree
+    last_checked: 2026-09-30
+  - label: "Tokyo Ghoul:re (Seasons 1–2)"
+    kind: series
+    episodes: "1–24"
+    aired: 2018-spring
+    covers_all: true
+    last_chapter: 179
+    note: "This number uses Tokyo Ghoul:re's own chapter numbering (it restarts at 1 after the original manga). The anime reaches the final chapter but condenses a lot, so many fans read :re from Chapter 1."
+    sources:
+      - name: ComicBook.com (season 2 adapts the final chapter)
+        url: https://comicbook.com/anime/news/tokyo-ghoul-re-anime-pacing-adaptation-season-2/
+      - name: Where Does The Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-did-the-tokyo-ghoul-anime-leave-off-in-the-manga/
+      - name: ComicBook.com (manga ends with Chapter 179)
+        url: https://comicbook.com/anime/news/tokyo-ghoul-ends-over-manga-final-chapter-179/
+    confidence: agree
+    last_checked: 2026-09-30

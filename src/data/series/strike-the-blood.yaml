@@ -1,0 +1,18 @@
+slug: strike-the-blood
+title: Strike the Blood
+aka: [Strike the Blood]
+source: light_novel
+entries:
+  - label: Final (OVA)
+    kind: part
+    aired: 2022-spring
+    covers_all: true
+    last_chapter: 22
+    note: "The anime ends with the adaptation of Volume 22, the final main volume. The light novel also has side-story volumes. Several earlier OVAs include anime-original stories, so reading from Volume 1 gives the full novel story."
+    sources:
+      - name: Anime Corner
+        url: https://animecorner.me/strike-the-blood-anime-officially-ends-after-9-years/
+      - name: Strike the Blood Wiki (Light Novel Volume 22)
+        url: https://strike-the-blood.fandom.com/wiki/Light_Novel_Volume_22
+    confidence: agree
+    last_checked: 2026-09-30

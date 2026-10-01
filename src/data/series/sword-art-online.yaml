@@ -1,0 +1,41 @@
+slug: sword-art-online
+title: Sword Art Online
+aka: [SAO]
+source: light_novel
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–25"
+    aired: 2012-summer
+    last_chapter: 4
+    start_chapter: 5
+    note: "Numbers are light novel volumes. The season also draws on a part of volume 8."
+    sources:
+      - name: Wikipedia (Sword Art Online TV series)
+        url: https://en.wikipedia.org/wiki/Sword_Art_Online_(TV_series)
+    confidence: single
+    last_checked: 2026-09-30
+  - label: Season 2
+    kind: season
+    episodes: "1–24"
+    aired: 2014-summer
+    last_chapter: 8
+    start_chapter: 9
+    note: "Numbers are light novel volumes. The season covers volumes 5 to 8, with the last one partly adapted."
+    sources:
+      - name: Wikipedia (Sword Art Online II)
+        url: https://en.wikipedia.org/wiki/Sword_Art_Online_II
+    confidence: single
+    last_checked: 2026-09-30
+  - label: Alicization (Season 3, incl. War of Underworld)
+    kind: season
+    episodes: "1–47"
+    aired: 2018-fall
+    last_chapter: 18
+    start_chapter: 19
+    note: "Numbers are light novel volumes. Covers volumes 9 to 18."
+    sources:
+      - name: Wikipedia (List of Sword Art Online episodes)
+        url: https://en.wikipedia.org/wiki/List_of_Sword_Art_Online_episodes
+    confidence: single
+    last_checked: 2026-09-30

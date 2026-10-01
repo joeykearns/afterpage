@@ -1,0 +1,18 @@
+slug: komi-cant-communicate
+title: "Komi Can't Communicate"
+aka: [Komi-san wa Comyushou desu, Komi-san]
+source: manga
+entries:
+  - label: Season 2
+    kind: season
+    episodes: "13–24"
+    aired: 2022-spring
+    last_chapter: 129
+    start_chapter: 130
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/komi-san-wa-comyushou-desu/
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/Komi_Can%27t_Communicate
+    confidence: single
+    last_checked: 2026-09-30

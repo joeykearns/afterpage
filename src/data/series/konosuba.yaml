@@ -1,0 +1,61 @@
+slug: konosuba
+title: "KonoSuba: God's Blessing on This Wonderful World!"
+aka: [Kono Subarashii Sekai ni Shukufuku wo!, KonoSuba]
+source: light_novel
+entries:
+  - label: Season 1
+    kind: season
+    aired: 2016-winter
+    last_chapter: 2
+    start_chapter: 3
+    sources:
+      - name: Wikipedia (KonoSuba season 1)
+        url: https://en.wikipedia.org/wiki/KonoSuba_season_1
+      - name: Lit Retreat
+        url: https://litretreat.com/konosuba-light-novel-reading-order/
+      - name: MangaShed
+        url: https://mangashed.com/where-does-the-konosuba-anime-leave-off-in-the-light-novel/
+    confidence: agree
+    last_checked: 2026-09-30
+  - label: Season 2
+    kind: season
+    aired: 2017-winter
+    last_chapter: 4
+    start_chapter: 5
+    sources:
+      - name: Wikipedia (KonoSuba season 2)
+        url: https://en.wikipedia.org/wiki/KonoSuba_season_2
+      - name: Lit Retreat
+        url: https://litretreat.com/konosuba-light-novel-reading-order/
+      - name: MangaShed
+        url: https://mangashed.com/where-does-the-konosuba-anime-leave-off-in-the-light-novel/
+    confidence: agree
+    last_checked: 2026-09-30
+  - label: "The Movie: Legend of Crimson"
+    kind: movie
+    aired: 2019-summer
+    last_chapter: 5
+    start_chapter: 6
+    note: "Numbers are light novel volumes. Season 3's first episode covers a small part of Volume 5 that the movie left out."
+    sources:
+      - name: Lit Retreat
+        url: https://litretreat.com/konosuba-light-novel-reading-order/
+      - name: MangaShed
+        url: https://mangashed.com/where-does-the-konosuba-anime-leave-off-in-the-light-novel/
+    confidence: agree
+    last_checked: 2026-09-30
+  - label: Season 3
+    kind: season
+    aired: 2024-spring
+    last_chapter: 7
+    start_chapter: 8
+    note: "Numbers are light novel volumes. The anime skips the epilogue of Volume 7, so Volume 8 is the practical starting point."
+    sources:
+      - name: Wikipedia (KonoSuba season 3)
+        url: https://en.wikipedia.org/wiki/KonoSuba_season_3
+      - name: Lit Retreat
+        url: https://litretreat.com/konosuba-light-novel-reading-order/
+      - name: MangaShed
+        url: https://mangashed.com/where-does-the-konosuba-anime-leave-off-in-the-light-novel/
+    confidence: agree
+    last_checked: 2026-09-30

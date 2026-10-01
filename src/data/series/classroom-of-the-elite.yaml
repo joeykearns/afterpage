@@ -1,0 +1,17 @@
+slug: classroom-of-the-elite
+title: Classroom of the Elite
+aka: [Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e, CotE, Youzitsu]
+source: light_novel
+entries:
+  - label: Season 2
+    kind: season
+    episodes: "13–25"
+    aired: 2022-summer
+    last_chapter: 7
+    start_chapter: 8
+    note: "Volume numbers follow the main light novel series as referenced by Anime Filler Guide."
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/youkoso-jitsuryoku-shijou-shugi-no-kyoushitsu-e/
+    confidence: single
+    last_checked: 2026-09-30

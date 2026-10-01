@@ -1,0 +1,19 @@
+slug: barakamon
+title: Barakamon
+aka: [Barakamon]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–12"
+    aired: 2014-summer
+    last_chapter: 52
+    start_chapter: 53
+    start_volume: 7
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/barakamon/
+      - name: MangaShed
+        url: https://mangashed.com/where-does-the-barakamon-anime-leave-off-in-the-manga/
+    confidence: agree
+    last_checked: 2026-09-30

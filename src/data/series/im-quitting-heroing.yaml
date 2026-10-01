@@ -1,0 +1,17 @@
+slug: im-quitting-heroing
+title: "I'm Quitting Heroing"
+aka: [Yuusha, Yamemasu]
+source: light_novel
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–12"
+    aired: 2022-spring
+    covers_all: true
+    last_chapter: 3
+    note: "The light novel has three volumes, all adapted by the 12 episodes. Two bonus OVAs aired afterwards."
+    sources:
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/I%27m_Quitting_Heroing
+    confidence: single
+    last_checked: 2026-09-30

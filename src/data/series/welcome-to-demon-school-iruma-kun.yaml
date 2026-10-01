@@ -1,0 +1,42 @@
+slug: welcome-to-demon-school-iruma-kun
+title: Welcome to Demon School! Iruma-kun
+aka: [Mairimashita! Iruma-kun]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–23"
+    aired: 2019-fall
+    last_chapter: 43
+    start_chapter: 44
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/mairimashita-iruma-kun/
+    confidence: single
+    last_checked: 2026-09-30
+  - label: Season 2
+    kind: season
+    episodes: "24–44"
+    aired: 2021-spring
+    last_chapter: 95
+    start_chapter: 95
+    overlap: "Season 3 starts around Ch. 95, so Season 2 ends in or just before it. Continue with Season 3's stopping point rather than from here."
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/mairimashita-iruma-kun/
+    confidence: single
+    last_checked: 2026-09-30
+  - label: Season 3
+    kind: season
+    episodes: "45–65"
+    aired: 2022-fall
+    last_chapter: 146
+    start_chapter: 146
+    overlap: "Sources give the end of Season 3 as Ch. 146 or Ch. 147. Start at the top of 146 to be safe."
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/mairimashita-iruma-kun/
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-welcome-to-demon-school-iruma-kun-anime-leave-off-in-the-manga/
+    confidence: differ
+    last_checked: 2026-09-30

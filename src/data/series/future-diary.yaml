@@ -1,0 +1,19 @@
+slug: future-diary
+title: Future Diary
+aka: [Mirai Nikki]
+source: manga
+entries:
+  - label: TV series
+    kind: series
+    episodes: "1–26"
+    aired: 2011-fall
+    covers_all: true
+    last_chapter: 59
+    note: "The side-story manga (Mosaic, Paradox) are separate and not adapted in the TV series; the Redial OVA is an epilogue."
+    sources:
+      - name: MyAnimeList (manga entry, 59 chapters)
+        url: https://myanimelist.net/manga/584/Mirai_Nikki
+      - name: MyAnimeList stack "Finished Anime (-> Manga)"
+        url: https://myanimelist.net/stacks/39404
+    confidence: single
+    last_checked: 2026-09-30

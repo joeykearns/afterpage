@@ -1,0 +1,16 @@
+slug: inuyashiki
+title: Inuyashiki
+aka: [Inuyashiki]
+source: manga
+entries:
+  - label: Full series
+    kind: series
+    episodes: "1–11"
+    aired: 2017-fall
+    covers_all: true
+    last_chapter: 85
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/2020/05/inuyashiki-filler-list.html
+    confidence: single
+    last_checked: 2026-09-30

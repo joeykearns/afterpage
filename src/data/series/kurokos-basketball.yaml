@@ -1,0 +1,19 @@
+slug: kurokos-basketball
+title: "Kuroko's Basketball"
+aka: [Kuroko no Basket, KnB]
+source: manga
+entries:
+  - label: Season 3
+    kind: season
+    episodes: "51–75"
+    aired: 2015-winter
+    covers_all: true
+    last_chapter: 275
+    note: "Season 3 finishes the original manga. The story continues in the sequel manga, Kuroko's Basketball: Extra Game."
+    sources:
+      - name: AfterAnime
+        url: https://afteranime.net/anime/kurokos-basketball-3
+      - name: Wikipedia (List of Kuroko's Basketball chapters)
+        url: https://en.wikipedia.org/wiki/List_of_Kuroko%27s_Basketball_chapters
+    confidence: single
+    last_checked: 2026-09-30

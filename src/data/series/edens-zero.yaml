@@ -1,0 +1,18 @@
+slug: edens-zero
+title: Edens Zero
+aka: [Edens Zero]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–25"
+    aired: 2021-spring
+    last_chapter: 68
+    start_chapter: 69
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/2024/01/edens-zero.html
+      - name: MangaShed
+        url: https://mangashed.com/where-does-the-edens-zero-anime-leave-off-in-the-manga/
+    confidence: agree
+    last_checked: 2026-09-30

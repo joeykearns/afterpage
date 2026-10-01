@@ -1,0 +1,21 @@
+slug: death-note
+title: Death Note
+aka: [Desu Noto]
+source: manga
+entries:
+  - label: Full series
+    kind: series
+    episodes: "1–37"
+    aired: 2006-fall
+    last_chapter: 107
+    start_chapter: 108
+    note: "The anime's finale adapts up to Ch. 107. The manga's short epilogue chapter isn't animated, so Ch. 108 is the one left to read."
+    sources:
+      - name: Death Note Wiki (Finis, Ch. 108)
+        url: https://deathnote.fandom.com/wiki/Finis_(chapter)
+      - name: Death Note Wiki (New World, episode 37)
+        url: https://deathnote.fandom.com/wiki/New_World_(episode)
+      - name: AfterAnime
+        url: https://afteranime.net/anime/death-note
+    confidence: agree
+    last_checked: 2026-09-30

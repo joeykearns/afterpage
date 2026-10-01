@@ -1,0 +1,17 @@
+slug: dark-gathering
+title: "Dark Gathering"
+aka: [Dark Gathering]
+source: manga
+entries:
+  - label: "Season 1"
+    kind: season
+    episodes: "1–25"
+    aired: 2023-summer
+    last_chapter: 34
+    start_chapter: 35
+    start_volume: 9
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/dark-gathering/
+    confidence: single
+    last_checked: 2026-09-30

@@ -1,0 +1,20 @@
+slug: bunny-drop
+title: Bunny Drop
+aka: [Usagi Drop]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–11"
+    aired: 2011-summer
+    last_chapter: 23
+    start_chapter: 24
+    note: "The anime adapts roughly the first four volumes, which make up the first part of the manga. Sources differ on whether the final episode includes Ch. 24."
+    overlap: "Sources place the end at Ch. 23 or Ch. 24 (the end of Volume 4). Start at Ch. 24 to be safe."
+    sources:
+      - name: MangaShed
+        url: https://mangashed.com/where-does-the-usagi-drop-anime-leave-off-in-the-manga/
+      - name: Where Does The Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-usagi-drop-anime-leave-off-in-the-manga/
+    confidence: differ
+    last_checked: 2026-09-30

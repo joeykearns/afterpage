@@ -1,0 +1,18 @@
+slug: mob-psycho-100
+title: Mob Psycho 100
+aka: [Mob Psycho]
+source: manga
+entries:
+  - label: Full series (Seasons 1-3)
+    kind: series
+    episodes: "1–37"
+    aired: 2016-summer
+    covers_all: true
+    last_chapter: 101
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/mob-psycho-100/
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/Mob_Psycho_100
+    confidence: single
+    last_checked: 2026-09-30

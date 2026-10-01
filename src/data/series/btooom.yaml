@@ -1,0 +1,18 @@
+slug: btooom
+title: Btooom!
+aka: [Btooom]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–12"
+    aired: 2012-fall
+    last_chapter: 50
+    start_chapter: 51
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/btooom/
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/Btooom!
+    confidence: agree
+    last_checked: 2026-09-30

@@ -1,0 +1,19 @@
+slug: the-tatami-galaxy
+title: The Tatami Galaxy
+aka: [Yojouhan Shinwa Taikei]
+source: novel
+entries:
+  - label: Full series
+    kind: series
+    episodes: "1–11"
+    aired: 2010-spring
+    covers_all: true
+    last_chapter: 1
+    note: "The anime adapts the single-volume novel. A separate novel, Tatami Time Machine Blues, follows it, but the anime doesn't adapt that one."
+    sources:
+      - name: Wikipedia (The Tatami Galaxy)
+        url: https://en.wikipedia.org/wiki/The_Tatami_Galaxy
+      - name: Anime News Network
+        url: https://www.animenewsnetwork.com/news/2021-07-21/harpervia-publishes-the-tatami-galaxy-novel-and-sequel-in-english-in-2022-2023/.175422
+    confidence: agree
+    last_checked: 2026-09-30

@@ -1,0 +1,17 @@
+slug: dead-mount-death-play
+title: "Dead Mount Death Play"
+aka: [Dead Mount Death Play]
+source: manga
+entries:
+  - label: "Season 1"
+    kind: season
+    episodes: "1–24"
+    aired: 2023-spring
+    last_chapter: 81
+    start_chapter: 82
+    start_volume: 10
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/dead-mount-death-play/
+    confidence: single
+    last_checked: 2026-09-30

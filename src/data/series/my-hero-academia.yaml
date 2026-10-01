@@ -1,0 +1,54 @@
+slug: my-hero-academia
+title: My Hero Academia
+aka: [Boku no Hero Academia, MHA, BNHA]
+source: manga
+read_official:
+  - name: VIZ Media (English print & digital)
+    url: https://www.viz.com/my-hero-academia
+entries:
+  - label: Season 6
+    kind: season
+    episodes: "114–138"
+    aired: 2022-fall
+    last_chapter: 328
+    start_chapter: 329
+    start_volume: 34
+    sources:
+      - name: Wikipedia (My Hero Academia season 6)
+        url: https://en.wikipedia.org/wiki/My_Hero_Academia_season_6
+      - name: EpicStream
+        url: https://epicstream.com/article/where-to-start-reading-my-hero-academia-after-anime
+    confidence: agree
+    last_checked: 2026-09-30
+  - label: Season 7
+    kind: season
+    episodes: "139–159"
+    aired: 2024-spring
+    last_chapter: 398
+    start_chapter: 399
+    start_volume: 40
+    sources:
+      - name: Wikipedia (My Hero Academia season 7)
+        url: https://en.wikipedia.org/wiki/My_Hero_Academia_season_7
+      - name: Sportskeeda
+        url: https://www.sportskeeda.com/anime/where-pick-manga-my-hero-academia-season-7-explained
+      - name: ComicBook.com
+        url: https://comicbook.com/anime/news/my-hero-academia-season-8/
+    confidence: agree
+    last_checked: 2026-09-30
+  - label: Final Season
+    kind: season
+    episodes: "160–170"
+    aired: 2025-fall
+    covers_all: true
+    last_chapter: 430
+    note: "The final season adapts through the manga's last chapter. A separate bonus special adapts the extra Ch. 431."
+    sources:
+      - name: Wikipedia (My Hero Academia season 8)
+        url: https://en.wikipedia.org/wiki/My_Hero_Academia_season_8
+      - name: Anime News Network (Episode 170 review)
+        url: https://www.animenewsnetwork.com/review/my-hero-academia-final-season/episode-170/.232109
+      - name: My Hero Academia Wiki (Chapter 430)
+        url: https://myheroacademia.fandom.com/wiki/Chapter_430
+    confidence: agree
+    last_checked: 2026-09-30

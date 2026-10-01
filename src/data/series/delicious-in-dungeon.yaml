@@ -1,0 +1,16 @@
+slug: delicious-in-dungeon
+title: "Delicious in Dungeon"
+aka: [Dungeon Meshi]
+source: manga
+entries:
+  - label: "Season 1"
+    kind: season
+    episodes: "1–24"
+    aired: 2024-winter
+    last_chapter: 52
+    start_chapter: 53
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/delicious-in-dungeon/
+    confidence: single
+    last_checked: 2026-09-30

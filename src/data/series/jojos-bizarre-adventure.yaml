@@ -1,0 +1,17 @@
+slug: jojos-bizarre-adventure
+title: "JoJo's Bizarre Adventure"
+aka: [JoJo no Kimyou na Bouken, JoJo, Steel Ball Run]
+source: manga
+entries:
+  - label: "Seasons 1–5 (2012–2022)"
+    kind: series
+    episodes: "1–190"
+    aired: 2012-fall
+    last_chapter: 752
+    start_chapter: 753
+    note: "Chapter numbers follow the continuous numbering across the whole manga, not per-part numbering."
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/jojos-bizarre-adventure/
+    confidence: single
+    last_checked: 2026-09-30

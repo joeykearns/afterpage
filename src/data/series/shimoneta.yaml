@@ -1,0 +1,19 @@
+slug: shimoneta
+title: "Shimoneta: A Boring World Where the Concept of Dirty Jokes Doesn't Exist"
+aka: [Shimoneta to Iu Gainen ga Sonzai Shinai Taikutsu na Sekai, Shimoneta]
+source: light_novel
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–12"
+    aired: 2015-summer
+    last_chapter: 2
+    start_chapter: 3
+    note: "Numbers are light novel volumes."
+    sources:
+      - name: Wikipedia (Shimoneta)
+        url: https://en.wikipedia.org/wiki/Shimoneta
+      - name: MangaShed
+        url: https://mangashed.com/where-does-the-shimoneta-anime-end-in-the-light-novel/
+    confidence: agree
+    last_checked: 2026-09-30

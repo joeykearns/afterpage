@@ -1,0 +1,17 @@
+slug: helck
+title: "Helck"
+aka: [Helck]
+source: manga
+entries:
+  - label: "Season 1"
+    kind: season
+    episodes: "1–24"
+    aired: 2023-summer
+    last_chapter: 70
+    start_chapter: 71
+    start_volume: 8
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/helck/
+    confidence: single
+    last_checked: 2026-09-30

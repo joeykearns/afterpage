@@ -1,0 +1,69 @@
+slug: danmachi
+title: Is It Wrong to Try to Pick Up Girls in a Dungeon?
+aka: [Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka, DanMachi]
+source: light_novel
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–13"
+    aired: 2015-spring
+    last_chapter: 5
+    start_chapter: 6
+    note: "Light novel volumes are listed as chapter numbers here."
+    sources:
+      - name: Wikipedia (DanMachi season 1)
+        url: https://en.wikipedia.org/wiki/Is_It_Wrong_to_Try_to_Pick_Up_Girls_in_a_Dungeon%3F_season_1
+      - name: MangaShed
+        url: https://mangashed.com/where-does-the-danmachi-anime-leave-off-in-the-manga/
+    confidence: agree
+    last_checked: 2026-09-30
+  - label: Season 2
+    kind: season
+    episodes: "1–12"
+    aired: 2019-summer
+    last_chapter: 8
+    start_chapter: 9
+    sources:
+      - name: Wikipedia (DanMachi season 2)
+        url: https://en.wikipedia.org/wiki/Is_It_Wrong_to_Try_to_Pick_Up_Girls_in_a_Dungeon%3F_season_2
+    confidence: single
+    last_checked: 2026-09-30
+  - label: Season 3
+    kind: season
+    episodes: "1–12"
+    aired: 2020-fall
+    last_chapter: 11
+    start_chapter: 12
+    sources:
+      - name: Wikipedia (DanMachi season 3)
+        url: https://en.wikipedia.org/wiki/Is_It_Wrong_to_Try_to_Pick_Up_Girls_in_a_Dungeon%3F_season_3
+      - name: MangaShed
+        url: https://mangashed.com/where-does-the-danmachi-anime-leave-off-in-the-manga/
+    confidence: agree
+    last_checked: 2026-09-30
+  - label: Season 4
+    kind: season
+    episodes: "1–22"
+    aired: 2022-summer
+    last_chapter: 14
+    start_chapter: 15
+    note: "Season 4 aired in two parts (summer 2022 and winter 2023)."
+    sources:
+      - name: Wikipedia (DanMachi season 4)
+        url: https://en.wikipedia.org/wiki/Is_It_Wrong_to_Try_to_Pick_Up_Girls_in_a_Dungeon%3F_season_4
+      - name: Epicstream
+        url: https://epicstream.com/article/where-to-start-reading-danmachi-light-novel-after-anime
+    confidence: agree
+    last_checked: 2026-09-30
+  - label: Season 5
+    kind: season
+    episodes: "1–15"
+    aired: 2024-fall
+    last_chapter: 18
+    start_chapter: 19
+    note: "Season 5 aired in two parts (fall 2024 and early 2025)."
+    sources:
+      - name: Wikipedia (DanMachi season 5)
+        url: https://en.wikipedia.org/wiki/Is_It_Wrong_to_Try_to_Pick_Up_Girls_in_a_Dungeon%3F_season_5
+    confidence: single
+    last_checked: 2026-09-30

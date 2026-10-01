@@ -1,0 +1,31 @@
+slug: kakegurui
+title: Kakegurui
+aka: ["Kakegurui: Compulsive Gambler"]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–12"
+    aired: 2017-summer
+    last_chapter: 27
+    start_chapter: 28
+    note: "Season 2 skips some of the chapters right after this point, so continuing from Season 2's stopping point is the cleaner option."
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/kakegurui/
+    confidence: single
+    last_checked: 2026-09-30
+  - label: Season 2
+    kind: season
+    episodes: "1–12"
+    aired: 2019-winter
+    start_chapter: 55
+    start_volume: 10
+    overlap: "Anime Filler Guide places the end of the anime a few pages into Ch. 55. Start at the top of 55."
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/kakegurui/
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-kakegurui-anime-leave-off-in-the-manga/
+    confidence: agree
+    last_checked: 2026-09-30

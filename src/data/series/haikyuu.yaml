@@ -1,0 +1,73 @@
+slug: haikyuu
+title: Haikyu!!
+aka: [Haikyuu!!, Haikyuu]
+source: manga
+read_official:
+  - name: VIZ Media (English print & digital)
+    url: https://www.viz.com/haikyu
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–25"
+    aired: 2014-spring
+    last_chapter: 71
+    start_chapter: 72
+    sources:
+      - name: Wikipedia (Haikyu!! season 1)
+        url: https://en.wikipedia.org/wiki/Haikyu!!_season_1
+      - name: Epicstream
+        url: https://epicstream.com/article/where-to-read-haikyuu-manga-after-anime
+    confidence: agree
+    last_checked: 2026-09-30
+  - label: Season 2
+    kind: season
+    episodes: "1–25"
+    aired: 2015-fall
+    last_chapter: 149
+    start_chapter: 150
+    sources:
+      - name: Wikipedia (Haikyu!! season 2)
+        url: https://en.wikipedia.org/wiki/Haikyu!!_season_2
+      - name: Epicstream
+        url: https://epicstream.com/article/where-to-read-haikyuu-manga-after-anime
+    confidence: agree
+    last_checked: 2026-09-30
+  - label: Season 3
+    kind: season
+    episodes: "1–10"
+    aired: 2016-fall
+    last_chapter: 190
+    start_chapter: 191
+    note: "Season 3 skips Ch. 191–206; Season 4 resumes at Ch. 207. Start at Ch. 191 to read the skipped chapters."
+    sources:
+      - name: Wikipedia (Haikyu!! season 3)
+        url: https://en.wikipedia.org/wiki/Haikyu!!_season_3
+      - name: Epicstream
+        url: https://epicstream.com/article/where-to-read-haikyuu-manga-after-anime
+    confidence: agree
+    last_checked: 2026-09-30
+  - label: "Season 4: To the Top"
+    kind: season
+    episodes: "1–25"
+    aired: 2020-winter
+    last_chapter: 292
+    start_chapter: 293
+    sources:
+      - name: Wikipedia (Haikyu!! season 4)
+        url: https://en.wikipedia.org/wiki/Haikyu!!_season_4
+      - name: Epicstream
+        url: https://epicstream.com/article/where-to-read-haikyuu-manga-after-anime
+    confidence: agree
+    last_checked: 2026-09-30
+  - label: "The Dumpster Battle (movie)"
+    kind: movie
+    aired: 2024-winter
+    last_chapter: 325
+    start_chapter: 326
+    sources:
+      - name: Dexerto
+        url: https://www.dexerto.com/anime/haikyuu-the-dumpster-battle-is-missing-scenes-from-the-manga-and-some-fans-are-angry-2758038/
+      - name: Deltia's Gaming
+        url: https://deltiasgaming.com/article/where-to-pick-up-haikyuu-manga-after-the-anime/
+    confidence: agree
+    last_checked: 2026-09-30

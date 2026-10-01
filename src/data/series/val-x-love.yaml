@@ -1,0 +1,16 @@
+slug: val-x-love
+title: "Val x Love"
+aka: [Ganbare Douki-chan, Val x Love]
+source: manga
+entries:
+  - label: "Season 1"
+    kind: season
+    episodes: "1–12"
+    aired: 2019-fall
+    last_chapter: 31
+    start_chapter: 32
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/val-x-love/
+    confidence: single
+    last_checked: 2026-09-30

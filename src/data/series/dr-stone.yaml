@@ -1,0 +1,72 @@
+slug: dr-stone
+title: Dr. Stone
+aka: [Dr. Stone]
+source: manga
+read_official:
+  - name: VIZ Media (English print & digital)
+    url: https://www.viz.com/dr-stone
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–24"
+    aired: 2019-summer
+    last_chapter: 60
+    start_chapter: 61
+    start_volume: 7
+    sources:
+      - name: Where Does The Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-dr-stone-anime-leave-off-in-the-manga/
+    confidence: single
+    last_checked: 2026-09-30
+  - label: "Season 3: New World"
+    kind: season
+    episodes: "36–57"
+    aired: 2023-spring
+    last_chapter: 142
+    start_chapter: 143
+    start_volume: 17
+    sources:
+      - name: EpicStream
+        url: https://epicstream.com/article/where-to-read-dr-stone-manga-after-the-anime
+      - name: Where Does The Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-dr-stone-anime-leave-off-in-the-manga/
+    confidence: agree
+    last_checked: 2026-09-30
+  - label: "Science Future Part 1"
+    kind: part
+    episodes: "58–69"
+    aired: 2025-winter
+    last_chapter: 169
+    start_chapter: 170
+    start_volume: 20
+    sources:
+      - name: Where Does The Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-dr-stone-anime-leave-off-in-the-manga/
+    confidence: single
+    last_checked: 2026-09-30
+  - label: "Science Future Part 2"
+    kind: part
+    episodes: "70–81"
+    aired: 2025-summer
+    last_chapter: 199
+    start_chapter: 200
+    start_volume: 23
+    sources:
+      - name: Where Does The Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-dr-stone-anime-leave-off-in-the-manga/
+    confidence: single
+    last_checked: 2026-09-30
+  - label: "Science Future Part 3"
+    kind: part
+    episodes: "82–94"
+    aired: 2026-spring
+    covers_all: true
+    last_chapter: 232
+    note: "The anime ends with the manga's final chapter 232. Volume 27 collects epilogue material published later that the anime doesn't adapt, and there is a separate spin-off, Dr. Stone Reboot: Byakuya."
+    sources:
+      - name: Anime News Network (episode 37 review)
+        url: https://www.animenewsnetwork.com/review/dr-stone-science-future/episode-37/.238984
+      - name: Where Does The Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-dr-stone-anime-leave-off-in-the-manga/
+    confidence: agree
+    last_checked: 2026-09-30

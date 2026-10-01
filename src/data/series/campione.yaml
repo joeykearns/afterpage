@@ -1,0 +1,17 @@
+slug: campione
+title: Campione!
+aka: [Campione! Matsurowanu Kamigami to Kamigoroshi no Maou]
+source: light_novel
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–13"
+    aired: 2012-summer
+    last_chapter: 5
+    start_chapter: 6
+    note: "Numbers are light novel volumes. The final episode is a self-contained story."
+    sources:
+      - name: Wikipedia (Campione!)
+        url: https://en.wikipedia.org/wiki/Campione!
+    confidence: single
+    last_checked: 2026-09-30

@@ -1,0 +1,18 @@
+slug: welcome-to-the-ballroom
+title: Welcome to the Ballroom
+aka: [Ballroom e Youkoso]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–24"
+    aired: 2017-summer
+    last_chapter: 54
+    start_chapter: 55
+    sources:
+      - name: MangaShed
+        url: https://mangashed.com/where-does-the-welcome-to-the-ballroom-anime-end-in-the-manga/
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/ballroom-e-youkoso/
+    confidence: agree
+    last_checked: 2026-09-30

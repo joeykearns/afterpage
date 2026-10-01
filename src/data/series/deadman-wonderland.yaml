@@ -1,0 +1,20 @@
+slug: deadman-wonderland
+title: Deadman Wonderland
+aka: [Deadman Wonderland]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–12"
+    aired: 2011-spring
+    last_chapter: 21
+    start_chapter: 22
+    start_volume: 6
+    note: "The anime only covers the early part of the manga and leaves out some characters, so some readers prefer starting from Ch. 1."
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/deadman-wonderland/
+      - name: BlinkAnime
+        url: https://blinkanime.com/deadman-wonderland-manga-after-anime-where-to-start-reading/
+    confidence: agree
+    last_checked: 2026-09-30

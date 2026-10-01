@@ -1,0 +1,17 @@
+slug: the-ancient-magus-bride
+title: "The Ancient Magus' Bride"
+aka: [Mahoutsukai no Yome]
+source: manga
+entries:
+  - label: "Seasons 1–2 (2017–2023)"
+    kind: series
+    episodes: "1–48"
+    aired: 2017-fall
+    last_chapter: 95
+    start_chapter: 96
+    start_volume: 20
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/mahoutsukai-no-yome/
+    confidence: single
+    last_checked: 2026-09-30

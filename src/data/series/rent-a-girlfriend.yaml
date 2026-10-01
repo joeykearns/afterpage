@@ -1,0 +1,32 @@
+slug: rent-a-girlfriend
+title: Rent-a-Girlfriend
+aka: [Kanojo, Okarishimasu, Kanokari]
+source: manga
+entries:
+  - label: Season 3
+    kind: season
+    episodes: "25–36"
+    aired: 2023-summer
+    last_chapter: 166
+    start_chapter: 167
+    start_volume: 20
+    sources:
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-rent-a-girlfriend-anime-leave-off-in-the-manga/
+      - name: Anime Senpai
+        url: https://www.animesenpai.net/rent-a-girlfriend-season-4-everything-you-need-to-know/
+    confidence: agree
+    last_checked: 2026-09-30
+  - label: Season 5
+    kind: season
+    episodes: "49–60"
+    aired: 2026-spring
+    last_chapter: 255
+    start_chapter: 256
+    start_volume: 30
+    note: "Season 5 was originally planned as the second half of Season 4."
+    sources:
+      - name: Dexerto France
+        url: https://www.dexerto.fr/anime/ou-reprendre-manga-rent-a-girlfriend-apres-saison-5-anime-1651903/
+    confidence: single
+    last_checked: 2026-09-30

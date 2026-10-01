@@ -1,0 +1,19 @@
+slug: run-with-the-wind
+title: Run with the Wind
+aka: [Kaze ga Tsuyoku Fuiteiru]
+source: novel
+entries:
+  - label: Full series
+    kind: series
+    episodes: "1–23"
+    aired: 2018-fall
+    covers_all: true
+    last_chapter: 1
+    note: "The anime adapts the whole single-volume novel."
+    sources:
+      - name: Wikipedia (Run with the Wind)
+        url: https://en.wikipedia.org/wiki/Run_with_the_Wind
+      - name: TV Tropes
+        url: https://tvtropes.org/pmwiki/pmwiki.php/Literature/RunWithTheWind
+    confidence: agree
+    last_checked: 2026-09-30

@@ -1,0 +1,17 @@
+slug: fist-of-the-north-star
+title: "Fist of the North Star"
+aka: [Hokuto no Ken]
+source: manga
+entries:
+  - label: "Original series (1984–1987)"
+    kind: series
+    episodes: "1–152"
+    aired: 1984-fall
+    last_chapter: 210
+    start_chapter: 211
+    note: "The anime ends before the manga does (245 chapters total); includes some filler episodes."
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/hokuto-no-ken/
+    confidence: single
+    last_checked: 2026-09-30

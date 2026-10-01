@@ -1,0 +1,71 @@
+slug: rascal-does-not-dream-of-bunny-girl-senpai
+title: Rascal Does Not Dream of Bunny Girl Senpai
+aka: [Seishun Buta Yarou, Bunny Girl Senpai, AoButa]
+source: light_novel
+read_official:
+  - name: Yen Press (English light novels)
+    url: https://yenpress.com/series/rascal-does-not-dream-light-novel
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–13"
+    aired: 2018-fall
+    last_chapter: 5
+    start_chapter: 6
+    note: "The film Rascal Does Not Dream of a Dreaming Girl adapts Volumes 6 and 7 directly after this season."
+    sources:
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/Rascal_Does_Not_Dream_of_Bunny_Girl_Senpai
+      - name: Seishun Buta Yarou Wiki (Anime)
+        url: https://aobuta.fandom.com/wiki/Anime
+      - name: Anime Corner
+        url: https://animecorner.me/rascal-does-not-dream-of-a-dear-friend-movie-reveals-teaser-trailer-october-16-premiere-date/
+    confidence: agree
+    last_checked: 2026-09-30
+  - label: "The Movie: A Dreaming Girl"
+    kind: movie
+    aired: 2019-spring
+    last_chapter: 7
+    start_chapter: 8
+    sources:
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/Rascal_Does_Not_Dream_of_Bunny_Girl_Senpai
+      - name: Seishun Buta Yarou Wiki (Anime)
+        url: https://aobuta.fandom.com/wiki/Anime
+    confidence: agree
+    last_checked: 2026-09-30
+  - label: "The Movie: A Sister Venturing Out"
+    kind: movie
+    aired: 2023-spring
+    last_chapter: 8
+    start_chapter: 9
+    sources:
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/Rascal_Does_Not_Dream_of_Bunny_Girl_Senpai
+    confidence: single
+    last_checked: 2026-09-30
+  - label: "The Movie: A Knapsack Kid"
+    kind: movie
+    aired: 2023-fall
+    last_chapter: 9
+    start_chapter: 10
+    sources:
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/Rascal_Does_Not_Dream_of_Bunny_Girl_Senpai
+    confidence: single
+    last_checked: 2026-09-30
+  - label: "Season 2: Santa Claus"
+    kind: season
+    aired: 2025-summer
+    last_chapter: 13
+    start_chapter: 14
+    note: "The light novel series is complete at 15 volumes."
+    sources:
+      - name: Seishun Buta Yarou Wiki (Anime)
+        url: https://aobuta.fandom.com/wiki/Anime
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/Rascal_Does_Not_Dream_of_Bunny_Girl_Senpai
+      - name: Tokyo Tokyo (Medium)
+        url: https://medium.com/tokyo-tokyo/anime-guide-to-rascal-does-not-dream-of-santa-claus-b6f66303c28d
+    confidence: agree
+    last_checked: 2026-09-30

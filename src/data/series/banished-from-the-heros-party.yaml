@@ -1,0 +1,30 @@
+slug: banished-from-the-heros-party
+title: "Banished from the Hero's Party"
+aka: [Shin no Nakama ja Nai to Yuusha no Party wo Oidasareta node, Henkyou de Slow Life suru Koto ni Shimashita]
+source: light_novel
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–13"
+    aired: 2021-fall
+    last_chapter: 4
+    start_chapter: 5
+    sources:
+      - name: Where Does The Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-banished-from-the-heros-party-i-decided-to-live-a-quiet-life-in-the-countryside-anime-leave-off-in-the-light-novel/
+      - name: Anime Corner
+        url: https://animecorner.me/banished-from-heros-party-finale-the-moment-we-waited-for/
+    confidence: agree
+    last_checked: 2026-09-30
+  - label: Season 2
+    kind: season
+    episodes: "1–12"
+    aired: 2024-winter
+    last_chapter: 9
+    start_chapter: 10
+    note: "The second season skips Volumes 6 and 7, so those are worth reading if you want everything."
+    sources:
+      - name: Where Does The Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-banished-from-the-heros-party-i-decided-to-live-a-quiet-life-in-the-countryside-anime-leave-off-in-the-light-novel/
+    confidence: single
+    last_checked: 2026-09-30

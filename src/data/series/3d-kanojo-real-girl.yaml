@@ -1,0 +1,19 @@
+slug: 3d-kanojo-real-girl
+title: Real Girl
+aka: ["3D Kanojo: Real Girl"]
+source: manga
+entries:
+  - label: Seasons 1–2
+    kind: series
+    episodes: "1–24"
+    aired: 2018-spring
+    covers_all: true
+    last_chapter: 47
+    note: "The manga has one extra special chapter (47.5) that the anime doesn't adapt."
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/3d-kanojo-real-girl/
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/3D_Kanojo
+    confidence: agree
+    last_checked: 2026-09-30

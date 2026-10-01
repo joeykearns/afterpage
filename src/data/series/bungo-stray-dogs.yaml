@@ -1,0 +1,19 @@
+slug: bungo-stray-dogs
+title: Bungo Stray Dogs
+aka: [Bungou Stray Dogs, BSD]
+source: manga
+entries:
+  - label: Season 4
+    kind: season
+    episodes: "38–50"
+    aired: 2023-winter
+    last_chapter: 77
+    start_chapter: 78
+    note: "Season 5 picks up from Chapter 78."
+    sources:
+      - name: Dexerto
+        url: https://www.dexerto.com/anime/bungo-stray-dogs-is-the-manga-finished-2301015/
+      - name: Sportskeeda
+        url: https://www.sportskeeda.com/anime/is-bungo-stray-dogs-over-status-series-explained
+    confidence: agree
+    last_checked: 2026-09-30

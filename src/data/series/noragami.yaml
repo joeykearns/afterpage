@@ -1,0 +1,18 @@
+slug: noragami
+title: "Noragami"
+aka: [Noragami Aragoto]
+source: manga
+entries:
+  - label: "Seasons 1–2 (2014–2015)"
+    kind: series
+    episodes: "1–25"
+    aired: 2014-winter
+    last_chapter: 39
+    start_chapter: 40
+    start_volume: 11
+    note: "The anime's final episode ends within Chapter 39; starting at 40 is the Anime Filler Guide's suggestion."
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/noragami/
+    confidence: single
+    last_checked: 2026-09-30

@@ -1,0 +1,40 @@
+slug: fire-force
+title: Fire Force
+aka: [Enen no Shouboutai]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–24"
+    aired: 2019-summer
+    last_chapter: 90
+    start_chapter: 91
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/fire-force/
+    confidence: single
+    last_checked: 2026-09-30
+  - label: Season 2
+    kind: season
+    episodes: "25–48"
+    aired: 2020-summer
+    last_chapter: 174
+    start_chapter: 175
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/fire-force/
+    confidence: single
+    last_checked: 2026-09-30
+  - label: Season 3
+    kind: season
+    aired: 2025-spring
+    covers_all: true
+    last_chapter: 304
+    note: "The third and final season adapts the manga through its last chapter."
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/fire-force/
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/Fire_Force
+    confidence: agree
+    last_checked: 2026-09-30

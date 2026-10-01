@@ -1,0 +1,36 @@
+slug: dragon-ball
+title: Dragon Ball
+aka: [Dragon Ball Z, DBZ]
+source: manga
+read_official:
+  - name: VIZ Media (English print & digital)
+    url: https://www.viz.com/dragon-ball
+entries:
+  - label: "Dragon Ball (1986–1989)"
+    kind: series
+    episodes: "1–153"
+    aired: 1986-winter
+    last_chapter: 194
+    start_chapter: 195
+    note: "The Dragon Ball anime adapts the first 194 chapters; the story continues in Ch. 195, where Dragon Ball Z picks up."
+    sources:
+      - name: Wikipedia (Dragon Ball TV series)
+        url: https://en.wikipedia.org/wiki/Dragon_Ball_(TV_series)
+      - name: Anime Filler Guide (Dragon Ball)
+        url: https://www.animefillerguide.com/anime/dragon-ball/
+    confidence: agree
+    last_checked: 2026-09-30
+  - label: "Dragon Ball Z (1989–1996)"
+    kind: series
+    episodes: "1–291"
+    aired: 1989-spring
+    covers_all: true
+    last_chapter: 519
+    note: "Dragon Ball Z adapts Ch. 195 through the manga's final chapter, so there is nothing left of the original manga to continue."
+    sources:
+      - name: Wikipedia (Dragon Ball Z)
+        url: https://en.wikipedia.org/wiki/Dragon_Ball_Z
+      - name: Anime Filler Guide (Dragon Ball Z)
+        url: https://www.animefillerguide.com/anime/dragon-ball-z/
+    confidence: agree
+    last_checked: 2026-09-30

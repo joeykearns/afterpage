@@ -1,0 +1,43 @@
+slug: a-certain-magical-index
+title: A Certain Magical Index
+aka: [Toaru Majutsu no Index, Index]
+source: light_novel
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–24"
+    aired: 2008-fall
+    last_chapter: 6
+    start_chapter: 7
+    note: "Numbers are light novel volumes."
+    sources:
+      - name: Wikipedia (List of A Certain Magical Index episodes)
+        url: https://en.wikipedia.org/wiki/List_of_A_Certain_Magical_Index_episodes
+    confidence: single
+    last_checked: 2026-09-30
+  - label: Season 2
+    kind: season
+    episodes: "1–24"
+    aired: 2010-fall
+    last_chapter: 13
+    start_chapter: 14
+    note: "Numbers are light novel volumes."
+    sources:
+      - name: Wikipedia (A Certain Magical Index II)
+        url: https://en.wikipedia.org/wiki/A_Certain_Magical_Index_II
+      - name: Wikipedia (List of A Certain Magical Index episodes)
+        url: https://en.wikipedia.org/wiki/List_of_A_Certain_Magical_Index_episodes
+    confidence: single
+    last_checked: 2026-09-30
+  - label: Season 3
+    kind: season
+    episodes: "1–26"
+    aired: 2018-fall
+    covers_all: true
+    last_chapter: 22
+    note: "Numbers are light novel volumes. Season 3 covers volumes 14 to 22, the end of the original series. The story continues in the sequel series A Certain Magical Index: New Testament."
+    sources:
+      - name: Wikipedia (A Certain Magical Index III)
+        url: https://en.wikipedia.org/wiki/A_Certain_Magical_Index_III
+    confidence: single
+    last_checked: 2026-09-30

@@ -1,0 +1,35 @@
+slug: mushoku-tensei
+title: "Mushoku Tensei: Jobless Reincarnation"
+aka: [Mushoku Tensei, Jobless Reincarnation]
+source: light_novel
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–23"
+    aired: 2021-winter
+    last_chapter: 6
+    start_chapter: 7
+    note: "Season 1 aired in two cours (winter and fall 2021) and covers light novel volumes 1–6."
+    sources:
+      - name: Wikipedia (Mushoku Tensei season 1)
+        url: https://en.wikipedia.org/wiki/Mushoku_Tensei_season_1
+      - name: Sportskeeda
+        url: https://www.sportskeeda.com/anime/mushoku-tensei-season-2-where-anime-leave-manga-light-novel
+    confidence: agree
+    last_checked: 2026-09-30
+  - label: Season 2
+    kind: season
+    episodes: "0–24"
+    aired: 2023-summer
+    last_chapter: 12
+    start_chapter: 13
+    note: "Season 2 aired in two cours (summer 2023 and spring 2024) and covers light novel volumes 7–12. Season 3 aired from summer 2026; its end point wasn't confirmed at time of checking."
+    sources:
+      - name: Wikipedia (Mushoku Tensei season 2)
+        url: https://en.wikipedia.org/wiki/Mushoku_Tensei_season_2
+      - name: Sportskeeda
+        url: https://www.sportskeeda.com/anime/mushoku-tensei-season-2-where-anime-leave-manga-light-novel
+      - name: EpicStream
+        url: https://epicstream.com/article/where-to-read-mushoku-tensei-after-anime
+    confidence: agree
+    last_checked: 2026-09-30

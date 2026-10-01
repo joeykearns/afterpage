@@ -1,0 +1,43 @@
+slug: made-in-abyss
+title: Made in Abyss
+aka: [Made in Abyss]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–13"
+    aired: 2017-summer
+    last_chapter: 26
+    start_chapter: 27
+    note: "The film Dawn of the Deep Soul continues directly from this season."
+    sources:
+      - name: EpicStream
+        url: https://epicstream.com/article/where-to-start-reading-made-in-abyss-after-anime
+    confidence: single
+    last_checked: 2026-09-30
+  - label: "The Movie: Dawn of the Deep Soul"
+    kind: movie
+    aired: 2020-winter
+    last_chapter: 38
+    start_chapter: 39
+    start_volume: 6
+    sources:
+      - name: EpicStream
+        url: https://epicstream.com/article/where-to-start-reading-made-in-abyss-after-anime
+    confidence: single
+    last_checked: 2026-09-30
+  - label: "Season 2: The Golden City of the Scorching Sun"
+    kind: season
+    episodes: "1–12"
+    aired: 2022-summer
+    last_chapter: 60
+    start_chapter: 61
+    start_volume: 11
+    note: "Season 2 ends with the last chapter of Volume 10, so Volume 11 is a clean starting point."
+    sources:
+      - name: EpicStream
+        url: https://epicstream.com/article/where-to-start-reading-made-in-abyss-after-anime
+      - name: Wikipedia (List of Made in Abyss volumes)
+        url: https://en.wikipedia.org/wiki/List_of_Made_in_Abyss_volumes
+    confidence: single
+    last_checked: 2026-09-30
