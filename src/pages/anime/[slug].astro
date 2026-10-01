@@ -3,7 +3,7 @@ import Base from '../../layouts/Base.astro';
 import AnswerCard from '../../components/AnswerCard.astro';
 import AiringCard from '../../components/AiringCard.astro';
 import ReadOfficial from '../../components/ReadOfficial.astro';
-import { loadAllSeries, airedKey, sourceLabel, unitLabel, latestAnswer, answerKey } from '../../lib/series.mjs';
+import { loadAllSeries, airedKey, sourceLabel, unitLabel, latestAnswer, answerKey, isComplete, answerSentence } from '../../lib/series.mjs';
 
 export function getStaticPaths() {
   return loadAllSeries().map((series) => ({ params: { slug: series.slug }, props: { series } }));
@@ -15,18 +15,23 @@ const finished = entries.filter((e) => !e.airing);
 const latest = latestAnswer(series);
 const unit = unitLabel(series.source);
 const source = sourceLabel(series.source).toLowerCase();
-const title = `${series.title}: where to start the ${source} after the anime`;
-const description = `The ${source} chapter to start after each season of ${series.title}. Numbers only, no spoilers. Sources linked.`;
+const wholeStory = latest && isComplete(latest);
+const title = wholeStory
+  ? `${series.title}: does the anime cover the whole ${source}?`
+  : `${series.title}: where to start the ${source} after the anime`;
+const description = wholeStory
+  ? `${answerSentence(series, latest)} Details for every season of ${series.title}, with sources. No spoilers.`
+  : `The ${source} chapter to start after each season of ${series.title}. Numbers only, no spoilers. Sources linked.`;
 
 const faq = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
   mainEntity: finished.map((e) => ({
     '@type': 'Question',
-    name: `Where do I start the ${source} after ${series.title} ${e.label}?`,
+    name: isComplete(e) ? `Does the ${series.title} anime cover the whole ${source}?` : `Where do I start the ${source} after ${series.title} ${e.label}?`,
     acceptedAnswer: {
       '@type': 'Answer',
-      text: `Start at chapter ${e.start_chapter}${e.start_volume ? ` (volume ${e.start_volume})` : ''}.`,
+      text: answerSentence(series, e),
     },
   })),
 };
@@ -47,7 +52,9 @@ const faq = {
     {series.aka.length > 0 && <p class="muted aka">Also known as {series.aka.join(', ')}</p>}
     {latest && (
       <p class="summary">
-        Finished <a href={`#${latest.id}`}>{latest.label}</a>? Start at <strong>{unit} {latest.start_chapter}</strong>.
+        {wholeStory
+          ? <>The anime covers the whole {source}, through <strong>{unit} {latest.last_chapter}</strong>. <a href={`#${latest.id}`}>Details</a></>
+          : <>Finished <a href={`#${latest.id}`}>{latest.label}</a>? Start at <strong>{unit} {latest.start_chapter}</strong>.</>}
       </p>
     )}
     {finished.some((e) => e.episode_map) && (

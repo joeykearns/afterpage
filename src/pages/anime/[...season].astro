@@ -5,7 +5,7 @@ import Base from '../../layouts/Base.astro';
 import AnswerCard from '../../components/AnswerCard.astro';
 import AiringCard from '../../components/AiringCard.astro';
 import ReadOfficial from '../../components/ReadOfficial.astro';
-import { loadAllSeries, airedKey, airedLabel, sourceLabel, unitLabel } from '../../lib/series.mjs';
+import { loadAllSeries, airedKey, airedLabel, sourceLabel, unitLabel, isComplete, shortAnswer, answerSentence } from '../../lib/series.mjs';
 
 export function getStaticPaths() {
   return loadAllSeries().flatMap((series) =>
@@ -20,24 +20,29 @@ const others = [...series.entries].filter((e) => e.id !== entry.id).sort((a, b) 
 const earlierFinished = series.entries.some((e) => !e.airing && e.id !== entry.id);
 const source = sourceLabel(series.source).toLowerCase();
 const unit = unitLabel(series.source);
-const answer = entry.airing ? null : `${unit} ${entry.start_chapter}`;
+const complete = isComplete(entry);
+const answer = entry.airing || complete ? null : `${unit} ${entry.start_chapter}`;
 
 const title = entry.airing
   ? `${series.title} ${entry.label}: where to start the ${source} (airing now)`
-  : `${series.title} ${entry.label}: where to start the ${source} (${answer})`;
+  : complete
+    ? `${series.title} ${entry.label}: does the anime cover the whole ${source}? (Yes)`
+    : `${series.title} ${entry.label}: where to start the ${source} (${answer})`;
 const description = entry.airing
   ? `${series.title} ${entry.label} is airing now. We add the exact ${source} ${unit.toLowerCase()} to start within 48 hours of the finale. No spoilers.`
-  : `Finished ${series.title} ${entry.label}? Start the ${source} at ${answer}${entry.start_volume ? ` (Volume ${entry.start_volume})` : ''}. Numbers only, no spoilers, sources linked.`;
+  : complete
+    ? `Finished ${series.title} ${entry.label}? ${answerSentence(series, entry)} No spoilers, sources linked.`
+    : `Finished ${series.title} ${entry.label}? Start the ${source} at ${answer}${entry.start_volume ? ` (Volume ${entry.start_volume})` : ''}. Numbers only, no spoilers, sources linked.`;
 
 const faq = !entry.airing && {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
   mainEntity: [{
     '@type': 'Question',
-    name: `Where do I start the ${source} after ${series.title} ${entry.label}?`,
+    name: complete ? `Does the ${series.title} anime cover the whole ${source}?` : `Where do I start the ${source} after ${series.title} ${entry.label}?`,
     acceptedAnswer: {
       '@type': 'Answer',
-      text: `Start at ${unit.toLowerCase()} ${entry.start_chapter}${entry.start_volume ? ` (volume ${entry.start_volume})` : ''}.`,
+      text: answerSentence(series, entry),
     },
   }],
 };
@@ -77,7 +82,7 @@ const breadcrumbs = {
               <span><span class="row-title">{e.label}</span><br /><span class="row-sub">{airedLabel(e.aired)}</span></span>
               {e.airing
                 ? <span class="row-pending">Airing</span>
-                : <span class="row-answer">{unit === 'Volume' ? 'Vol.' : 'Ch.'} {e.start_chapter}</span>}
+                : <span class="row-answer">{shortAnswer(series, e)}</span>}
             </a>
           </li>
         ))}
