@@ -1,0 +1,20 @@
+slug: ouran-high-school-host-club
+title: Ouran High School Host Club
+aka: [Ouran Koukou Host Club, Ouran]
+source: manga
+entries:
+  - label: Anime series
+    kind: series
+    episodes: "1–26"
+    aired: 2006-spring
+    last_chapter: 36
+    start_chapter: 37
+    start_volume: 9
+    note: "The anime adapts the first eight volumes of the manga (chapters 1-36); the manga runs to 18 volumes."
+    sources:
+      - name: Wikipedia (Ouran High School Host Club)
+        url: https://en.wikipedia.org/wiki/Ouran_High_School_Host_Club
+      - name: Wikipedia (List of Ouran High School Host Club chapters)
+        url: https://en.wikipedia.org/wiki/List_of_Ouran_High_School_Host_Club_chapters
+    confidence: single
+    last_checked: 2026-09-30

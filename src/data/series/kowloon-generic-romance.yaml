@@ -1,0 +1,18 @@
+slug: kowloon-generic-romance
+title: Kowloon Generic Romance
+aka: [Kowloon Generic Romance]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–13"
+    aired: 2025-spring
+    last_chapter: 82
+    start_chapter: 83
+    start_volume: 10
+    note: "The anime switches to its own ending near the finale; the manga continues from here."
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/kowloon-generic-romance/
+    confidence: single
+    last_checked: 2026-09-30

@@ -1,0 +1,17 @@
+slug: mr-villains-day-off
+title: "Mr. Villain’s Day Off"
+aka: ["Kyuujitsu no Warumono-san"]
+source: manga
+entries:
+  - label: "Season 1"
+    kind: season
+    episodes: "1–12"
+    aired: 2024-winter
+    last_chapter: 53
+    start_chapter: 54
+    start_volume: 5
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/kyuujitsu-no-warumono-san/
+    confidence: single
+    last_checked: 2026-09-30

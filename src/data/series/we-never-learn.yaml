@@ -1,0 +1,28 @@
+slug: we-never-learn
+title: "We Never Learn"
+aka: ["Bokutachi wa Benkyou ga Dekinai", "Bokuben"]
+source: manga
+entries:
+  - label: "Season 1"
+    kind: season
+    episodes: "1–13"
+    aired: 2019-spring
+    last_chapter: 43
+    start_chapter: 44
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/bokutachi-wa-benkyou-ga-dekinai/
+    confidence: single
+    last_checked: 2026-09-30
+  - label: "Season 2"
+    kind: season
+    episodes: "14–26"
+    aired: 2019-fall
+    last_chapter: 69
+    start_chapter: 70
+    start_volume: 9
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/bokutachi-wa-benkyou-ga-dekinai/
+    confidence: single
+    last_checked: 2026-09-30

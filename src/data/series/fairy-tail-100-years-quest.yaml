@@ -1,0 +1,17 @@
+slug: fairy-tail-100-years-quest
+title: "Fairy Tail: 100 Years Quest"
+aka: [Fairy Tail 100-nen Quest]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–25"
+    aired: 2024-summer
+    last_chapter: 91
+    start_chapter: 92
+    start_volume: 11
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/fairy-tail-100-years-quest/
+    confidence: single
+    last_checked: 2026-09-30

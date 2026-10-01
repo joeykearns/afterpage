@@ -1,0 +1,17 @@
+slug: world-end-harem
+title: "World's End Harem"
+aka: ["Shuumatsu no Harem"]
+source: manga
+entries:
+  - label: "Season 1"
+    kind: season
+    episodes: "1–11"
+    aired: 2021-fall
+    last_chapter: 54
+    start_chapter: 54
+    note: "The finale ends a few pages into Ch. 54. Start at the top of 54."
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/shuumatsu-no-harem/
+    confidence: single
+    last_checked: 2026-09-30

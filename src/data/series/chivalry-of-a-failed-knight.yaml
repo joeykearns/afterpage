@@ -1,0 +1,19 @@
+slug: chivalry-of-a-failed-knight
+title: Chivalry of a Failed Knight
+aka: [Rakudai Kishi no Cavalry]
+source: light_novel
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–12"
+    aired: 2015-fall
+    last_chapter: 3
+    start_chapter: 4
+    note: "Numbers are light novel volumes."
+    sources:
+      - name: Wikipedia (List of Chivalry of a Failed Knight episodes)
+        url: https://en.wikipedia.org/wiki/List_of_Chivalry_of_a_Failed_Knight_episodes
+      - name: Wikipedia (Chivalry of a Failed Knight)
+        url: https://en.wikipedia.org/wiki/Chivalry_of_a_Failed_Knight
+    confidence: single
+    last_checked: 2026-09-30

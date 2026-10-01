@@ -1,0 +1,29 @@
+slug: haganai
+title: "Haganai: I Don't Have Many Friends"
+aka: [Boku wa Tomodachi ga Sukunai, Haganai]
+source: light_novel
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–12"
+    aired: 2011-fall
+    last_chapter: 3
+    start_chapter: 4
+    note: "Numbers are light novel volumes. The season also covers the beginning of volume 4, so start at the top of volume 4."
+    sources:
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/Haganai
+    confidence: single
+    last_checked: 2026-09-30
+  - label: Season 2 (NEXT)
+    kind: season
+    episodes: "1–12"
+    aired: 2013-winter
+    last_chapter: 8
+    start_chapter: 9
+    note: "Numbers are light novel volumes. Wikipedia says the season runs from volume 4 to the first few chapters of volume 9, so start at the top of volume 9. The series has 11 volumes."
+    sources:
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/Haganai
+    confidence: single
+    last_checked: 2026-09-30

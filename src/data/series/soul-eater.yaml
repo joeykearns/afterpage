@@ -1,0 +1,19 @@
+slug: soul-eater
+title: Soul Eater
+aka: [Soul Eater]
+source: manga
+entries:
+  - label: Original series
+    kind: series
+    episodes: "1–51"
+    aired: 2008-spring
+    last_chapter: 37
+    start_chapter: 37
+    start_volume: 10
+    overlap: "The anime ends partway through Ch. 37 (it stops around page 30). Start at the top of 37; Vol. 10 collects Ch. 36–39."
+    note: "The anime switches to its own storyline in the second half; the manga continues from here."
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/soul-eater/
+    confidence: single
+    last_checked: 2026-09-30

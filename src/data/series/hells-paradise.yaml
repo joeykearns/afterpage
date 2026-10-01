@@ -1,0 +1,29 @@
+slug: hells-paradise
+title: Hell's Paradise
+aka: [Jigokuraku]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–13"
+    aired: 2023-spring
+    last_chapter: 45
+    start_chapter: 46
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/jigokuraku/
+    confidence: single
+    last_checked: 2026-09-30
+  - label: Season 2
+    kind: season
+    episodes: "14–25"
+    aired: 2026-winter
+    last_chapter: 89
+    start_chapter: 90
+    start_volume: 10
+    note: "The final episode also draws a few pages from Ch. 94, so a little of what follows may feel familiar."
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/jigokuraku/
+    confidence: single
+    last_checked: 2026-09-30

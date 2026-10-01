@@ -1,0 +1,18 @@
+slug: ayakashi-triangle
+title: Ayakashi Triangle
+aka: [Ayakashi Triangle]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–12"
+    aired: 2023-winter
+    last_chapter: 24
+    start_chapter: 25
+    start_volume: 3
+    note: "Chapters 26, 27 and 34 were adapted out of order within the season, so some of what follows may feel familiar."
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/ayakashi-triangle/
+    confidence: single
+    last_checked: 2026-09-30

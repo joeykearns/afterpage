@@ -1,0 +1,17 @@
+slug: temple
+title: Temple
+aka: [Temple]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–12"
+    aired: 2023-summer
+    last_chapter: 35
+    start_chapter: 36
+    start_volume: 5
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/temple/
+    confidence: single
+    last_checked: 2026-09-30

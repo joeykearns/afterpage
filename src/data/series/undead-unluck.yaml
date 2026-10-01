@@ -1,0 +1,18 @@
+slug: undead-unluck
+title: "Undead Unluck"
+aka: ["Undead Unluck"]
+source: manga
+entries:
+  - label: "Season 1"
+    kind: season
+    episodes: "1–24"
+    aired: 2023-fall
+    last_chapter: 53
+    start_chapter: 53
+    start_volume: 7
+    overlap: "The finale ends partway through Ch. 53. Start at the top of 53."
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/undead-unluck/
+    confidence: single
+    last_checked: 2026-09-30

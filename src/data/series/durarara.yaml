@@ -1,0 +1,17 @@
+slug: durarara
+title: Durarara!!
+aka: [Durarara, DRRR]
+source: light_novel
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–24"
+    aired: 2010-winter
+    last_chapter: 3
+    start_chapter: 4
+    note: "Numbers are light novel volumes."
+    sources:
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/Durarara!!
+    confidence: single
+    last_checked: 2026-09-30

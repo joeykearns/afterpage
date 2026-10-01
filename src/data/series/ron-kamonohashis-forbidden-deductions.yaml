@@ -1,0 +1,18 @@
+slug: ron-kamonohashis-forbidden-deductions
+title: "Ron Kamonohashi's Forbidden Deductions"
+aka: [Kamonohashi Ron no Kindan Suiri]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–13"
+    aired: 2023-fall
+    last_chapter: 21
+    start_chapter: 21
+    start_volume: 4
+    overlap: "The finale ends partway through Ch. 21 (about page 12). Start at the top of 21."
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/kamonohashi-ron-no-kindan-suiri/
+    confidence: single
+    last_checked: 2026-09-30

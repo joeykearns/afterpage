@@ -1,0 +1,18 @@
+slug: witch-watch
+title: "Witch Watch"
+aka: ["Witch Watch"]
+source: manga
+entries:
+  - label: "Season 1"
+    kind: season
+    episodes: "1–25"
+    aired: 2025-spring
+    last_chapter: 98
+    start_chapter: 99
+    start_volume: 12
+    note: "The anime does not adapt the manga in chronological order, so some earlier chapters appear out of sequence."
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/witch-watch/
+    confidence: single
+    last_checked: 2026-09-30

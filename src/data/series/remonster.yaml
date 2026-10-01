@@ -1,0 +1,18 @@
+slug: remonster
+title: "Re:Monster"
+aka: ["Re:Monster"]
+source: manga
+entries:
+  - label: "Season 1"
+    kind: season
+    episodes: "1–12"
+    aired: 2024-spring
+    last_chapter: 60
+    start_chapter: 60
+    start_volume: 7
+    overlap: "The finale ends partway through Ch. 60. Start at the top of 60. The source is also a light novel series; the anime ends at its volume 3."
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/remonster/
+    confidence: single
+    last_checked: 2026-09-30

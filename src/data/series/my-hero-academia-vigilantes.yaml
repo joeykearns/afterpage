@@ -1,0 +1,28 @@
+slug: my-hero-academia-vigilantes
+title: "My Hero Academia: Vigilantes"
+aka: ["Vigilante: Boku no Hero Academia Illegals"]
+source: manga
+entries:
+  - label: "Season 1"
+    kind: season
+    episodes: "1–13"
+    aired: 2025-spring
+    last_chapter: 30
+    start_chapter: 31
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/my-hero-academia-vigilantes/
+    confidence: single
+    last_checked: 2026-09-30
+  - label: "Season 2"
+    kind: season
+    episodes: "14–26"
+    aired: 2026-winter
+    last_chapter: 66
+    start_chapter: 67
+    start_volume: 9
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/my-hero-academia-vigilantes/
+    confidence: single
+    last_checked: 2026-09-30

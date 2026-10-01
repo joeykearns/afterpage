@@ -1,0 +1,18 @@
+slug: d-gray-man
+title: D.Gray-man
+aka: [D.Gray-man Hallow, Dee Gray-man]
+source: manga
+entries:
+  - label: D.Gray-man Hallow
+    kind: season
+    episodes: "104–116"
+    aired: 2016-summer
+    last_chapter: 208
+    start_chapter: 208
+    start_volume: 23
+    overlap: "The final episode ends partway through Ch. 208 (about page 20). Start at the top of 208."
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/d-gray-man/
+    confidence: single
+    last_checked: 2026-09-30

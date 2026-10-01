@@ -1,0 +1,18 @@
+slug: kenichi-the-mightiest-disciple
+title: "Kenichi: The Mightiest Disciple"
+aka: ["Shijou Saikyou no Deshi Kenichi"]
+source: manga
+entries:
+  - label: "Season 1"
+    kind: season
+    episodes: "1–50"
+    aired: 2006-fall
+    last_chapter: 197
+    start_chapter: 198
+    start_volume: 23
+    note: "Bundled OVAs cover chapters beyond this point."
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/kenichi/
+    confidence: single
+    last_checked: 2026-09-30

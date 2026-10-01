@@ -1,0 +1,17 @@
+slug: hyouka
+title: Hyouka
+aka: [Koten-bu Series, Classic Literature Club]
+source: novel
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–22"
+    aired: 2012-spring
+    last_chapter: 4
+    start_chapter: 5
+    note: "Numbers are novel volumes."
+    sources:
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/Hyouka
+    confidence: single
+    last_checked: 2026-09-30

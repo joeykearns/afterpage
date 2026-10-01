@@ -1,0 +1,18 @@
+slug: yona-of-the-dawn
+title: "Yona of the Dawn"
+aka: ["Akatsuki no Yona"]
+source: manga
+entries:
+  - label: "Season 1"
+    kind: season
+    episodes: "1–24"
+    aired: 2014-fall
+    last_chapter: 47
+    start_chapter: 48
+    start_volume: 9
+    overlap: "The finale draws on chapters 42, 43 and 47 according to the source; start at 48 to continue."
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/akatsuki-no-yona/
+    confidence: single
+    last_checked: 2026-09-30

@@ -1,0 +1,16 @@
+slug: high-school-dxd
+title: High School DxD
+aka: [High School DxD]
+source: light_novel
+entries:
+  - label: Season 2 (High School DxD New)
+    kind: season
+    aired: 2013-summer
+    last_chapter: 4
+    start_chapter: 5
+    note: "Numbers are light novel volumes."
+    sources:
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/High_School_DxD
+    confidence: single
+    last_checked: 2026-09-30

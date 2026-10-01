@@ -1,0 +1,17 @@
+slug: love-of-kill
+title: Love of Kill
+aka: [Koroshi Ai]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–12"
+    aired: 2022-winter
+    last_chapter: 42
+    start_chapter: 43
+    start_volume: 8
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/anime/koroshi-ai/
+    confidence: single
+    last_checked: 2026-09-30
