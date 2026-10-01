@@ -1,12 +1,16 @@
 ---
-import { airedLabel, unitLabel } from '../lib/series.mjs';
+import { airedLabel, unitLabel, sourceLabel, isComplete } from '../lib/series.mjs';
 import { feedbackUrl } from '../lib/feedback.mjs';
 
 const { series, entry, permalink, headingLevel = 2 } = Astro.props;
 const H = `h${headingLevel}`;
 const unit = unitLabel(series.source);
 const kindText = entry.kind === 'movie' ? 'Film' : entry.episodes ? `Episodes ${entry.episodes}` : '';
-const answerText = `${series.title}, after ${entry.label}: start at ${unit} ${entry.start_chapter}${entry.start_volume ? ` (Volume ${entry.start_volume})` : ''}`;
+const complete = isComplete(entry);
+const sourceWord = sourceLabel(series.source).toLowerCase();
+const answerText = complete
+  ? `${series.title}, ${entry.label}: the anime covers the whole ${sourceWord}, through ${unit} ${entry.last_chapter}`
+  : `${series.title}, after ${entry.label}: start at ${unit} ${entry.start_chapter}${entry.start_volume ? ` (Volume ${entry.start_volume})` : ''}`;
 
 const trust = {
   agree: `${entry.sources.length} sources agree`,
@@ -30,18 +34,28 @@ const reportUrl = feedbackUrl({ type: 'correction', show: series.title, season: 
 ---
 <article class="answer" id={entry.id} aria-labelledby={`${entry.id}-h`}>
   <header class="answer-head">
-    <H id={`${entry.id}-h`}>After {entry.label}</H>
+    <H id={`${entry.id}-h`}>{complete ? entry.label : `After ${entry.label}`}</H>
     <p class="muted">{[kindText, airedLabel(entry.aired)].filter(Boolean).join(', ')}</p>
     {permalink && <a class="permalink" href={permalink}>Page for this {entry.kind === 'movie' ? 'film' : entry.kind === 'part' ? 'part' : 'season'}</a>}
   </header>
 
-  <div class="start">
-    <span class="ribbon" aria-hidden="true"></span>
-    <p class="start-label">Start reading at</p>
-    <p class="start-number"><span class="unit">{unit}</span> {entry.start_chapter}</p>
-    {entry.start_volume && <p class="start-vol">Volume {entry.start_volume}</p>}
-    <button class="copy" type="button" data-copy={answerText}>Copy answer</button>
-  </div>
+  {complete ? (
+    <div class="start">
+      <span class="ribbon" aria-hidden="true"></span>
+      <p class="start-label">The anime covers</p>
+      <p class="start-number whole">The whole {sourceWord}</p>
+      <p class="start-vol">Through the final {unit.toLowerCase()}, {unit} {entry.last_chapter}</p>
+      <button class="copy" type="button" data-copy={answerText}>Copy answer</button>
+    </div>
+  ) : (
+    <div class="start">
+      <span class="ribbon" aria-hidden="true"></span>
+      <p class="start-label">Start reading at</p>
+      <p class="start-number"><span class="unit">{unit}</span> {entry.start_chapter}</p>
+      {entry.start_volume && <p class="start-vol">Volume {entry.start_volume}</p>}
+      <button class="copy" type="button" data-copy={answerText}>Copy answer</button>
+    </div>
+  )}
 
   {entry.overlap && (
     <p class="callout"><strong>Where it cuts off:</strong> {entry.overlap}</p>
@@ -63,7 +77,7 @@ const reportUrl = feedbackUrl({ type: 'correction', show: series.title, season: 
   )}
 
   <dl class="facts">
-    {entry.last_chapter != null && (<div><dt>Anime ends at</dt><dd>{unit} {entry.last_chapter}</dd></div>)}
+    {entry.last_chapter != null && !complete && (<div><dt>Anime ends at</dt><dd>{unit} {entry.last_chapter}</dd></div>)}
     <div><dt>Skipped by the anime</dt><dd>{entry.skipped.length ? entry.skipped.join('; ') : 'Nothing we know of'}</dd></div>
   </dl>
 
@@ -126,6 +140,7 @@ const reportUrl = feedbackUrl({ type: 'correction', show: series.title, season: 
   }
   .unit { font-size: 0.42em; letter-spacing: 0; font-weight: 500; vertical-align: 0.55em; margin-right: 0.15em; }
   .start-vol { font-weight: 700; margin-top: 6px; }
+  .start-number.whole { font-size: clamp(2rem, 8vw, 2.9rem); line-height: 1.05; letter-spacing: -0.01em; margin-top: 6px; }
   .copy {
     margin-top: 14px;
     font: inherit; font-size: 0.9rem; font-weight: 700;
