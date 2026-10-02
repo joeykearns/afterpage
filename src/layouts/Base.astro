@@ -59,7 +59,7 @@ const fullTitle = title === SITE_NAME ? `${SITE_NAME}: the exact manga chapter t
         } catch (e) {}
       })();
       // App install: sets <html data-install="installed | ready | ios | manual"> so pages can show
-      // the right install help, and makes any [data-install] button open the browser's install prompt.
+      // the right install help, and makes any [data-install-prompt] button open the browser's install prompt.
       (function () {
         var deferred = null;
         var ua = navigator.userAgent;
@@ -75,7 +75,7 @@ const fullTitle = title === SITE_NAME ? `${SITE_NAME}: the exact manga chapter t
         window.addEventListener('beforeinstallprompt', function (e) { e.preventDefault(); deferred = e; set(); });
         window.addEventListener('appinstalled', function () { deferred = null; set(); });
         document.addEventListener('click', function (e) {
-          var btn = e.target && e.target.closest && e.target.closest('[data-install]');
+          var btn = e.target && e.target.closest && e.target.closest('[data-install-prompt]');
           if (!btn || !deferred) return;
           e.preventDefault();
           var prompt = deferred;
