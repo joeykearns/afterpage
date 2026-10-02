@@ -1,0 +1,18 @@
+slug: skip-beat
+title: Skip Beat!
+aka: [Skip Beat]
+source: manga
+entries:
+  - label: Full anime
+    kind: series
+    episodes: "1–25"
+    aired: 2008-fall
+    last_chapter: 66
+    start_chapter: 67
+    sources:
+      - name: Skip Beat Wiki
+        url: https://skip-beat.fandom.com/wiki/Anime
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-skip-beat-anime-end-in-the-manga/
+    confidence: agree
+    last_checked: 2026-09-30

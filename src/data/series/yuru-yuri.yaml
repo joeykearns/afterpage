@@ -1,0 +1,16 @@
+slug: yuru-yuri
+title: YuruYuri
+aka: [Yuru Yuri]
+source: manga
+entries:
+  - label: "Season 3 (San Hai!)"
+    kind: season
+    aired: 2015-fall
+    start_chapter: 99
+    start_volume: 14
+    sources:
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-yuruyuri-anime-end-in-the-manga/
+    confidence: single
+    note: "The anime skips many chapters throughout its run, so reading from the beginning is also a fair choice for this slice-of-life comedy."
+    last_checked: 2026-09-30

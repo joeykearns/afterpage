@@ -1,0 +1,22 @@
+slug: my-happy-marriage
+title: My Happy Marriage
+aka: [Watashi no Shiawase na Kekkon]
+source: light_novel
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–12"
+    aired: 2023-summer
+    last_chapter: 2
+    start_chapter: 3
+    start_volume: 3
+    note: "Season 1 covers Light Novel Volumes 1 and 2."
+    sources:
+      - name: Epicstream
+        url: https://epicstream.com/article/where-to-start-reading-my-happy-marriage-after-anime
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-my-happy-marriage-anime-end-in-the-light-novel/
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/My_Happy_Marriage
+    confidence: agree
+    last_checked: 2026-09-30

@@ -1,0 +1,16 @@
+slug: the-heroic-legend-of-arslan
+title: The Heroic Legend of Arslan
+aka: [Arslan Senki]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–25"
+    aired: 2015-spring
+    start_chapter: 107
+    overlap: "The anime adapts some of Chapter 107 but not all of it; start at the top of 107. The source also notes the anime condenses the story heavily."
+    sources:
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-heroic-legend-of-arslan-anime-leave-off-in-the-light-novel/
+    confidence: single
+    last_checked: 2026-09-30

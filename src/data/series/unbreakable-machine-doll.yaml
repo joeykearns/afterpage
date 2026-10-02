@@ -1,0 +1,18 @@
+slug: unbreakable-machine-doll
+title: Unbreakable Machine-Doll
+aka: [Machine-Doll wa Kizutsukanai]
+source: light_novel
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–12"
+    aired: 2013-fall
+    last_chapter: 3
+    start_chapter: 4
+    start_volume: 4
+    sources:
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/Unbreakable_Machine-Doll
+    confidence: single
+    note: "The anime adapts the first three light novels; the series runs 17 volumes in total."
+    last_checked: 2026-09-30

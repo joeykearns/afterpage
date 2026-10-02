@@ -1,0 +1,18 @@
+slug: lord-marksman-and-vanadis
+title: Lord Marksman and Vanadis
+aka: [Madan no Ou to Vanadis]
+source: light_novel
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–13"
+    aired: 2014-fall
+    last_chapter: 5
+    start_chapter: 6
+    start_volume: 6
+    note: "The 13 episodes cover the first five light novel volumes; the series has 18 volumes in total."
+    sources:
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/Lord_Marksman_and_Vanadis
+    confidence: single
+    last_checked: 2026-09-30

@@ -1,0 +1,16 @@
+slug: nanbaka
+title: Nanbaka
+aka: [Nanbaka]
+source: manga
+entries:
+  - label: Season 2
+    kind: season
+    aired: 2017-winter
+    last_chapter: 94
+    start_chapter: 95
+    sources:
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-nanbaka-anime-end-in-the-manga/
+    confidence: single
+    note: "The source describes the anime as faithful and skipping very little, so there is little need to go back earlier."
+    last_checked: 2026-09-30

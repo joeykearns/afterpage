@@ -1,0 +1,17 @@
+slug: a-sister-is-all-you-need
+title: "A Sister's All You Need."
+aka: [Imouto sae Ireba Ii.]
+source: light_novel
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–12"
+    aired: 2017-fall
+    start_chapter: 4
+    start_volume: 4
+    sources:
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-a-sisters-all-you-need-anime-end-in-the-light-novel/
+    confidence: single
+    note: "The anime jumps around the source, so starting at Volume 4 means some overlap with what you have seen. The light novel is complete at 14 volumes."
+    last_checked: 2026-09-30

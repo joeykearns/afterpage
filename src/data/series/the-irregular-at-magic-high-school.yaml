@@ -1,0 +1,35 @@
+slug: the-irregular-at-magic-high-school
+title: The Irregular at Magic High School
+aka: [Mahouka Koukou no Rettousei, Mahouka]
+source: light_novel
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–26"
+    aired: 2014-spring
+    last_chapter: 7
+    start_chapter: 8
+    start_volume: 8
+    note: "Season 1 covers six of the first seven volumes. Volume 8 was later adapted as a separate TV special (Reminiscence Arc), so Season 2 skips it."
+    sources:
+      - name: Lit Retreat
+        url: https://litretreat.com/irregular-at-magic-high-school-light-novel-reading-order/
+      - name: Mahouka Wiki (Anime)
+        url: https://mahouka-koukou-no-rettousei.fandom.com/wiki/Anime
+    confidence: agree
+    last_checked: 2026-09-30
+  - label: Season 2 (Visitor Arc)
+    kind: season
+    episodes: "27–39"
+    aired: 2020-fall
+    last_chapter: 11
+    start_chapter: 12
+    start_volume: 12
+    note: "The Visitor Arc covers Volumes 9-11."
+    sources:
+      - name: Lit Retreat
+        url: https://litretreat.com/irregular-at-magic-high-school-light-novel-reading-order/
+      - name: Mahouka Wiki (Anime)
+        url: https://mahouka-koukou-no-rettousei.fandom.com/wiki/Anime
+    confidence: agree
+    last_checked: 2026-09-30

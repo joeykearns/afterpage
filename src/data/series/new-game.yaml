@@ -1,0 +1,17 @@
+slug: new-game
+title: New Game!
+aka: [New Game]
+source: manga
+entries:
+  - label: Season 2
+    kind: season
+    aired: 2017-summer
+    start_chapter: 65
+    note: "This is the continuation point after both seasons. The anime skipped the side stories collected in Volume 5; they are optional reading."
+    sources:
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-new-game-anime-end-in-the-manga/
+      - name: Wikipedia (air dates)
+        url: https://en.wikipedia.org/wiki/New_Game!
+    confidence: single
+    last_checked: 2026-09-30

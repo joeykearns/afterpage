@@ -1,0 +1,29 @@
+slug: nura-rise-of-the-yokai-clan
+title: "Nura: Rise of the Yokai Clan"
+aka: [Nurarihyon no Mago]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    aired: 2010-summer
+    last_chapter: 83
+    start_chapter: 84
+    sources:
+      - name: MangaShed
+        url: https://mangashed.com/where-does-the-nura-rise-of-the-yokai-clan-anime-end-in-the-manga/
+    confidence: single
+    last_checked: 2026-09-30
+  - label: Season 2
+    kind: season
+    aired: 2011-summer
+    last_chapter: 134
+    start_chapter: 135
+    start_volume: 17
+    note: "The manga is complete at 218 chapters."
+    sources:
+      - name: MangaShed
+        url: https://mangashed.com/where-does-the-nura-rise-of-the-yokai-clan-anime-end-in-the-manga/
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-nura-rise-of-the-yokai-clan-anime-end-in-the-manga/
+    confidence: agree
+    last_checked: 2026-09-30

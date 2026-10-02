@@ -1,0 +1,19 @@
+slug: astra-lost-in-space
+title: Astra Lost in Space
+aka: [Kanata no Astra]
+source: manga
+entries:
+  - label: Full series
+    kind: series
+    episodes: "1–12"
+    aired: 2019-summer
+    covers_all: true
+    last_chapter: 49
+    sources:
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/Astra_Lost_in_Space
+      - name: TV Tropes
+        url: https://tvtropes.org/pmwiki/pmwiki.php/Manga/AstraLostInSpace
+    confidence: single
+    note: "The manga is complete at 49 chapters in 5 volumes."
+    last_checked: 2026-09-30

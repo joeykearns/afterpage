@@ -1,0 +1,18 @@
+slug: dimension-w
+title: Dimension W
+aka: [Dimension W]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–12"
+    aired: 2016-winter
+    last_chapter: 75
+    start_chapter: 76
+    start_volume: 10
+    note: "The anime was heavily condensed, so rereading from the beginning is recommended."
+    sources:
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-dimension-w-anime-end-in-the-manga/
+    confidence: single
+    last_checked: 2026-09-30

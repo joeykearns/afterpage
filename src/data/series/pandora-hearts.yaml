@@ -1,0 +1,18 @@
+slug: pandora-hearts
+title: Pandora Hearts
+aka: [Pandora Hearts]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–25"
+    aired: 2009-spring
+    start_chapter: 33
+    note: "The anime diverges from the manga with its own ending, so the manga picks up the story from here. The manga is complete."
+    sources:
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-pandora-hearts-anime-end-in-the-manga/
+      - name: Wikipedia (episode count and air dates)
+        url: https://en.wikipedia.org/wiki/Pandora_Hearts
+    confidence: single
+    last_checked: 2026-09-30

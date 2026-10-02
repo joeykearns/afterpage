@@ -1,0 +1,16 @@
+slug: high-rise-invasion
+title: High-Rise Invasion
+aka: [Tenkuu Shinpan]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–12"
+    aired: 2021-winter
+    start_chapter: 150
+    note: "The 12 episodes compress a lot of material; the source suggests reading from the beginning if you want the skipped content."
+    sources:
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-high-rise-invasion-anime-leave-off-in-the-manga/
+    confidence: single
+    last_checked: 2026-09-30

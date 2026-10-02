@@ -1,0 +1,19 @@
+slug: arakawa-under-the-bridge
+title: Arakawa Under the Bridge
+aka: [Arakawa Under the Bridge]
+source: manga
+read_official:
+  - name: Kodansha (English)
+    url: https://kodansha.us/series/arakawa-under-the-bridge/
+entries:
+  - label: "Seasons 1-2 (2010)"
+    kind: series
+    episodes: "1–26"
+    aired: 2010-spring
+    start_chapter: 267
+    sources:
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/arakawa-under-bridge-manga-after-anime/
+    confidence: single
+    note: "The anime skips many chapters, so it is not a straight chapter-for-chapter adaptation. The manga ends at Chapter 410."
+    last_checked: 2026-09-30

@@ -1,0 +1,19 @@
+slug: jormungand
+title: Jormungand
+aka: [Jormungand]
+source: manga
+entries:
+  - label: "Seasons 1 and 2 (2012)"
+    kind: series
+    episodes: "1–24"
+    aired: 2012-spring
+    covers_all: true
+    last_chapter: 70
+    note: "The manga is complete at 70 chapters (11 volumes); the final episode adapts Chapters 69-70."
+    sources:
+      - name: Jormungand Wiki (Episode 24)
+        url: https://jormungand.fandom.com/wiki/Episode_24
+      - name: Dark Fantasy Manga
+        url: https://darkfantasymanga.com/2026/08/05/jormungand-manga-volumes/
+    confidence: agree
+    last_checked: 2026-09-30
