@@ -1,0 +1,20 @@
+slug: asobi-asobase
+title: Asobi Asobase
+aka: [Asobi Asobase]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–12"
+    aired: 2018-summer
+    last_chapter: 46
+    start_chapter: 47
+    start_volume: 5
+    note: "The anime adapts nearly all chapters up to this point (about five skipped). The OVA covers Chapters 43 and 48."
+    sources:
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-asobi-asobase-anime-end-in-the-manga/
+      - name: Wikipedia (episode count and air dates)
+        url: https://en.wikipedia.org/wiki/Asobi_Asobase
+    confidence: single
+    last_checked: 2026-09-30

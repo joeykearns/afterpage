@@ -1,0 +1,27 @@
+slug: nisekoi
+title: Nisekoi
+aka: ["Nisekoi: False Love"]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–20"
+    aired: 2014-winter
+    last_chapter: 50
+    start_chapter: 51
+    sources:
+      - name: MangaShed
+        url: https://mangashed.com/where-does-the-nisekoi-anime-end-in-the-manga/
+    confidence: single
+    last_checked: 2026-09-30
+  - label: "Season 2 (Nisekoi:)"
+    kind: season
+    aired: 2015-spring
+    last_chapter: 106
+    start_chapter: 107
+    note: "The manga has 229 chapters in total and a definitive ending, unlike the anime's open conclusion."
+    sources:
+      - name: MangaShed
+        url: https://mangashed.com/where-does-the-nisekoi-anime-end-in-the-manga/
+    confidence: single
+    last_checked: 2026-09-30

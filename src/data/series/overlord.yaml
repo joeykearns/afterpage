@@ -1,0 +1,20 @@
+slug: overlord
+title: Overlord
+aka: [Overlord]
+source: light_novel
+entries:
+  - label: Season 4
+    kind: season
+    aired: 2022-summer
+    last_chapter: 14
+    start_chapter: 15
+    note: "Season 4 adapts volumes 10, 11 and 14. Volumes 12-13 were skipped and are planned as a separate film, so read those first if you want that part of the story."
+    sources:
+      - name: Epicstream
+        url: https://epicstream.com/article/where-to-start-overlord-light-novel-after-anime
+      - name: MangaShed
+        url: https://mangashed.com/where-does-the-overlord-anime-leave-off-in-the-light-novels/
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/Overlord_season_4
+    confidence: agree
+    last_checked: 2026-09-30

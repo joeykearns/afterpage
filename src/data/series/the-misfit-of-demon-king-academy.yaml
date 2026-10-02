@@ -1,0 +1,30 @@
+slug: the-misfit-of-demon-king-academy
+title: The Misfit of Demon King Academy
+aka: [Maou Gakuin no Futekigousha, Maou Gakuin]
+source: light_novel
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–13"
+    aired: 2020-summer
+    last_chapter: 3
+    start_chapter: 4
+    start_volume: 4
+    sources:
+      - name: MangaShed
+        url: https://mangashed.com/where-does-the-misfit-of-demon-king-academy-anime-leave-off-in-the-light-novel/
+    confidence: single
+    last_checked: 2026-09-30
+  - label: Season 2 Part 2
+    kind: part
+    aired: 2024-spring
+    last_chapter: 6
+    start_chapter: 7
+    start_volume: 7
+    sources:
+      - name: MangaShed
+        url: https://mangashed.com/where-does-the-misfit-of-demon-king-academy-anime-leave-off-in-the-light-novel/
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-misfit-of-demon-king-academy-anime-leave-off-in-the-light-novel/
+    confidence: agree
+    last_checked: 2026-09-30

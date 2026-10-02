@@ -1,0 +1,19 @@
+slug: toradora
+title: Toradora!
+aka: [Toradora]
+source: light_novel
+entries:
+  - label: Full series
+    kind: series
+    episodes: "1–25"
+    aired: 2008-fall
+    covers_all: true
+    last_chapter: 10
+    note: "The anime ran alongside the novels and its ending was written before the final volume was out. Volume 10 gives the novel's own version of the ending."
+    sources:
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/Toradora!
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-toradora-anime-end-in-the-light-novel/
+    confidence: agree
+    last_checked: 2026-09-30

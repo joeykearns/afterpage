@@ -1,0 +1,30 @@
+slug: kamisama-kiss
+title: Kamisama Kiss
+aka: [Kamisama Hajimemashita]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–13"
+    aired: 2012-fall
+    last_chapter: 30
+    start_chapter: 31
+    sources:
+      - name: MangaShed
+        url: https://mangashed.com/where-does-the-kamisama-kiss-anime-leave-off-in-the-manga/
+    confidence: single
+    last_checked: 2026-09-30
+  - label: Season 2
+    kind: season
+    episodes: "14–25"
+    aired: 2015-winter
+    last_chapter: 64
+    start_chapter: 65
+    note: "Later OVAs (the Kako-hen) adapt chapters 86–100, so the full story is best read from chapter 65 or from chapter 101 if you watch the OVAs."
+    sources:
+      - name: MangaShed
+        url: https://mangashed.com/where-does-the-kamisama-kiss-anime-leave-off-in-the-manga/
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/List_of_Kamisama_Kiss_episodes
+    confidence: single
+    last_checked: 2026-09-30

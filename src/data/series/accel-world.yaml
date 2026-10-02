@@ -1,0 +1,17 @@
+slug: accel-world
+title: Accel World
+aka: [Accel World]
+source: light_novel
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–24"
+    aired: 2012-spring
+    last_chapter: 4
+    start_chapter: 5
+    note: "Light novel volumes are numbered here (volume numbers, not chapters). The anime also pulls two short stories from Volume 10 into its timeline."
+    sources:
+      - name: MangaShed
+        url: https://mangashed.com/where-does-the-accel-world-anime-end-in-the-light-novel/
+    confidence: single
+    last_checked: 2026-09-30

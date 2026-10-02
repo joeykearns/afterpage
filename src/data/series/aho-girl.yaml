@@ -1,0 +1,18 @@
+slug: aho-girl
+title: Aho-Girl
+aka: [Aho Girl]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–12"
+    aired: 2017-summer
+    last_chapter: 85
+    start_chapter: 86
+    start_volume: 6
+    note: "The anime skips a lot of short comedic chapters and jumps around the manga, so it is fine to read from the start as well."
+    sources:
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-aho-girl-anime-end-in-the-manga/
+    confidence: single
+    last_checked: 2026-09-30

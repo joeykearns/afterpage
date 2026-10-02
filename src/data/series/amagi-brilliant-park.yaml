@@ -1,0 +1,19 @@
+slug: amagi-brilliant-park
+title: Amagi Brilliant Park
+aka: [Amaburi]
+source: light_novel
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–13"
+    aired: 2014-fall
+    last_chapter: 2
+    start_chapter: 3
+    note: "The anime rearranges events and uses an anime-original ending; some scenes from volume 3 appear early. Many fans suggest starting from volume 1."
+    sources:
+      - name: MangaShed
+        url: https://mangashed.com/where-does-the-amagi-brilliant-park-anime-leave-off-in-the-light-novels/
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/Amagi_Brilliant_Park
+    confidence: single
+    last_checked: 2026-09-30

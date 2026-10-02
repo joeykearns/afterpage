@@ -1,0 +1,44 @@
+slug: a-certain-scientific-railgun
+title: A Certain Scientific Railgun
+aka: [Toaru Kagaku no Railgun, Railgun]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–24"
+    aired: 2009-fall
+    start_chapter: 18
+    start_volume: 4
+    sources:
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-a-certain-magical-index-a-certain-scientific-railgun-anime-leave-off-in-the-light-novels/
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/A_Certain_Scientific_Railgun
+    confidence: single
+    last_checked: 2026-09-30
+  - label: Season 2 (Railgun S)
+    kind: season
+    episodes: "1–24"
+    aired: 2013-spring
+    start_chapter: 43
+    start_volume: 7
+    sources:
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-a-certain-magical-index-a-certain-scientific-railgun-anime-leave-off-in-the-light-novels/
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/A_Certain_Scientific_Railgun
+    confidence: single
+    last_checked: 2026-09-30
+  - label: Season 3 (Railgun T)
+    kind: season
+    episodes: "1–25"
+    aired: 2020-winter
+    start_chapter: 97
+    start_volume: 14
+    sources:
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-a-certain-magical-index-a-certain-scientific-railgun-anime-leave-off-in-the-light-novels/
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/A_Certain_Scientific_Railgun
+    confidence: single
+    last_checked: 2026-09-30

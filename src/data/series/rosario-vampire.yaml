@@ -1,0 +1,19 @@
+slug: rosario-vampire
+title: Rosario + Vampire
+aka: [Rosario to Vampire]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–13"
+    aired: 2008-winter
+    last_chapter: 25
+    start_chapter: 26
+    note: "Season 2 (Capu2, 2008) is described as almost entirely anime-original and does not move the manga story forward. The manga is published in two parts: Rosario + Vampire (10 volumes) and Season II (14 volumes)."
+    sources:
+      - name: MangaShed
+        url: https://mangashed.com/where-does-the-rosario-vampire-anime-leave-off-in-the-manga/
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/Rosario_%2B_Vampire
+    confidence: single
+    last_checked: 2026-09-30

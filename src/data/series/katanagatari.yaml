@@ -1,0 +1,17 @@
+slug: katanagatari
+title: Katanagatari
+aka: [Katanagatari]
+source: light_novel
+entries:
+  - label: Full series
+    kind: series
+    episodes: "1–12"
+    aired: 2010-winter
+    covers_all: true
+    last_chapter: 12
+    note: "Each episode corresponds to one of the 12 main light novel volumes."
+    sources:
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/Katanagatari
+    confidence: single
+    last_checked: 2026-09-30

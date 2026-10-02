@@ -1,0 +1,17 @@
+slug: in-spectre
+title: In/Spectre
+aka: ["Kyokou Suiri"]
+source: manga
+entries:
+  - label: Season 2
+    kind: season
+    aired: 2023-winter
+    start_chapter: 34
+    note: "The anime adapts its arcs out of order; the source says it adapts two of the four chapters of Volume 12."
+    sources:
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-in-spectre-anime-leave-off-in-the-manga/
+      - name: Wikipedia (air dates)
+        url: https://en.wikipedia.org/wiki/In/Spectre
+    confidence: single
+    last_checked: 2026-09-30

@@ -1,0 +1,28 @@
+slug: black-butler
+title: Black Butler
+aka: [Kuroshitsuji]
+source: manga
+entries:
+  - label: "Book of Circus"
+    kind: season
+    aired: 2014-summer
+    start_chapter: 36
+    sources:
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-black-butler-anime-leave-off-in-the-manga/
+    confidence: single
+    last_checked: 2026-09-30
+  - label: "Public School Arc"
+    kind: season
+    episodes: "1–11"
+    aired: 2024-spring
+    last_chapter: 86
+    start_chapter: 86
+    note: "The finale ends within the first few pages of Ch. 86. Start at the top of 86."
+    sources:
+      - name: Sportskeeda
+        url: https://www.sportskeeda.com/anime/where-start-black-butler-manga-season-4-explained
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-black-butler-anime-leave-off-in-the-manga/
+    confidence: agree
+    last_checked: 2026-09-30

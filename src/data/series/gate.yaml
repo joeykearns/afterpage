@@ -1,0 +1,20 @@
+slug: gate
+title: Gate
+aka: ["Gate: Jieitai Kanochi nite, Kaku Tatakaeri"]
+source: light_novel
+entries:
+  - label: Season 1 (both cours)
+    kind: season
+    episodes: "1–24"
+    aired: 2015-summer
+    last_chapter: 5
+    start_chapter: 6
+    start_volume: 6
+    note: "The anime covers the original five-volume novel series; the story continues in the later 'Season 2' novels."
+    sources:
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-gate-thus-the-jsdf-fought-there-anime-leave-off-in-the-light-novel/
+      - name: Wikipedia (Gate novel series)
+        url: https://en.wikipedia.org/wiki/Gate_(novel_series)
+    confidence: agree
+    last_checked: 2026-09-30

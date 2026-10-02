@@ -1,0 +1,19 @@
+slug: the-god-of-high-school
+title: The God of High School
+aka: [GoH]
+source: webtoon
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–13"
+    aired: 2020-summer
+    last_chapter: 111
+    start_chapter: 112
+    note: "Sources differ by one chapter on where episode 13 ends. Start at the top of 112 to be safe."
+    sources:
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-god-of-high-school-anime-leave-off-in-the-manga/
+      - name: Explore Anime
+        url: https://www.exploreanime.com/where-does-the-god-of-high-school-anime-end-in-the-webtoon/
+    confidence: differ
+    last_checked: 2026-09-30

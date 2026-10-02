@@ -1,0 +1,43 @@
+slug: the-world-god-only-knows
+title: The World God Only Knows
+aka: [Kami nomi zo Shiru Sekai, TWGOK]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–12"
+    aired: 2010-fall
+    last_chapter: 16
+    start_chapter: 17
+    sources:
+      - name: MangaShed
+        url: https://mangashed.com/where-does-the-world-god-only-knows-anime-leave-off-in-the-manga/
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/The_World_God_Only_Knows_season_1
+    confidence: single
+    last_checked: 2026-09-30
+  - label: Season 2
+    kind: season
+    aired: 2011-spring
+    last_chapter: 41
+    start_chapter: 42
+    note: "Season 3 skips chapters 42 to 113, so reading on from chapter 42 fills that gap."
+    sources:
+      - name: MangaShed
+        url: https://mangashed.com/where-does-the-world-god-only-knows-anime-leave-off-in-the-manga/
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/The_World_God_Only_Knows_II
+    confidence: single
+    last_checked: 2026-09-30
+  - label: Season 3
+    kind: season
+    aired: 2013-summer
+    last_chapter: 189
+    start_chapter: 190
+    sources:
+      - name: MangaShed
+        url: https://mangashed.com/where-does-the-world-god-only-knows-anime-leave-off-in-the-manga/
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/The_World_God_Only_Knows:_Goddesses
+    confidence: single
+    last_checked: 2026-09-30

@@ -1,0 +1,16 @@
+slug: highschool-of-the-dead
+title: Highschool of the Dead
+aka: [HOTD, Gakuen Mokushiroku]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    aired: 2010-summer
+    last_chapter: 18
+    start_chapter: 18
+    note: "The anime deviates from the manga in places, so reading from the start gives the full story."
+    sources:
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-high-school-of-the-dead-anime-leave-off-in-the-manga/
+    confidence: single
+    last_checked: 2026-09-30

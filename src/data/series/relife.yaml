@@ -1,0 +1,19 @@
+slug: relife
+title: ReLIFE
+aka: [ReLIFE]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–13"
+    aired: 2016-summer
+    last_chapter: 108
+    start_chapter: 109
+    note: "The manga has 222 chapters and is complete."
+    sources:
+      - name: MangaShed
+        url: https://mangashed.com/where-does-the-relife-anime-leave-off-in-the-manga/
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/ReLIFE
+    confidence: single
+    last_checked: 2026-09-30

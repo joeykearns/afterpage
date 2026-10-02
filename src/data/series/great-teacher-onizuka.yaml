@@ -1,0 +1,19 @@
+slug: great-teacher-onizuka
+title: Great Teacher Onizuka
+aka: [GTO]
+source: manga
+entries:
+  - label: Original anime
+    kind: series
+    episodes: "1–43"
+    aired: 1999-summer
+    last_chapter: 106
+    start_chapter: 106
+    note: "The anime ends with its own original ending and skips some chapters. Sources differ by one chapter on the last one adapted, so start at the top of 106."
+    sources:
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-great-teacher-onizuka-anime-end-in-the-manga/
+      - name: Blinkanime
+        url: https://blinkanime.com/great-teacher-onizuka-manga-after-anime-where-to-start/
+    confidence: differ
+    last_checked: 2026-09-30

@@ -1,0 +1,17 @@
+slug: snow-white-with-the-red-hair
+title: Snow White with the Red Hair
+aka: [Akagami no Shirayuki-hime]
+source: manga
+entries:
+  - label: Season 2
+    kind: season
+    episodes: "13–24"
+    aired: 2016-winter
+    last_chapter: 32
+    start_chapter: 33
+    note: "Source gives the season ending at Chapter 32 (Volume 8); the anime has a slightly rearranged ending."
+    sources:
+      - name: MangaShed
+        url: https://mangashed.com/where-does-the-snow-white-with-the-red-hair-anime-leave-off-in-the-manga/
+    confidence: single
+    last_checked: 2026-09-30

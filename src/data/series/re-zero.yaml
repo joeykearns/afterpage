@@ -1,0 +1,41 @@
+slug: re-zero
+title: "Re:Zero − Starting Life in Another World"
+aka: ["Re:Zero kara Hajimeru Isekai Seikatsu", "Re:Zero"]
+source: light_novel
+entries:
+  - label: Season 1
+    kind: season
+    aired: 2016-spring
+    last_chapter: 9
+    start_chapter: 9
+    note: "Season 1 ends partway through Volume 9 (around Chapter 5 of that volume), so Volume 9 is the place to pick up. Starting from Volume 1 is also recommended."
+    sources:
+      - name: MangaShed
+        url: https://mangashed.com/where-does-the-rezero-anime-leave-off-in-the-light-novel/
+    confidence: single
+    last_checked: 2026-09-30
+  - label: Season 2
+    kind: season
+    aired: 2020-summer
+    last_chapter: 15
+    start_chapter: 16
+    start_volume: 16
+    sources:
+      - name: MangaShed
+        url: https://mangashed.com/where-does-the-rezero-anime-leave-off-in-the-light-novel/
+    confidence: single
+    last_checked: 2026-09-30
+  - label: Season 3
+    kind: season
+    episodes: "51–66"
+    aired: 2024-fall
+    last_chapter: 20
+    start_chapter: 21
+    start_volume: 21
+    sources:
+      - name: Anime Corner
+        url: https://animecorner.me/where-to-continue-rezero-novel-after-season-3-anime/
+      - name: MangaShed
+        url: https://mangashed.com/where-does-the-rezero-anime-leave-off-in-the-light-novel/
+    confidence: agree
+    last_checked: 2026-09-30

@@ -1,0 +1,19 @@
+slug: magi
+title: "Magi: The Labyrinth of Magic"
+aka: [Magi]
+source: manga
+entries:
+  - label: Season 2 (The Kingdom of Magic)
+    kind: season
+    aired: 2013-fall
+    start_chapter: 198
+    last_chapter: 198
+    sources:
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-magi-anime-end-in-the-manga/
+      - name: Quote the Anime
+        url: https://quotetheanime.com/watch-order/magi/
+    confidence: differ
+    note: "One source says the anime adapts through Ch. 198, another says to continue at Ch. 198. The manga has 369 chapters in 37 volumes."
+    overlap: "Season 2 ends around Ch. 198. Start at the top of 198 to be safe."
+    last_checked: 2026-09-30

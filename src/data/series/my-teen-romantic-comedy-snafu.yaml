@@ -1,0 +1,40 @@
+slug: my-teen-romantic-comedy-snafu
+title: My Teen Romantic Comedy SNAFU
+aka: [Yahari Ore no Seishun Love Comedy wa Machigatteiru, Oregairu]
+source: light_novel
+entries:
+  - label: Season 1
+    kind: season
+    aired: 2013-spring
+    last_chapter: 6
+    start_chapter: 7
+    sources:
+      - name: English Light Novels
+        url: https://www.englishlightnovels.com/2017/04/29/after-the-anime-what-ln-volume-to-read-first/
+      - name: Lit Retreat
+        url: https://litretreat.com/my-youth-romantic-comedy-is-wrong-as-i-expected-light-novel-reading-order/
+    confidence: agree
+    last_checked: 2026-09-30
+  - label: Season 2
+    kind: season
+    aired: 2015-spring
+    last_chapter: 11
+    start_chapter: 12
+    sources:
+      - name: English Light Novels
+        url: https://www.englishlightnovels.com/2017/04/29/after-the-anime-what-ln-volume-to-read-first/
+      - name: Lit Retreat
+        url: https://litretreat.com/my-youth-romantic-comedy-is-wrong-as-i-expected-light-novel-reading-order/
+    confidence: agree
+    last_checked: 2026-09-30
+  - label: Season 3
+    kind: season
+    aired: 2020-summer
+    last_chapter: 14
+    start_chapter: 15
+    note: "Season 3 is the final season. The short-story volumes 6.5, 7.5, 10.5 and 14.5 are not adapted."
+    sources:
+      - name: Lit Retreat
+        url: https://litretreat.com/my-youth-romantic-comedy-is-wrong-as-i-expected-light-novel-reading-order/
+    confidence: single
+    last_checked: 2026-09-30

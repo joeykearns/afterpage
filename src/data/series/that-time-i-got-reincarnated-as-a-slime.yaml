@@ -1,0 +1,43 @@
+slug: that-time-i-got-reincarnated-as-a-slime
+title: That Time I Got Reincarnated as a Slime
+aka: [Tensei shitara Slime Datta Ken, Tensura, TenSura]
+source: light_novel
+entries:
+  - label: Season 1
+    kind: season
+    aired: 2018-fall
+    episodes: "1–24"
+    last_chapter: 4
+    start_chapter: 4
+    note: "Season 2 later adapts material from volume 4 that Season 1 skipped, so volume 4 is where to pick up."
+    sources:
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-that-time-i-got-reincarnated-as-a-slime-anime-leave-off-in-the-light-novel/
+      - name: Lit Retreat
+        url: https://litretreat.com/that-time-i-got-reincarnated-as-a-slime-light-novel-reading-order/
+    confidence: agree
+    last_checked: 2026-09-30
+  - label: Season 2
+    kind: season
+    aired: 2021-winter
+    last_chapter: 6
+    start_chapter: 7
+    sources:
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-that-time-i-got-reincarnated-as-a-slime-anime-leave-off-in-the-light-novel/
+      - name: Lit Retreat
+        url: https://litretreat.com/that-time-i-got-reincarnated-as-a-slime-light-novel-reading-order/
+    confidence: agree
+    last_checked: 2026-09-30
+  - label: Season 3
+    kind: season
+    aired: 2024-spring
+    last_chapter: 9
+    start_chapter: 10
+    sources:
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-that-time-i-got-reincarnated-as-a-slime-anime-leave-off-in-the-light-novel/
+      - name: Lit Retreat
+        url: https://litretreat.com/that-time-i-got-reincarnated-as-a-slime-light-novel-reading-order/
+    confidence: agree
+    last_checked: 2026-09-30

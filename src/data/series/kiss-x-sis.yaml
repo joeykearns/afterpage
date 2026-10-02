@@ -1,0 +1,18 @@
+slug: kiss-x-sis
+title: Kiss x Sis
+aka: [Kiss x Sis]
+source: manga
+entries:
+  - label: TV series
+    kind: series
+    episodes: "1–12"
+    aired: 2010-spring
+    start_chapter: 19
+    note: "The separate OVA series goes further into the manga; the source suggests Ch. 64 for OVA viewers. The manga is complete at Ch. 156."
+    sources:
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-kiss-x-sis-anime-end-in-the-manga/
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/Kiss%C3%97sis
+    confidence: single
+    last_checked: 2026-09-30

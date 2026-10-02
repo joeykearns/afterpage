@@ -1,0 +1,19 @@
+slug: kaguya-sama-love-is-war
+title: "Kaguya-sama: Love Is War"
+aka: ["Kaguya-sama wa Kokurasetai", "Kaguya-sama"]
+source: manga
+entries:
+  - label: Season 3 (Ultra Romantic)
+    kind: season
+    aired: 2022-spring
+    last_chapter: 137
+    start_chapter: 137
+    note: "Guides give slightly different spots to resume (Ch. 137 to 139). The manga is complete at 281 chapters."
+    overlap: "Sources disagree by a chapter or so. Starting at Ch. 137 avoids missing anything."
+    sources:
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-kaguya-sama-love-is-war-anime-leave-off-in-the-manga/
+      - name: Epicstream
+        url: https://epicstream.com/article/where-should-you-read-kaguya-sama-love-is-war-after-the-anime
+    confidence: differ
+    last_checked: 2026-09-30

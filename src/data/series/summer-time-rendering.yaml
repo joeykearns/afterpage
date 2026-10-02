@@ -1,0 +1,19 @@
+slug: summer-time-rendering
+title: Summer Time Rendering
+aka: [Summertime Render]
+source: manga
+entries:
+  - label: Full series
+    kind: series
+    episodes: "1–25"
+    aired: 2022-spring
+    covers_all: true
+    last_chapter: 139
+    note: "The anime adapts the whole story across two cours; the manga has 13 volumes."
+    sources:
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/Summer_Time_Rendering
+      - name: Epicstream
+        url: https://epicstream.com/article/is-summer-time-rendering-manga-finished-or-ongoing-current-status
+    confidence: single
+    last_checked: 2026-09-30

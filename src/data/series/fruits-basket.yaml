@@ -1,0 +1,19 @@
+slug: fruits-basket
+title: Fruits Basket
+aka: [Furuba]
+source: manga
+entries:
+  - label: "2019 anime (all 3 seasons)"
+    kind: series
+    episodes: "1–63"
+    aired: 2019-spring
+    covers_all: true
+    last_chapter: 136
+    note: "The 2019 anime adapts the whole manga, which has 136 chapters in 23 volumes. The older 2001 anime did not."
+    sources:
+      - name: Wikipedia (Fruits Basket)
+        url: https://en.wikipedia.org/wiki/Fruits_Basket
+      - name: Fruits Basket Wiki (Chapter 136)
+        url: https://fruitsbasket.fandom.com/wiki/Chapter_136
+    confidence: agree
+    last_checked: 2026-09-30

@@ -1,0 +1,16 @@
+slug: my-little-monster
+title: My Little Monster
+aka: [Tonari no Kaibutsu-kun]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–13"
+    aired: 2012-fall
+    last_chapter: 15
+    start_chapter: 16
+    sources:
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-my-little-monster-anime-leave-off-in-the-manga/
+    confidence: single
+    last_checked: 2026-09-30

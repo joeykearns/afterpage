@@ -1,0 +1,47 @@
+slug: the-rising-of-the-shield-hero
+title: The Rising of the Shield Hero
+aka: [Tate no Yuusha no Nariagari, Shield Hero]
+source: light_novel
+entries:
+  - label: Season 1
+    kind: season
+    aired: 2019-winter
+    last_chapter: 5
+    start_chapter: 6
+    sources:
+      - name: Epicstream
+        url: https://epicstream.com/article/where-start-reading-rising-of-the-shield-hero-after-anime
+    confidence: single
+    last_checked: 2026-09-30
+  - label: Season 2
+    kind: season
+    aired: 2022-spring
+    last_chapter: 9
+    start_chapter: 10
+    sources:
+      - name: Epicstream
+        url: https://epicstream.com/article/where-start-reading-rising-of-the-shield-hero-after-anime
+    confidence: single
+    last_checked: 2026-09-30
+  - label: Season 3
+    kind: season
+    aired: 2023-fall
+    last_chapter: 12
+    start_chapter: 13
+    sources:
+      - name: Epicstream
+        url: https://epicstream.com/article/where-start-reading-rising-of-the-shield-hero-after-anime
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/The_Rising_of_the_Shield_Hero_season_3
+    confidence: agree
+    last_checked: 2026-09-30
+  - label: Season 4
+    kind: season
+    aired: 2025-summer
+    last_chapter: 14
+    start_chapter: 15
+    sources:
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/The_Rising_of_the_Shield_Hero_season_4
+    confidence: single
+    last_checked: 2026-09-30
