@@ -1,0 +1,17 @@
+slug: keijo
+title: Keijo!!!!!!!!
+aka: [Keijo]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–12"
+    aired: 2016-fall
+    last_chapter: 94
+    start_chapter: 95
+    note: "One source says the anime ends right at the beginning of Ch. 95 (Vol. 12), so start there."
+    sources:
+      - name: MangaShed
+        url: https://mangashed.com/where-does-the-keijo-anime-end-in-the-manga/
+    confidence: single
+    last_checked: 2026-09-30

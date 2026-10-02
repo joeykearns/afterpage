@@ -1,0 +1,17 @@
+slug: my-deer-friend-nokotan
+title: My Deer Friend Nokotan
+aka: [Shikanoko Nokonoko Koshitantan]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–12"
+    aired: 2024-summer
+    last_chapter: 30
+    start_chapter: 31
+    note: "The final episode includes some anime-original content."
+    sources:
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-my-deer-friend-nokotan-anime-end-in-the-manga/
+    confidence: single
+    last_checked: 2026-09-30

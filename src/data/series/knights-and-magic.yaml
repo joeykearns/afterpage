@@ -1,0 +1,16 @@
+slug: knights-and-magic
+title: "Knight's & Magic"
+aka: [Knights and Magic]
+source: light_novel
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–13"
+    aired: 2017-summer
+    start_chapter: 5
+    note: "The source describes the anime as heavily abridged and recommends reading from the beginning."
+    sources:
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-knights-magic-anime-end-in-the-light-novel/
+    confidence: single
+    last_checked: 2026-09-30

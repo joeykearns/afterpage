@@ -1,0 +1,19 @@
+slug: bokura-ga-ita
+title: We Were There
+aka: [Bokura ga Ita]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–26"
+    aired: 2006-summer
+    start_chapter: 32
+    start_volume: 9
+    note: "The anime covers only the first portion of the 16-volume manga and has its own conclusion."
+    sources:
+      - name: Blinkanime
+        url: https://blinkanime.com/bokura-ga-ita-manga-after-anime-where-to-start/
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/We_Were_There_(manga)
+    confidence: single
+    last_checked: 2026-09-30

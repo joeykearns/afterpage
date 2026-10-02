@@ -1,0 +1,38 @@
+slug: is-the-order-a-rabbit
+title: Is the Order a Rabbit?
+aka: [Gochuumon wa Usagi desu ka?, GochiUsa]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–12"
+    aired: 2014-spring
+    start_chapter: 31
+    note: "Four-panel manga; the anime skips and reorders some chapters, so starting a little earlier is harmless."
+    sources:
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-is-the-order-a-rabbit-anime-end-in-the-manga/
+    confidence: single
+    last_checked: 2026-09-30
+  - label: Season 2
+    kind: season
+    episodes: "1–12"
+    aired: 2015-fall
+    start_chapter: 54
+    sources:
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-is-the-order-a-rabbit-anime-end-in-the-manga/
+    confidence: single
+    last_checked: 2026-09-30
+  - label: Season 3 (BLOOM)
+    kind: season
+    episodes: "1–12"
+    aired: 2020-fall
+    start_chapter: 82
+    sources:
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-is-the-order-a-rabbit-anime-end-in-the-manga/
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/Is_the_Order_a_Rabbit%3F
+    confidence: single
+    last_checked: 2026-09-30

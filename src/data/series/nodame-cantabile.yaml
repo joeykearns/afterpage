@@ -1,0 +1,18 @@
+slug: nodame-cantabile
+title: Nodame Cantabile
+aka: [Nodame Cantabile]
+source: manga
+entries:
+  - label: Season 3 (Finale)
+    kind: season
+    aired: 2010-winter
+    last_chapter: 135
+    start_chapter: 136
+    note: "Start point is for viewers who have watched all three anime seasons. The manga is complete."
+    sources:
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-nodame-cantabile-anime-leave-off-in-the-manga/
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/Nodame_Cantabile
+    confidence: single
+    last_checked: 2026-09-30

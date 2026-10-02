@@ -1,0 +1,16 @@
+slug: nananas-buried-treasure
+title: Nanana's Buried Treasure
+aka: [Ryuugajou Nanana no Maizoukin]
+source: light_novel
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–11"
+    aired: 2014-spring
+    start_chapter: 4
+    note: "Numbers are light novel volumes. The anime condenses the first three volumes; the light novel is complete at 12 volumes."
+    sources:
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-nananas-buried-treasure-anime-end-in-the-light-novel/
+    confidence: single
+    last_checked: 2026-09-30

@@ -1,0 +1,17 @@
+slug: too-many-losing-heroines
+title: Too Many Losing Heroines!
+aka: [Make Heroine ga Oosugiru!, Makeine]
+source: light_novel
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–12"
+    aired: 2024-summer
+    last_chapter: 3
+    start_chapter: 4
+    note: "Numbers are light novel volumes. The final episode is anime-original and does not adapt novel material."
+    sources:
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-makeine-anime-end-in-the-light-novel/
+    confidence: single
+    last_checked: 2026-09-30

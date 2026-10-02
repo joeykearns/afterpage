@@ -1,0 +1,16 @@
+slug: kampfer
+title: Kämpfer
+aka: [Kampfer]
+source: light_novel
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–12"
+    aired: 2009-fall
+    start_chapter: 8
+    note: "The source says the light novels differ from the anime in significant places and recommends reading from the beginning."
+    sources:
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-kampfer-anime-end-in-the-light-novel/
+    confidence: single
+    last_checked: 2026-09-30

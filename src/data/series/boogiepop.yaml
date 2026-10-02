@@ -1,0 +1,16 @@
+slug: boogiepop
+title: Boogiepop and Others
+aka: [Boogiepop wa Warawanai]
+source: light_novel
+entries:
+  - label: Boogiepop and Others (2019)
+    kind: season
+    episodes: "1–18"
+    aired: 2019-winter
+    start_chapter: 7
+    note: "Numbers are light novel volumes. The anime skipped Novel 4, so go back to it before moving on to Novel 7 if you want the full story."
+    sources:
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-boogiepop-phantom-anime-leave-off-in-the-light-novels/
+    confidence: single
+    last_checked: 2026-09-30

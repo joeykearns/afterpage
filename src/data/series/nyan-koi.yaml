@@ -1,0 +1,17 @@
+slug: nyan-koi
+title: Nyan Koi!
+aka: [Nyan Koi]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–12"
+    aired: 2009-fall
+    start_chapter: 17
+    start_volume: 4
+    note: "The source says the anime includes some anime-original additions that don't affect the story."
+    sources:
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-nyan-koi-anime-end-in-the-manga/
+    confidence: single
+    last_checked: 2026-09-30

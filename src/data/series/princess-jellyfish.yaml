@@ -1,0 +1,19 @@
+slug: princess-jellyfish
+title: Princess Jellyfish
+aka: [Kuragehime]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–11"
+    aired: 2010-fall
+    start_chapter: 21
+    note: "Guides disagree on exactly where the anime stops and note the final episodes diverge from the manga. Starting at Ch. 21 avoids missing anything."
+    overlap: "One guide says the anime leaves off around Ch. 21 and recommends Ch. 22; another recommends starting at Ch. 21. Start at Ch. 21."
+    sources:
+      - name: MangaShed
+        url: https://mangashed.com/where-does-the-princess-jellyfish-anime-end-in-the-manga/
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-princess-jellyfish-anime-end-in-the-manga/
+    confidence: differ
+    last_checked: 2026-09-30

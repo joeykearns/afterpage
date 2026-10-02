@@ -1,0 +1,19 @@
+slug: ghost-hunt
+title: Ghost Hunt
+aka: [Akuryou Series]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–25"
+    aired: 2006-fall
+    start_chapter: 42
+    start_volume: 10
+    note: "Numbers are for the manga adaptation. Volume 10 opens with the first file of the next arc after the anime's final story. The manga is complete."
+    sources:
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-ghost-hunt-anime-end-in-the-manga/
+      - name: Wikipedia (list of chapters)
+        url: https://en.wikipedia.org/wiki/List_of_Ghost_Hunt_chapters
+    confidence: agree
+    last_checked: 2026-09-30

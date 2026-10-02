@@ -1,0 +1,16 @@
+slug: shomin-sample
+title: Shomin Sample
+aka: [Ore ga Ojousama Gakkou ni "Shomin Sample" Toshite Gets Sareta Ken]
+source: light_novel
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–12"
+    aired: 2015-fall
+    last_chapter: 4
+    start_chapter: 5
+    sources:
+      - name: MangaShed
+        url: https://mangashed.com/where-does-the-shomin-sample-anime-end-in-the-light-novel/
+    confidence: single
+    last_checked: 2026-09-30

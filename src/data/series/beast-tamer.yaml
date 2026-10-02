@@ -1,0 +1,18 @@
+slug: beast-tamer
+title: Beast Tamer
+aka: ["Yuusha Party wo Tsuihou sareta Beast Tamer, Saikyoushu no Nekomimi Shoujo to Deau"]
+source: light_novel
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–13"
+    aired: 2022-fall
+    start_chapter: 3
+    note: "Numbers are light novel volumes. The finale adapts a little of the start of volume 3, so starting at the beginning of volume 3 gives a small overlap."
+    sources:
+      - name: Epicstream
+        url: https://epicstream.com/article/where-to-start-reading-beast-tamer-after-anime
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-beast-tamer-anime-leave-off-in-the-light-novels/
+    confidence: agree
+    last_checked: 2026-09-30

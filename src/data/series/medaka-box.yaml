@@ -1,0 +1,19 @@
+slug: medaka-box
+title: Medaka Box
+aka: [Medaka Box]
+source: manga
+entries:
+  - label: Season 2 (Abnormal)
+    kind: season
+    episodes: "13–24"
+    aired: 2012-fall
+    last_chapter: 55
+    start_chapter: 55
+    note: "The finale ends partway through Ch. 55. Start at the top of 55."
+    sources:
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-medaka-box-anime-end-in-the-manga/
+      - name: MangaShed
+        url: https://mangashed.com/where-does-the-medaka-box-anime-end-in-the-manga/
+    confidence: differ
+    last_checked: 2026-09-30

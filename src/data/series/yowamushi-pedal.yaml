@@ -1,0 +1,29 @@
+slug: yowamushi-pedal
+title: Yowamushi Pedal
+aka: [Yowapeda]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–38"
+    aired: 2013-fall
+    start_chapter: 74
+    sources:
+      - name: MangaShed
+        url: https://mangashed.com/where-does-the-yowamushi-pedal-anime-end-in-the-manga/
+      - name: Wikipedia (episode list)
+        url: https://en.wikipedia.org/wiki/List_of_Yowamushi_Pedal_episodes
+    confidence: single
+    last_checked: 2026-09-30
+  - label: Season 2 (Grande Road)
+    kind: season
+    episodes: "39–62"
+    aired: 2014-fall
+    start_chapter: 182
+    sources:
+      - name: MangaShed
+        url: https://mangashed.com/where-does-the-yowamushi-pedal-anime-end-in-the-manga/
+      - name: Wikipedia (episode list)
+        url: https://en.wikipedia.org/wiki/List_of_Yowamushi_Pedal_episodes
+    confidence: single
+    last_checked: 2026-09-30

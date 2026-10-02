@@ -1,0 +1,19 @@
+slug: cells-at-work-code-black
+title: Cells at Work! Code Black
+aka: [Hataraku Saibou Black]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–13"
+    aired: 2021-winter
+    start_chapter: 10
+    overlap: "One guide puts the end of the anime at roughly Ch. 10, another at Ch. 11. The anime skips and reorders chapters, so starting a little earlier is safest."
+    note: "The manga is complete at 8 volumes. One guide recommends reading from Chapter 1 because of the anime's non-linear adaptation."
+    sources:
+      - name: MangaShed
+        url: https://mangashed.com/where-does-the-cells-at-work-anime-leave-off-in-the-manga/
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-cells-at-work-anime-leave-off-in-the-manga/
+    confidence: differ
+    last_checked: 2026-09-30

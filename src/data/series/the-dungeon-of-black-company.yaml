@@ -1,0 +1,19 @@
+slug: the-dungeon-of-black-company
+title: The Dungeon of Black Company
+aka: [Meikyuu Black Company]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–12"
+    aired: 2021-summer
+    last_chapter: 29
+    start_chapter: 29
+    note: "The anime ends at Chapter 29 but leaves out that chapter's last few pages in favour of its own ending, so start at the top of Ch. 29."
+    sources:
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-dungeon-of-black-company-anime-end-in-the-manga/
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/The_Dungeon_of_Black_Company
+    confidence: single
+    last_checked: 2026-09-30

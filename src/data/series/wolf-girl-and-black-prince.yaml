@@ -1,0 +1,19 @@
+slug: wolf-girl-and-black-prince
+title: Wolf Girl and Black Prince
+aka: [Ookami Shoujo to Kuro Ouji]
+source: manga
+read_official:
+  - name: VIZ Media (English print & digital)
+    url: https://www.viz.com/vizmanga/chapters/wolf-girl-and-black-prince
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–12"
+    aired: 2014-fall
+    last_chapter: 21
+    start_chapter: 22
+    sources:
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-wolf-girl-and-black-prince-anime-end-in-the-manga/
+    confidence: single
+    last_checked: 2026-09-30

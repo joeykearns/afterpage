@@ -1,0 +1,16 @@
+slug: dragonar-academy
+title: Dragonar Academy
+aka: [Seikoku no Dragonar]
+source: light_novel
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–12"
+    aired: 2014-spring
+    start_chapter: 5
+    note: "Numbers are light novel volumes. The anime adapts the first four volumes; the light novel is complete at 20 volumes."
+    sources:
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/Dragonar_Academy
+    confidence: single
+    last_checked: 2026-09-30

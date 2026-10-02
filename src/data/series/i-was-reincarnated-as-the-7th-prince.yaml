@@ -1,0 +1,30 @@
+slug: i-was-reincarnated-as-the-7th-prince
+title: I Was Reincarnated as the 7th Prince so I Can Take My Time Perfecting My Magical Ability
+aka: [Tensei shitara Dainana Ouji Datta node, Kimama ni Majutsu wo Kiwamemasu, Dainana Ouji]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–12"
+    aired: 2024-spring
+    last_chapter: 43
+    start_chapter: 43
+    note: "Sources differ by one chapter. Start at the top of 43 to be safe. Counts are for the manga adaptation."
+    sources:
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/reincarnated-7th-prince-light-novel-after-anime/
+      - name: FandomWire
+        url: https://fandomwire.com/i-was-reincarnated-as-the-7th-prince-season-3-renewal-status-possible-manga-arcs-explained/
+    confidence: differ
+    last_checked: 2026-09-30
+  - label: Season 2
+    kind: season
+    aired: 2025-summer
+    last_chapter: 86
+    start_chapter: 87
+    note: "Counts are for the manga adaptation."
+    sources:
+      - name: FandomWire
+        url: https://fandomwire.com/i-was-reincarnated-as-the-7th-prince-season-3-renewal-status-possible-manga-arcs-explained/
+    confidence: single
+    last_checked: 2026-09-30

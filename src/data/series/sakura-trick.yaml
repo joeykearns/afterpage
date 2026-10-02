@@ -1,0 +1,17 @@
+slug: sakura-trick
+title: Sakura Trick
+aka: [Sakura Trick]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–12"
+    aired: 2014-winter
+    last_chapter: 28
+    start_chapter: 29
+    start_volume: 4
+    sources:
+      - name: MangaShed
+        url: https://mangashed.com/where-does-the-sakura-trick-anime-end-in-the-manga/
+    confidence: single
+    last_checked: 2026-09-30

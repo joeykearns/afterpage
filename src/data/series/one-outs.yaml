@@ -1,0 +1,16 @@
+slug: one-outs
+title: One Outs
+aka: [One Outs]
+source: manga
+entries:
+  - label: Full series
+    kind: series
+    episodes: "1–25"
+    aired: 2008-fall
+    last_chapter: 82
+    start_chapter: 83
+    sources:
+      - name: Blinkanime
+        url: https://blinkanime.com/one-outs-manga-after-anime-where-to-start-reading/
+    confidence: single
+    last_checked: 2026-09-30

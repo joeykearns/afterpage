@@ -1,0 +1,19 @@
+slug: pluto
+title: Pluto
+aka: [Pluto]
+source: manga
+entries:
+  - label: Full series
+    kind: series
+    episodes: "1–8"
+    aired: 2023-fall
+    covers_all: true
+    last_chapter: 65
+    note: "The eight episodes each adapt one of the manga's 8 volumes, so the anime covers the whole story."
+    sources:
+      - name: The Popverse
+        url: https://www.thepopverse.com/netflix-pluto-anime-adaptation-naoki-urusawa-one-season
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/Pluto_(Japanese_TV_series)
+    confidence: agree
+    last_checked: 2026-09-30

@@ -1,0 +1,33 @@
+slug: sasaki-and-miyano
+title: Sasaki and Miyano
+aka: [Sasaki to Miyano]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–12"
+    aired: 2022-winter
+    start_chapter: 33
+    start_volume: 7
+    overlap: "The TV series covers volumes 1-6. Sources differ slightly on the exact restart point (Ch. 33 or 34, with a half-numbered bonus chapter 33.5 at the start of volume 7). Starting at the beginning of volume 7 is safe."
+    note: "The Graduation film adapts the whole of volume 7, so if you plan to watch it first, use the film entry below."
+    sources:
+      - name: Epicstream
+        url: https://epicstream.com/article/where-to-start-reading-sasaki-and-miyano-after-sasaki-and-miyano-graduation
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-sasaki-and-miyano-anime-leave-off-in-the-manga/
+    confidence: differ
+    last_checked: 2026-09-30
+  - label: "The Movie: Graduation"
+    kind: movie
+    aired: 2023-winter
+    start_chapter: 40
+    start_volume: 8
+    overlap: "Epicstream says to start at Ch. 40 (Volume 8), or at bonus chapter 39.1; another guide says Ch. 41. Start at 40."
+    sources:
+      - name: Epicstream
+        url: https://epicstream.com/article/where-to-start-reading-sasaki-and-miyano-after-sasaki-and-miyano-graduation
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-sasaki-and-miyano-anime-leave-off-in-the-manga/
+    confidence: differ
+    last_checked: 2026-09-30

@@ -1,0 +1,18 @@
+slug: sket-dance
+title: Sket Dance
+aka: [SKET Dance]
+source: manga
+entries:
+  - label: "Original series (2011–2012)"
+    kind: series
+    episodes: "1–77"
+    aired: 2011-spring
+    start_chapter: 181
+    note: "The TV series skips a number of chapters after this point, so starting here catches the skipped material. The manga is complete at 288 chapters."
+    sources:
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-sket-dance-anime-end-in-the-manga/
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/Sket_Dance
+    confidence: single
+    last_checked: 2026-09-30

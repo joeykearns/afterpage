@@ -1,0 +1,19 @@
+slug: tsubasa-reservoir-chronicle
+title: "Tsubasa: Reservoir Chronicle"
+aka: [Tsubasa Chronicle]
+source: manga
+entries:
+  - label: TV series (Seasons 1-2)
+    kind: series
+    episodes: "1–52"
+    aired: 2005-spring
+    start_chapter: 107
+    start_volume: 14
+    note: "The TV series follows the manga up to about episode 42, then continues with anime-original episodes. The manga is complete at 28 volumes. Two OVA series (Tokyo Revelations and Shunraiki) also continue the story."
+    sources:
+      - name: MangaShed
+        url: https://mangashed.com/where-does-the-tsubasa-reservoir-chronicles-anime-end-in-the-manga/
+      - name: Wikipedia (season 2)
+        url: https://en.wikipedia.org/wiki/Tsubasa:_Reservoir_Chronicle_season_2
+    confidence: single
+    last_checked: 2026-09-30
