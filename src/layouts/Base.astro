@@ -46,6 +46,8 @@ const fullTitle = title === SITE_NAME ? `${SITE_NAME}: the exact manga chapter t
     <link rel="manifest" href="/manifest.webmanifest" />
     <link rel="alternate" type="application/rss+xml" title={`${SITE_NAME}: new chapter answers`} href="/feed.xml" />
     <meta name="apple-mobile-web-app-title" content={SITE_NAME} />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <link rel="preload" href="/digits.woff2" as="font" type="font/woff2" crossorigin />
     {googleVerification && <meta name="google-site-verification" content={googleVerification} />}
     <script is:inline>
@@ -54,6 +56,36 @@ const fullTitle = title === SITE_NAME ? `${SITE_NAME}: the exact manga chapter t
           var t = localStorage.getItem('theme');
           if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
         } catch (e) {}
+      })();
+      // App install: sets <html data-install="installed | ready | ios | manual"> so pages can show
+      // the right install help, and makes any [data-install] button open the browser's install prompt.
+      (function () {
+        var deferred = null;
+        var ua = navigator.userAgent;
+        var ios = /iPad|iPhone|iPod/.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+        var installed = function () {
+          return window.matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
+        };
+        var set = function () {
+          document.documentElement.dataset.install = installed() ? 'installed' : deferred ? 'ready' : ios ? 'ios' : 'manual';
+          document.dispatchEvent(new Event('installstate'));
+        };
+        set();
+        window.addEventListener('beforeinstallprompt', function (e) { e.preventDefault(); deferred = e; set(); });
+        window.addEventListener('appinstalled', function () { deferred = null; set(); });
+        document.addEventListener('click', function (e) {
+          var btn = e.target && e.target.closest && e.target.closest('[data-install]');
+          if (!btn || !deferred) return;
+          e.preventDefault();
+          var prompt = deferred;
+          deferred = null;
+          prompt.prompt();
+          prompt.userChoice.finally(set);
+        });
+        // The offline helper (service worker) that makes the site installable and work offline.
+        if ('serviceWorker' in navigator) {
+          window.addEventListener('load', function () { navigator.serviceWorker.register('/sw.js').catch(function () {}); });
+        }
       })();
     </script>
     <slot name="head" />
@@ -87,7 +119,7 @@ const fullTitle = title === SITE_NAME ? `${SITE_NAME}: the exact manga chapter t
           {SITE_NAME}
         </p>
         <p>Numbers only, never plot. Every answer links its sources, and we only point to official releases.</p>
-        <p>Something wrong or missing? <a href="/submit">Tell us</a>, or read <a href="/about">how we check answers</a>. Follow new answers with the <a href="/feed.xml">RSS feed</a>.</p>
+        <p>Something wrong or missing? <a href="/submit">Tell us</a>, or read <a href="/about">how we check answers</a>. Follow new answers with the <a href="/feed.xml">RSS feed</a>, or <a href="/app">get the app</a>.</p>
       </div>
     </footer>
     {analyticsToken && (
