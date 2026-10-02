@@ -1,6 +1,8 @@
 ---
 import Base from '../layouts/Base.astro';
-import { SITE_NAME } from '../config.mjs';
+import * as config from '../config.mjs';
+const { SITE_NAME } = config;
+const kofiUrl = config.KOFI_URL || '';
 ---
 <Base title="How we check answers" description={`How ${SITE_NAME} finds, checks and corrects its chapter numbers.`}>
   <article class="prose">
@@ -25,6 +27,11 @@ import { SITE_NAME } from '../config.mjs';
 
     <h2>Fixing mistakes</h2>
     <p>Every card has a "This is wrong" link. It opens a short form; we check it against the chapter and update the page, usually within a few days.</p>
+
+    {kofiUrl && <>
+      <h2>Supporting the site</h2>
+      <p>{SITE_NAME} is free and run by one person. If it saved you some digging, you can <a href={kofiUrl} rel="noopener">buy us a coffee on Ko-fi</a>. Support never changes an answer: the numbers come only from the sources linked on each page.</p>
+    </>}
   </article>
 </Base>
 
