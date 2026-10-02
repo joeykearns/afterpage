@@ -1,0 +1,63 @@
+---
+// A small "put this on your home screen" card for the home page.
+// Shows only when installing is possible (a one-tap prompt, or iPhone/iPad instructions),
+// never inside the installed app, and stays hidden for 60 days after "Not now".
+import { SITE_NAME } from '../config.mjs';
+---
+<aside class="install-card glass" id="install-card" aria-labelledby="install-h" hidden>
+  <img src="/icon-192.png" width="52" height="52" alt="" />
+  <div class="install-text">
+    <h2 id="install-h">Get {SITE_NAME} on your home screen</h2>
+    <p class="muted">Opens like an app, keeps your saved shows, and works offline for shows you've opened.</p>
+    <div class="install-actions">
+      <button type="button" class="install-go" data-install data-when="ready">Install</button>
+      <a class="install-go" href="/app" data-when="ios">Show me how</a>
+      <button type="button" class="install-later">Not now</button>
+    </div>
+  </div>
+</aside>
+
+<script>
+  const card = document.getElementById('install-card');
+  const KEY = 'install-dismissed';
+  const DAYS = 60;
+  const dismissedRecently = () => {
+    try { return Date.now() - Number(localStorage.getItem(KEY) || 0) < DAYS * 864e5; } catch { return false; }
+  };
+  const update = () => {
+    if (!card) return;
+    const state = document.documentElement.dataset.install;
+    const show = (state === 'ready' || state === 'ios') && !dismissedRecently();
+    card.hidden = !show;
+    card.querySelectorAll<HTMLElement>('[data-when]').forEach((el) => { el.hidden = el.dataset.when !== state; });
+  };
+  update();
+  document.addEventListener('installstate', update);
+  card?.querySelector('.install-later')?.addEventListener('click', () => {
+    try { localStorage.setItem(KEY, String(Date.now())); } catch {}
+    card.hidden = true;
+  });
+</script>
+
+<style>
+  .install-card {
+    margin-top: 18px; padding: 16px 18px; border-radius: 18px;
+    display: flex; gap: 14px; align-items: flex-start;
+  }
+  .install-card[hidden] { display: none; }
+  .install-card img { width: 52px; height: 52px; border-radius: 13px; flex: none; }
+  .install-text h2 { font-size: 1.1rem; line-height: 1.25; }
+  .install-text p { margin-top: 4px; font-size: 0.95rem; }
+  .install-actions { margin-top: 12px; display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+  .install-actions [hidden] { display: none; }
+  .install-go {
+    font: inherit; font-weight: 700; font-size: 0.95rem; padding: 9px 16px; border-radius: 10px; cursor: pointer;
+    border: none; background: var(--ink); color: var(--sheet); text-decoration: none; display: inline-block;
+  }
+  .install-go:hover { opacity: 0.88; }
+  .install-later {
+    font: inherit; font-size: 0.95rem; padding: 9px 10px; border: none; background: none; color: var(--ink-soft); cursor: pointer;
+    text-decoration: underline; text-underline-offset: 3px;
+  }
+  .install-later:hover { color: var(--ink); }
+</style>
