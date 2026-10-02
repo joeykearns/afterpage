@@ -1,12 +1,18 @@
 {
+  "id": "/",
   "name": "After The Anime",
   "short_name": "AfterTheAnime",
   "description": "The exact manga chapter to start after the anime. No spoilers.",
+  "lang": "en",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
   "background_color": "#FFFFFF",
   "theme_color": "#20283D",
+  "categories": [
+    "entertainment",
+    "books"
+  ],
   "icons": [
     {
       "src": "/icon-192.png",
@@ -23,6 +29,20 @@
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "All shows",
+      "short_name": "All shows",
+      "url": "/shows",
+      "icons": [
+        {
+          "src": "/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
     }
   ]
 }
