@@ -1,0 +1,19 @@
+slug: gushing-over-magical-girls
+title: Gushing over Magical Girls
+aka: [Mahou Shoujo ni Akogarete, Mahoako]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–13"
+    aired: 2024-winter
+    start_chapter: 25
+    start_volume: 5
+    overlap: "The anime ends with Chapters 23 and 24. One guide notes Chapter 22 was skipped by the anime, so start at Chapter 22 if you want to catch it."
+    sources:
+      - name: Anime Filler Guide
+        url: https://www.animefillerguide.com/2024/04/mahou-shoujo.html
+      - name: Let's Weaboo
+        url: https://letsweaboo.com/news/which-manga-chapter-does-gushing-over-magical-girls-season-1-end-with_a143
+    confidence: agree
+    last_checked: 2026-09-30

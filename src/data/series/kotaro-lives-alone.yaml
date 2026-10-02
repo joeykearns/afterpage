@@ -1,0 +1,16 @@
+slug: kotaro-lives-alone
+title: Kotaro Lives Alone
+aka: [Kotarou wa Hitorigurashi]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–10"
+    aired: 2022-winter
+    start_chapter: 86
+    overlap: "The anime ends with Chapter 85 but skips Chapters 61 through 84. The guide suggests starting at Chapter 61 if you want the skipped material."
+    sources:
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-kotaro-lives-alone-anime-end-in-the-manga/
+    confidence: single
+    last_checked: 2026-09-30

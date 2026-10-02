@@ -1,0 +1,17 @@
+slug: senryu-girl
+title: Senryu Girl
+aka: [Senryuu Shoujo]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–12"
+    aired: 2019-spring
+    last_chapter: 41
+    start_chapter: 42
+    note: "The anime skips some larger chunks of chapters after this point."
+    sources:
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-senryuu-girl-anime-end-in-the-manga/
+    confidence: single
+    last_checked: 2026-09-30

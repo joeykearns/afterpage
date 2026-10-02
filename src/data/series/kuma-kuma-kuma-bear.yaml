@@ -1,0 +1,16 @@
+slug: kuma-kuma-kuma-bear
+title: Kuma Kuma Kuma Bear
+aka: [Kumakuma]
+source: light_novel
+entries:
+  - label: Season 2
+    kind: season
+    aired: 2023-spring
+    start_chapter: 9
+    start_volume: 9
+    note: "The source places the stopping point about halfway through Novel 9 (around Chapter 212), so starting at the beginning of Novel 9 may repeat a little."
+    sources:
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-kuma-kuma-kuma-bear-anime-end-in-the-light-novel/
+    confidence: single
+    last_checked: 2026-09-30

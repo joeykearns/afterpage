@@ -1,0 +1,18 @@
+slug: adachi-and-shimamura
+title: Adachi and Shimamura
+aka: [Adachi to Shimamura]
+source: light_novel
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–12"
+    aired: 2020-fall
+    start_chapter: 4
+    overlap: "The anime adapts material from the first four volumes, partly out of order, and its final episode comes from Volume 4. One guide says to continue at Volume 5, another at Volume 4. Start at Volume 4 to be safe, or begin at Volume 1 for the full story."
+    sources:
+      - name: MangaShed
+        url: https://mangashed.com/adachi-and-shimamara-manga-after-anime/
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/adachi-and-shimamara-manga-after-anime/
+    confidence: differ
+    last_checked: 2026-09-30

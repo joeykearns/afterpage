@@ -1,0 +1,15 @@
+slug: tsugumomo
+title: Tsugumomo
+aka: [Tsugumomo]
+source: manga
+entries:
+  - label: Season 2
+    kind: season
+    aired: 2020-spring
+    start_chapter: 72
+    sources:
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/tsugumomo-manga-after-anime/
+    confidence: single
+    note: "Start point is given for viewers who have finished both seasons."
+    last_checked: 2026-09-30

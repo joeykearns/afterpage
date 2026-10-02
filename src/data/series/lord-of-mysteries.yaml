@@ -1,0 +1,17 @@
+slug: lord-of-mysteries
+title: Lord of Mysteries
+aka: [Guimi Zhi Zhu]
+source: novel
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–13"
+    aired: 2025-summer
+    last_chapter: 213
+    start_chapter: 214
+    note: "Season 1 adapts the first volume of the web novel (Chapters 1 to 213)."
+    sources:
+      - name: Wikipedia
+        url: https://en.wikipedia.org/wiki/Lord_of_Mysteries
+    confidence: single
+    last_checked: 2026-09-30

@@ -1,0 +1,16 @@
+slug: my-roommate-is-a-cat
+title: My Roommate Is a Cat
+aka: [Doukyonin wa Hiza, Tokidoki, Atama no Ue.]
+source: manga
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–12"
+    aired: 2019-winter
+    start_chapter: 16
+    note: "The anime adapts through Volume 5 of the official release. Chapter 16 is the official-release numbering; the original webcomic version numbers its chapters differently."
+    sources:
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-my-roommate-is-a-cat-anime-end-in-the-manga/
+    confidence: single
+    last_checked: 2026-09-30

@@ -1,0 +1,17 @@
+slug: silent-witch
+title: Secrets of the Silent Witch
+aka: ["Silent Witch: Chinmoku no Majo no Kakushigoto", Silent Witch]
+source: light_novel
+entries:
+  - label: Season 1
+    kind: season
+    episodes: "1–13"
+    aired: 2025-summer
+    last_chapter: 3
+    start_chapter: 4
+    note: "The anime covers up to volume 3 of the light novel; the story continues from volume 4."
+    sources:
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-secrets-of-the-silent-witch-anime-end-in-the-light-novel/
+    confidence: single
+    last_checked: 2026-09-30

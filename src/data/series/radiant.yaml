@@ -1,0 +1,19 @@
+slug: radiant
+title: Radiant
+aka: [Radiant]
+source: manga
+entries:
+  - label: Season 2
+    kind: season
+    episodes: "1–21"
+    aired: 2019-fall
+    last_chapter: 75
+    start_chapter: 76
+    note: "The anime (both seasons) adapts through chapter 75, which is nearly all of volume 10."
+    sources:
+      - name: Where Does the Anime Leave Off
+        url: https://wheredoestheanimeleaveoff.com/where-does-the-radiant-anime-end-in-the-manfra/
+      - name: Wikipedia (Radiant season 2)
+        url: https://en.wikipedia.org/wiki/Radiant_season_2
+    confidence: single
+    last_checked: 2026-09-30
