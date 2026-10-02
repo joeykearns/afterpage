@@ -9,6 +9,7 @@ const { SITE_NAME, SITE_URL } = config;
 // Optional settings in config.mjs (safe to leave out):
 const googleVerification = config.GOOGLE_SITE_VERIFICATION || '';
 const analyticsToken = config.CLOUDFLARE_ANALYTICS_TOKEN || '';
+const kofiUrl = config.KOFI_URL || '';
 
 interface Props {
   title: string;
@@ -120,6 +121,7 @@ const fullTitle = title === SITE_NAME ? `${SITE_NAME}: the exact manga chapter t
         </p>
         <p>Numbers only, never plot. Every answer links its sources, and we only point to official releases.</p>
         <p>Something wrong or missing? <a href="/submit">Tell us</a>, or read <a href="/about">how we check answers</a>. Follow new answers with the <a href="/feed.xml">RSS feed</a>, or <a href="/app">get the app</a>.</p>
+        {kofiUrl && <p>Find this useful? <a href={kofiUrl} rel="noopener">Buy us a coffee on Ko-fi</a>. It helps keep the site free and ad-light.</p>}
       </div>
     </footer>
     {analyticsToken && (
