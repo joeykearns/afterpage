@@ -1,0 +1,65 @@
+---
+// Shown by the app when there's no connection and the page wasn't saved yet.
+import Base from '../layouts/Base.astro';
+---
+<Base title="You're offline" description="No connection right now. Shows you've opened before still work.">
+  <meta slot="head" name="robots" content="noindex" />
+  <div class="offline">
+    <h1>You're offline</h1>
+    <p class="lede muted">This page hasn't been saved on this device yet. It'll load once you're back online.</p>
+
+    <section class="section" id="saved" hidden aria-labelledby="saved-h">
+      <h2 id="saved-h">Shows you can open offline</h2>
+      <ul class="rows" id="saved-list"></ul>
+    </section>
+
+    <p class="muted again"><a href="/">Go to the home page</a> or try again in a moment.</p>
+  </div>
+</Base>
+
+<script>
+  // List the show pages this device already has, so there's something useful to open.
+  (async () => {
+    if (!('caches' in window)) return;
+    try {
+      const cache = await caches.open('ata-pages');
+      const seen = new Set<string>();
+      const items: { href: string; title: string }[] = [];
+      for (const req of (await cache.keys()).reverse()) {
+        const url = new URL(req.url);
+        if (!url.pathname.startsWith('/anime/')) continue;
+        const href = url.pathname.replace(/\/$/, '');
+        if (seen.has(href)) continue;
+        seen.add(href);
+        const res = await cache.match(req);
+        const html = res ? await res.text() : '';
+        const title = (html.match(/<title>([^<]*)<\/title>/)?.[1] || href)
+          .replace(/ \| .*$/, '')
+          .replace(/: (where to start|does the anime cover) .*$/, '')
+          .replace(/&amp;/g, '&').replace(/&#39;|&#x27;/g, "'").replace(/&quot;/g, '"');
+        items.push({ href, title });
+      }
+      if (!items.length) return;
+      const list = document.getElementById('saved-list')!;
+      list.replaceChildren(...items.map(({ href, title }) => {
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        a.href = href;
+        const t = document.createElement('span');
+        t.className = 'row-title';
+        t.textContent = title;
+        a.append(t);
+        li.append(a);
+        return li;
+      }));
+      document.getElementById('saved')!.hidden = false;
+    } catch {}
+  })();
+</script>
+
+<style>
+  .offline { padding-top: 24px; }
+  h1 { font-size: clamp(2rem, 7vw, 2.9rem); }
+  .lede { margin-top: 10px; font-size: 1.1rem; max-width: 40ch; }
+  .again { margin-top: 32px; }
+</style>

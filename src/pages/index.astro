@@ -1,4 +1,5 @@
 ---
+import InstallCard from '../components/InstallCard.astro';
 import Base from '../layouts/Base.astro';
 import LetterBar from '../components/LetterBar.astro';
 import { SITE_NAME } from '../config.mjs';
@@ -40,6 +41,7 @@ const popular = POPULAR.filter(([slug]) => series.some((s) => s.slug === slug)).
         </ul>
       </div>
     </div>
+    <InstallCard />
   </section>
 
   <section class="section my-shows" id="my-shows" aria-labelledby="my-h" hidden>

@@ -1,0 +1,76 @@
+---
+// "Get the app": how to put the site on your home screen, with a one-tap button where the browser supports it.
+import Base from '../layouts/Base.astro';
+import { SITE_NAME } from '../config.mjs';
+---
+<Base title="Get the app" description={`Put ${SITE_NAME} on your home screen. It opens like an app, and shows you've opened work offline. Free, nothing to download from a store.`}>
+  <article class="prose app">
+    <img class="app-icon" src="/icon-192.png" width="96" height="96" alt="" />
+    <h1>Get the app</h1>
+    <p class="lede">Put {SITE_NAME} on your home screen. It opens full screen like any other app, your saved shows come with it, and shows you've opened still work offline. It's free and there's nothing to download from a store.</p>
+
+    <div class="status installed-only glass">
+      <strong>You're using the app.</strong> Nothing else to do.
+    </div>
+
+    <div class="status ready-only glass">
+      <p>Your browser can install it in one tap.</p>
+      <button type="button" class="install-btn" data-install>Install {SITE_NAME}</button>
+    </div>
+
+    <section aria-labelledby="ios-h">
+      <h2 id="ios-h">iPhone and iPad</h2>
+      <ol>
+        <li>Open this site in <strong>Safari</strong>. (On iOS 17 and later, Chrome and other browsers work too.)</li>
+        <li>Tap the <strong>Share</strong> button <span class="share-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3v12M7.5 7.5 12 3l4.5 4.5M6 11H5v10h14V11h-1" /></svg></span> at the bottom of the screen (at the top on iPad).</li>
+        <li>Scroll down and tap <strong>Add to Home Screen</strong>.</li>
+        <li>Tap <strong>Add</strong>.</li>
+      </ol>
+    </section>
+
+    <section aria-labelledby="android-h">
+      <h2 id="android-h">Android</h2>
+      <ol>
+        <li>Open this site in <strong>Chrome</strong>.</li>
+        <li>Tap the <strong>⋮</strong> menu at the top right.</li>
+        <li>Tap <strong>Add to Home screen</strong>, then <strong>Install</strong>.</li>
+      </ol>
+      <p class="muted">Samsung Internet, Edge and Firefox have the same option in their menus.</p>
+    </section>
+
+    <section aria-labelledby="desktop-h">
+      <h2 id="desktop-h">Computer</h2>
+      <ul>
+        <li><strong>Chrome or Edge:</strong> click the install icon at the right end of the address bar, or open the menu and choose <strong>Install {SITE_NAME}</strong>.</li>
+        <li><strong>Safari on a Mac:</strong> choose <strong>File → Add to Dock</strong>.</li>
+      </ul>
+    </section>
+
+    <p class="muted small">To remove it later, delete it like any other app. Pages always load fresh when you're online, so answers stay up to date.</p>
+  </article>
+</Base>
+
+<style>
+  .prose { max-width: 62ch; }
+  .prose h1 { font-size: clamp(2rem, 7vw, 2.8rem); }
+  .prose h2 { font-size: 1.3rem; margin: 0 0 10px; }
+  .prose li { margin-bottom: 10px; }
+  .prose ol, .prose ul { padding-left: 22px; }
+  .lede { margin-top: 12px; font-size: 1.15rem; color: var(--ink-soft); }
+  .app { padding-top: 20px; }
+  .app-icon { width: 80px; height: 80px; border-radius: 20px; box-shadow: 0 8px 24px -10px rgba(32, 40, 61, 0.45); }
+  .app h1 { margin-top: 16px; }
+  .app section { margin-top: 28px; }
+  .status { display: none; margin-top: 20px; padding: 16px 18px; border-radius: 16px; }
+  .status p { margin: 0 0 12px; }
+  :global(html[data-install='installed']) .installed-only { display: block; }
+  :global(html[data-install='ready']) .ready-only { display: block; }
+  .install-btn {
+    font: inherit; font-weight: 700; font-size: 1rem; padding: 12px 20px; border-radius: 10px; cursor: pointer;
+    border: none; background: var(--ink); color: var(--sheet);
+  }
+  .install-btn:hover { opacity: 0.88; }
+  .share-icon { display: inline-grid; vertical-align: -4px; width: 22px; height: 22px; }
+  .share-icon svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .small { font-size: 0.92rem; margin-top: 32px; }
+</style>
