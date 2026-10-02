@@ -8,3 +8,4 @@ export const GOOGLE_SITE_VERIFICATION = 'Zi-2tNdcGxKJvgbF0vtch6AMNz9F-vPDMPLSouN
 
 export const CLOUDFLARE_ANALYTICS_TOKEN = '6c357de60f144f08a1a19f858edbf37f';
 export const FEEDBACK_FORM_URL = 'https://tally.so/r/A71vKW';
+export const KOFI_URL = 'https://ko-fi.com/aftertheanime';
